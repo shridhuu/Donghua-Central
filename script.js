@@ -120,42 +120,6 @@ if (staffGrid) {
     .join("");
 }
 
-const revealTargets = document.querySelectorAll(
-  ".panel-band, .preview-panel, .system-panel, .join-section, .feature-card, .series-card, .nine-heavens-banner, .heaven-card, .realm-tier, .staff-card"
-);
-
-if (window.matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) {
-  revealTargets.forEach((target) => target.classList.add("is-visible"));
-} else {
-  revealTargets.forEach((target, index) => {
-    target.classList.add("reveal");
-    target.dataset.revealDelay = String(Math.min(index % 6, 5) * 70);
-    target.style.transitionDelay = `${target.dataset.revealDelay}ms`;
-  });
-
-  const revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          return;
-        }
-
-        entry.target.classList.add("is-visible");
-        window.setTimeout(() => {
-          entry.target.style.transitionDelay = "";
-        }, Number(entry.target.dataset.revealDelay || 0) + 760);
-        revealObserver.unobserve(entry.target);
-      });
-    },
-    {
-      threshold: 0.14,
-      rootMargin: "0px 0px -70px",
-    }
-  );
-
-  revealTargets.forEach((target) => revealObserver.observe(target));
-}
-
 const faqDetails = document.querySelectorAll(".faq-list details");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

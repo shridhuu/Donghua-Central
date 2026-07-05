@@ -37,7 +37,7 @@ body {
     linear-gradient(180deg, rgba(3, 8, 38, 0.18), rgba(3, 8, 38, 0.92) 760px),
     url("Template/Background.png"),
     url("Template/Color Theme.png");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-blend-mode: normal, soft-light, normal;
   background-position: center top, center top, center center;
   background-size: cover, cover, cover;
@@ -53,7 +53,6 @@ body::before {
   background:
     radial-gradient(circle at center top, rgba(138, 163, 199, 0.2), transparent 28rem),
     linear-gradient(90deg, rgba(3, 8, 38, 0.95), rgba(3, 8, 38, 0.46) 42%, rgba(3, 8, 38, 0.95));
-  animation: qi-breathe 12s ease-in-out infinite alternate;
 }
 
 body::after {
@@ -68,7 +67,6 @@ body::after {
     linear-gradient(90deg, rgba(138, 163, 199, 0.06) 1px, transparent 1px);
   background-size: 72px 72px;
   mask-image: linear-gradient(to bottom, black, transparent 58%);
-  animation: grid-drift 28s linear infinite;
 }
 
 a {
@@ -108,7 +106,6 @@ a {
     linear-gradient(90deg, rgba(3, 8, 38, 0.92), rgba(30, 33, 53, 0.42), rgba(3, 8, 38, 0.92)),
     rgba(3, 8, 38, 0.84);
   box-shadow: 0 16px 54px rgba(0, 0, 0, 0.38);
-  backdrop-filter: blur(18px);
 }
 
 .brand {
@@ -125,7 +122,6 @@ a {
   place-items: center;
   overflow: hidden;
   border-radius: 50%;
-  filter: drop-shadow(0 0 18px rgba(138, 163, 199, 0.45));
 }
 
 .brand-mark img {
@@ -273,7 +269,6 @@ a {
 
 .hero-copy {
   width: min(810px, 100%);
-  animation: rise-in 800ms ease-out both;
 }
 
 .eyebrow {
@@ -328,62 +323,6 @@ h4 {
   font-family: "Cinzel", serif;
   font-size: 0.98rem;
   line-height: 1.2;
-}
-
-@keyframes qi-breathe {
-  from {
-    opacity: 0.76;
-    transform: scale(1);
-  }
-
-  to {
-    opacity: 1;
-    transform: scale(1.035);
-  }
-}
-
-@keyframes grid-drift {
-  from {
-    background-position: 0 0, 0 0;
-  }
-
-  to {
-    background-position: 72px 144px, 144px 72px;
-  }
-}
-
-@keyframes rise-in {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes seal-pulse {
-  from {
-    opacity: 0.56;
-    transform: rotate(0deg) scale(0.96);
-  }
-
-  to {
-    opacity: 0.9;
-    transform: rotate(12deg) scale(1.04);
-  }
-}
-
-@keyframes aura-sweep {
-  from {
-    transform: translateX(-120%);
-  }
-
-  to {
-    transform: translateX(120%);
-  }
 }
 
 .hero-lede,
@@ -451,8 +390,6 @@ details p {
   border-radius: 8px;
   background: rgba(3, 8, 38, 0.68);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(18px);
-  animation: rise-in 900ms 180ms ease-out both;
 }
 
 .realm-stat {
@@ -506,7 +443,8 @@ details p {
     linear-gradient(180deg, rgba(17, 23, 46, 0.78), rgba(3, 8, 38, 0.84)),
     rgba(3, 8, 38, 0.72);
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
-  backdrop-filter: blur(16px);
+  content-visibility: auto;
+  contain-intrinsic-size: 760px;
 }
 
 .panel-band::before,
@@ -520,19 +458,6 @@ details p {
   content: "";
   background: linear-gradient(90deg, rgba(138, 163, 199, 0.14), transparent 34%, rgba(214, 168, 77, 0.08));
   mask-image: linear-gradient(to bottom, black 0, transparent 74%);
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity 680ms ease,
-    transform 680ms ease;
-}
-
-.reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .intro-band {
@@ -587,29 +512,10 @@ details p {
     background 180ms ease;
 }
 
-.feature-card::before,
-.heaven-card::before,
-.realm-tier::before {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  content: "";
-  background: linear-gradient(110deg, transparent, rgba(239, 245, 255, 0.13), transparent);
-  opacity: 0;
-  transform: translateX(-120%);
-}
-
 .feature-card:hover {
   transform: translateY(-4px);
   border-color: rgba(138, 163, 199, 0.46);
   background: rgba(30, 33, 53, 0.42);
-}
-
-.feature-card:hover::before,
-.heaven-card:hover::before,
-.realm-tier:hover::before {
-  animation: aura-sweep 850ms ease;
-  opacity: 1;
 }
 
 .feature-card.is-gold {
@@ -847,7 +753,6 @@ details p {
     radial-gradient(circle at 68% 30%, rgba(138, 163, 199, 0.24), transparent 48%);
   content: "";
   filter: blur(0.2px);
-  animation: seal-pulse 4.8s ease-in-out infinite alternate;
 }
 
 .ascension-kicker {
@@ -1536,9 +1441,5 @@ details.is-closing p {
     transition-duration: 0.01ms !important;
   }
 
-  .reveal {
-    opacity: 1;
-    transform: none;
-  }
 }
 
