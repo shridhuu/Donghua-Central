@@ -286,7 +286,7 @@ h2,
 h3,
 p {
   margin-top: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 h1,
@@ -447,8 +447,6 @@ details p {
     linear-gradient(180deg, rgba(17, 23, 46, 0.78), rgba(3, 8, 38, 0.84)),
     rgba(3, 8, 38, 0.72);
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.28);
-  content-visibility: auto;
-  contain-intrinsic-size: 760px;
 }
 
 .panel-band::before,
@@ -685,9 +683,9 @@ details p {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 0.98fr) minmax(320px, 0.58fr);
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.7fr);
   gap: clamp(1.2rem, 3vw, 2.4rem);
-  align-items: end;
+  align-items: center;
   margin-bottom: 1.6rem;
 }
 
@@ -696,7 +694,7 @@ details p {
 }
 
 .system-copy h2 {
-  max-width: 13ch;
+  max-width: 18ch;
 }
 
 .system-lede {
