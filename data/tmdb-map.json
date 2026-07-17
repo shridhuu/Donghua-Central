@@ -1,8 +1,8 @@
 {
-  "perfect-world": { "tmdb_id": 124003, "type": "tv", "use_tmdb_poster": false, "use_tmdb_synopsis": false },
-  "renegade-immortal": { "tmdb_id": 223911, "type": "tv", "use_tmdb_poster": false, "use_tmdb_synopsis": false },
-  "mortal-journey": { "tmdb_id": 106449, "type": "tv", "use_tmdb_poster": false, "use_tmdb_synopsis": false },
-  "slay-the-gods": { "tmdb_id": 259231, "type": "tv", "use_tmdb_poster": false, "use_tmdb_synopsis": false },
-  "beyond-times-gaze": { "tmdb_id": 281233, "type": "tv", "use_tmdb_poster": false, "use_tmdb_synopsis": false },
-  "blades-guardians": { "tmdb_id": 107463, "type": "tv", "use_tmdb_poster": false, "use_tmdb_synopsis": false }
+  "perfect-world": { "tmdb_id": 124003, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "renegade-immortal": { "tmdb_id": 223911, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "mortal-journey": { "tmdb_id": 106449, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "slay-the-gods": { "tmdb_id": 259231, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "beyond-times-gaze": { "tmdb_id": 281233, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "blades-guardians": { "tmdb_id": 107463, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
 }

@@ -44,10 +44,20 @@ for (const [key, info] of Object.entries(mapData)) {
       use_tmdb_poster: !!use_tmdb_poster,
       use_tmdb_synopsis: !!use_tmdb_synopsis,
       rating: data.vote_average,
+      vote_count: data.vote_count || null,
       episodes: data.number_of_episodes || null,
+      seasons: data.number_of_seasons || null,
       status: data.status,
-      poster_path: data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : null,
-      overview: data.overview || null
+      first_air_date: data.first_air_date || null,
+      original_name: data.original_name || null,
+      tagline: data.tagline || null,
+      poster_path: data.poster_path ? `https://image.tmdb.org/t/p/original${data.poster_path}` : null,
+      overview: data.overview || null,
+      next_episode: data.next_episode_to_air ? {
+        name: data.next_episode_to_air.name,
+        air_date: data.next_episode_to_air.air_date,
+        episode_number: data.next_episode_to_air.episode_number
+      } : null
     };
     console.log(`Success: Loaded TMDB details for "${key}"`);
   } catch (err) {

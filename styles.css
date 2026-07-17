@@ -2051,6 +2051,14 @@ details.is-closing p {
   color: white;
 }
 
+.modal-native-name {
+  color: var(--muted);
+  font-style: italic;
+  font-size: 0.95rem;
+  margin-top: -0.4rem;
+  margin-bottom: 12px;
+}
+
 .modal-meta-row {
   display: flex;
   align-items: center;
@@ -2083,6 +2091,36 @@ details.is-closing p {
 .modal-episodes {
   font-size: 0.88rem;
   color: var(--muted);
+}
+
+.modal-year {
+  color: var(--dim);
+  font-size: 0.85rem;
+}
+
+.modal-vote-count {
+  color: var(--dim);
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.modal-next-episode {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--highlight);
+  font-size: 0.9rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(138, 163, 199, 0.18);
+  border-radius: 6px;
+  background: rgba(138, 163, 199, 0.06);
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.modal-next-episode svg {
+  width: 14px;
+  height: 14px;
 }
 
 .modal-synopsis {

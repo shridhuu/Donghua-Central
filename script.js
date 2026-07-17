@@ -290,6 +290,20 @@ const renderFilterChips = () => {
   });
 };
 
+const buildPosterMarkup = (item, altText, extraAttrs = "") => {
+  const isRemote = item.image.startsWith("http");
+  if (isRemote) {
+    return `<img src="${item.image}" alt="${altText}" loading="lazy" ${extraAttrs} />`;
+  }
+  const webpSrc = item.image.replace(/\.(jpg|png)$/, ".webp");
+  return `
+    <picture>
+      <source srcset="${webpSrc}" type="image/webp">
+      <img src="${item.image}" alt="${altText}" loading="lazy" width="${item.width}" height="${item.height}" ${extraAttrs} />
+    </picture>
+  `;
+};
+
 const renderSeries = () => {
   if (!seriesGrid) return;
 
@@ -316,14 +330,10 @@ const renderSeries = () => {
   }
 
   seriesGrid.innerHTML = filtered.map(item => {
-    const webpSrc = item.image.replace(/\.(jpg|png)$/, '.webp');
     return `
       <article class="series-card" data-id="${item.id}" role="button" tabindex="0" aria-label="View details for ${item.name}">
         <div class="series-card-media">
-          <picture>
-            <source srcset="${webpSrc}" type="image/webp">
-            <img src="${item.image}" alt="${item.name} Poster" loading="lazy" width="${item.width}" height="${item.height}" />
-          </picture>
+          ${buildPosterMarkup(item, `${item.name} Poster`)}
         </div>
         <span>${item.status}</span>
         <h3>${item.name}</h3>
@@ -357,23 +367,22 @@ const openModal = (id) => {
   if (!item || !seriesModal || !modalContent) return;
 
   previouslyFocusedElement = document.activeElement;
-  const webpSrc = item.image.replace(/\.(jpg|png)$/, '.webp');
 
   modalContent.innerHTML = `
     <div class="modal-body">
       <div class="modal-media">
-        <picture>
-          <source srcset="${webpSrc}" type="image/webp">
-          <img src="${item.image}" alt="${item.name}" width="${item.width}" height="${item.height}" />
-        </picture>
+        ${buildPosterMarkup(item, item.name)}
       </div>
       <div class="modal-info">
         <h2>${item.name}</h2>
+        ${item.nativeName ? `<p class="modal-native-name">${item.nativeName}</p>` : ""}
         <div class="modal-meta-row">
           <span class="modal-badge status-${item.status.toLowerCase()}">${item.status}</span>
+          ${item.year ? `<span class="modal-year">${item.year}</span>` : ""}
           <span class="modal-episodes"><strong>Episodes:</strong> ${item.episodes}</span>
-          ${item.rating ? `<span class="modal-rating"><i data-lucide="star" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; fill: var(--highlight); color: var(--highlight);"></i><strong>${item.rating.toFixed(1)}</strong>/10</span>` : ''}
+          ${item.rating ? `<span class="modal-rating"><i data-lucide="star" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; fill: var(--highlight); color: var(--highlight);"></i><strong>${item.rating.toFixed(1)}</strong>/10${item.voteCount ? ` <span class="modal-vote-count">(${item.voteCount.toLocaleString()} votes)</span>` : ""}</span>` : ""}
         </div>
+        ${item.nextEpisode ? `<p class="modal-next-episode"><i data-lucide="calendar" aria-hidden="true"></i> Episode ${item.nextEpisode.episode_number} airs ${new Date(item.nextEpisode.air_date).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })}</p>` : ""}
         <p class="modal-synopsis">${item.synopsis}</p>
         <div class="modal-genres">
           ${item.genres.map(g => `<span class="genre-tag">${g}</span>`).join("")}
@@ -581,6 +590,10 @@ const loadTMDBData = async () => {
         if (tmdbInfo.overview && tmdbInfo.use_tmdb_synopsis) {
           item.synopsis = tmdbInfo.overview;
         }
+        if (tmdbInfo.vote_count) item.voteCount = tmdbInfo.vote_count;
+        if (tmdbInfo.first_air_date) item.year = tmdbInfo.first_air_date.slice(0, 4);
+        if (tmdbInfo.original_name && tmdbInfo.original_name !== item.name) item.nativeName = tmdbInfo.original_name;
+        if (tmdbInfo.next_episode) item.nextEpisode = tmdbInfo.next_episode;
       }
     });
   } catch (err) {
