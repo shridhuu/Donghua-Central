@@ -53,8 +53,11 @@ for (const [key, info] of Object.entries(mapData)) {
       tagline: data.tagline || null,
       poster_path: data.poster_path ? `https://image.tmdb.org/t/p/original${data.poster_path}` : null,
       overview: data.overview || null,
+      last_episode: data.last_episode_to_air ? {
+        air_date: data.last_episode_to_air.air_date,
+        episode_number: data.last_episode_to_air.episode_number
+      } : null,
       next_episode: data.next_episode_to_air ? {
-        name: data.next_episode_to_air.name,
         air_date: data.next_episode_to_air.air_date,
         episode_number: data.next_episode_to_air.episode_number
       } : null

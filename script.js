@@ -382,7 +382,11 @@ const openModal = (id) => {
           <span class="modal-episodes"><strong>Episodes:</strong> ${item.episodes}</span>
           ${item.rating ? `<span class="modal-rating"><i data-lucide="star" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px; fill: var(--highlight); color: var(--highlight);"></i><strong>${item.rating.toFixed(1)}</strong>/10${item.voteCount ? ` <span class="modal-vote-count">(${item.voteCount.toLocaleString()} votes)</span>` : ""}</span>` : ""}
         </div>
-        ${item.nextEpisode ? `<p class="modal-next-episode"><i data-lucide="calendar" aria-hidden="true"></i> Episode ${item.nextEpisode.episode_number} airs ${new Date(item.nextEpisode.air_date).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })}</p>` : ""}
+        ${(item.lastEpisode || item.nextEpisode) ? `
+        <div class="modal-airing-status">
+          ${item.lastEpisode ? `<p class="modal-episode-line"><i data-lucide="check-circle" aria-hidden="true"></i> Episode ${item.lastEpisode.episode_number} aired ${new Date(item.lastEpisode.air_date).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })}</p>` : ""}
+          ${item.nextEpisode ? `<p class="modal-episode-line modal-next-episode"><i data-lucide="calendar" aria-hidden="true"></i> Episode ${item.nextEpisode.episode_number} airs ${new Date(item.nextEpisode.air_date).toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" })}</p>` : ""}
+        </div>` : ""}
         <p class="modal-synopsis">${item.synopsis}</p>
         <div class="modal-genres">
           ${item.genres.map(g => `<span class="genre-tag">${g}</span>`).join("")}
@@ -593,6 +597,7 @@ const loadTMDBData = async () => {
         if (tmdbInfo.vote_count) item.voteCount = tmdbInfo.vote_count;
         if (tmdbInfo.first_air_date) item.year = tmdbInfo.first_air_date.slice(0, 4);
         if (tmdbInfo.original_name && tmdbInfo.original_name !== item.name) item.nativeName = tmdbInfo.original_name;
+        if (tmdbInfo.last_episode) item.lastEpisode = tmdbInfo.last_episode;
         if (tmdbInfo.next_episode) item.nextEpisode = tmdbInfo.next_episode;
       }
     });
