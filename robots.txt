@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://shridhuu.github.io/Donghua-Central/sitemap.xml

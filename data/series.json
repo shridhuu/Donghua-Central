@@ -1,0 +1,68 @@
+{
+  "perfect-world": {
+    "tmdb_id": 124003,
+    "type": "tv",
+    "use_tmdb_poster": false,
+    "use_tmdb_synopsis": false,
+    "rating": 8.2,
+    "episodes": 286,
+    "status": "Returning Series",
+    "poster_path": "https://image.tmdb.org/t/p/w500/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
+    "overview": "Born into a unique world where villages fight to gain power and control, the main character, Shi Hao, is a genius blessed by the heavens born under the poorest of conditions. His clan, however, has a mysterious past. To rise up and become the genius he is meant to be, the clan goes through every effort to aid his cultivation as they battle through fanatical monsters and engage in power struggles with other clans. His journey will bring him through unknown lands until he is able to become a person that can truly shake the world."
+  },
+  "renegade-immortal": {
+    "tmdb_id": 223911,
+    "type": "tv",
+    "use_tmdb_poster": false,
+    "use_tmdb_synopsis": false,
+    "rating": 8.256,
+    "episodes": 200,
+    "status": "Returning Series",
+    "poster_path": "https://image.tmdb.org/t/p/w500/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
+    "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength."
+  },
+  "mortal-journey": {
+    "tmdb_id": 106449,
+    "type": "tv",
+    "use_tmdb_poster": false,
+    "use_tmdb_synopsis": false,
+    "rating": 8.4,
+    "episodes": 190,
+    "status": "Returning Series",
+    "poster_path": "https://image.tmdb.org/t/p/w500/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
+    "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality."
+  },
+  "slay-the-gods": {
+    "tmdb_id": 259231,
+    "type": "tv",
+    "use_tmdb_poster": false,
+    "use_tmdb_synopsis": false,
+    "rating": 7.9,
+    "episodes": 30,
+    "status": "Returning Series",
+    "poster_path": "https://image.tmdb.org/t/p/w500/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
+    "overview": "\"If the dark night comes to an end, I will stand in front of tens of thousands of people, slashing my sword into the abyss, staining the sky with blood!\" Have you ever thought that monsters from ancient myths lurk under the bright neon cities? Have you ever thought that above the moon hanging high above the heads of the world, there are gods watching over the world? Have you ever thought that in the crowded modern cities, there are extraordinary people who walk the world in place of gods?"
+  },
+  "beyond-times-gaze": {
+    "tmdb_id": 281233,
+    "type": "tv",
+    "use_tmdb_poster": false,
+    "use_tmdb_synopsis": false,
+    "rating": 9.4,
+    "episodes": 52,
+    "status": "Returning Series",
+    "poster_path": "https://image.tmdb.org/t/p/w500/vF5RXqbpLTPHwwJWywxx5nZ6nTs.jpg",
+    "overview": "Xu Qing lives in a world where the weak are the prey of the strong, and every day is a fight to survive. The aura of a god has polluted the entire world, including the resources necessary to practice cultivation. As a result, cultivators risk mutation and death when they try to become more powerful. Xu Qing’s goals are simple: he wants to survive, and he wants to find his lost family. He lives in brutal, ruthless, and chaotic circumstances, but he encounters good people that become his close friends. He is not crafty and cowardly like Bai Xiaochun. He is not clever and greedy like Meng Hao. He is his own person."
+  },
+  "blades-guardians": {
+    "tmdb_id": 107463,
+    "type": "tv",
+    "use_tmdb_poster": false,
+    "use_tmdb_synopsis": false,
+    "rating": 7.1,
+    "episodes": 23,
+    "status": "Returning Series",
+    "poster_path": "https://image.tmdb.org/t/p/w500/ck4VbauqthkMldF661byC693ify.jpg",
+    "overview": "A extraordinary guard walks in the desert of the Western regions. On the way escaping the killing by the government, he took a guarding task with destination to the capital Chang 'an. The task was thought as just a simple one, but actually it is a road full of crisis and danger. A journey affecting the fate of the world begins......"
+  }
+}

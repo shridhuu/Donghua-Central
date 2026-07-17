@@ -1,0 +1,21 @@
+{
+  "name": "Donghua Central",
+  "short_name": "Donghua Central",
+  "description": "Donghua Central is a Discord community for donghua fans.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#030826",
+  "theme_color": "#030826",
+  "icons": [
+    {
+      "src": "assets/Logo/logo_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/Logo/logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

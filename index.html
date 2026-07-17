@@ -8,6 +8,26 @@
       name="description"
       content="Donghua Central is a Discord community for donghua fans with handcrafted English subtitles, episode updates, discussions, novels, audiobooks, and the Nine Heavens cultivation project."
     />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/Logo/logo_32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/Logo/logo_180.png" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="canonical" href="https://shridhuu.github.io/Donghua-Central/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://shridhuu.github.io/Donghua-Central/" />
+    <meta property="og:title" content="Donghua Central" />
+    <meta property="og:description" content="Donghua Central is a Discord community for donghua fans with handcrafted English subtitles, episode updates, discussions, novels, audiobooks, and the Nine Heavens cultivation project." />
+    <meta property="og:image" content="https://shridhuu.github.io/Donghua-Central/assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://shridhuu.github.io/Donghua-Central/" />
+    <meta property="twitter:title" content="Donghua Central" />
+    <meta property="twitter:description" content="Donghua Central is a Discord community for donghua fans with handcrafted English subtitles, episode updates, discussions, novels, audiobooks, and the Nine Heavens cultivation project." />
+    <meta property="twitter:image" content="https://shridhuu.github.io/Donghua-Central/assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.png" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,13 +35,30 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Donghua Central",
+      "url": "https://shridhuu.github.io/Donghua-Central/",
+      "description": "Discord community for Chinese animation (donghua) fans, offering handcrafted English subtitles, active discussions, novel library, and Nine Heavens RPG.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://shridhuu.github.io/Donghua-Central/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
   </head>
   <body>
+    <a href="#top" class="skip-to-content">Skip to Content</a>
     <div class="page-shell">
       <header class="site-header">
         <a class="brand" href="#top" aria-label="Donghua Central home">
           <span class="brand-mark">
-            <img src="assets/Logo/LOGO_2.gif" alt="" />
+            <img src="assets/Logo/LOGO_2.gif" alt="Donghua Central Logo" width="310" height="310" />
           </span>
           <span class="brand-text">
             <strong>Donghua</strong>
@@ -29,23 +66,34 @@
           </span>
         </a>
 
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a class="is-active" href="#top">Home</a>
-          <a href="#library">Library</a>
-          <a href="#subtitles">Subtitles</a>
-          <a href="#nine-heavens">Nine Heavens</a>
-          <a href="#staff">Staff</a>
-          <a href="#faq">FAQ</a>
-        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navMenu">
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
 
-        <a class="discord-btn" href="https://discord.gg/donghuacentral" target="_blank" rel="noopener noreferrer">
-          <span>Join Discord</span>
-          <i data-lucide="message-circle" aria-hidden="true"></i>
-        </a>
+        <div class="nav-menu" id="navMenu">
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a class="is-active" href="#top">Home</a>
+            <a href="#library">Library</a>
+            <a href="#subtitles">Subtitles</a>
+            <a href="#nine-heavens">Nine Heavens</a>
+            <a href="#staff">Staff</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+
+          <a class="discord-btn" href="https://discord.gg/donghuacentral" target="_blank" rel="noopener noreferrer">
+            <span>Join Discord</span>
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+          </a>
+        </div>
       </header>
 
       <main id="top">
         <section class="hero-section" aria-labelledby="hero-title">
+          <div class="hero-bg-video-wrapper">
+            <video class="hero-bg-video" id="heroVideo" loop muted playsinline aria-hidden="true" preload="none">
+              <source data-src="assets/Banner/Banner Animated.mp4" type="video/mp4" />
+            </video>
+          </div>
           <div class="hero-copy">
             <p class="eyebrow">Your ultimate hub for</p>
             <h1 id="hero-title">Donghua &amp; Cultivation</h1>
@@ -113,7 +161,10 @@
 
         <section class="preview-panel" aria-label="Donghua Central preview">
           <div class="preview-media">
-            <img src="assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.png" alt="" loading="lazy" />
+            <picture>
+              <source srcset="assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.webp" type="image/webp">
+              <img src="assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.png" alt="Donghua Central Discord community mockup showcasing active member chat channels and server interface" loading="lazy" width="2560" height="1440" />
+            </picture>
           </div>
           <div class="preview-copy">
             <p class="eyebrow">Community Preview</p>
@@ -142,38 +193,14 @@
               fantasy worlds, and titles that keep discussion channels alive.
             </p>
           </div>
-          <div class="series-grid">
-            <article class="series-card">
-              <img src="assets/shows/Perfect%20World.jpg" alt="" loading="lazy" />
-              <span>01</span>
-              <h3>Perfect World</h3>
-            </article>
-            <article class="series-card">
-              <img src="assets/shows/Renegade%20Immortal.jpg" alt="" loading="lazy" />
-              <span>02</span>
-              <h3>Renegade Immortal</h3>
-            </article>
-            <article class="series-card">
-              <img src="assets/shows/A%20Record%27s%20of%20mortal%20journey%20to%20Immortallity.jpg" alt="" loading="lazy" />
-              <span>03</span>
-              <h3>A Record of a Mortal's Journey to Immortality</h3>
-            </article>
-            <article class="series-card">
-              <img src="assets/shows/Slay%20The%20Gods.png" alt="" loading="lazy" />
-              <span>04</span>
-              <h3>Slay The Gods</h3>
-            </article>
-            <article class="series-card">
-              <img src="assets/shows/Beyond%20Time%27s%20Gaze.jpg" alt="" loading="lazy" />
-              <span>05</span>
-              <h3>Beyond Time's Gaze</h3>
-            </article>
-            <article class="series-card">
-              <img src="assets/shows/Blades%20of%20the%20Guardians.png" alt="" loading="lazy" />
-              <span>06</span>
-              <h3>Blades of the Guardians</h3>
-            </article>
+          <div class="library-filters">
+            <div class="search-wrapper">
+              <i data-lucide="search" aria-hidden="true"></i>
+              <input type="text" id="librarySearch" placeholder="Search series..." aria-label="Search series" />
+            </div>
+            <div class="filter-chips" id="filterChips"></div>
           </div>
+          <div class="series-grid" id="seriesGrid"></div>
         </section>
 
         <section class="system-panel" id="nine-heavens">
@@ -217,11 +244,16 @@
           </div>
 
           <figure class="nine-heavens-banner">
-            <img
-              src="assets/Banner/NineHeavens.png"
-              alt="Nine Heavens cultivation RPG banner"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="assets/Banner/NineHeavens.webp" type="image/webp">
+              <img
+                src="assets/Banner/NineHeavens.png"
+                alt="Nine Heavens cultivation RPG banner showing game interface mockup with character items and ranks"
+                loading="lazy"
+                width="1983"
+                height="793"
+              />
+            </picture>
           </figure>
 
           <div class="heavens-grid">
@@ -280,74 +312,191 @@
               <p class="eyebrow">Realm Codex</p>
               <h3>Every stage on the path beyond mortality.</h3>
             </div>
-            <ol class="realm-list">
-              <li class="realm-tier">
-                <span>01</span>
-                <div>
-                  <h4>Mortal Body</h4>
-                  <p>1st - 9th Stage</p>
+            <div class="realm-list" id="realmList">
+              <div class="realm-tier" data-tier="1">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">I</div>
+                  <div class="realm-tier-title">
+                    <h4>Mortal Body</h4>
+                    <p>1st - 9th Stage</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>02</span>
-                <div>
-                  <h4>Qi Gathering</h4>
-                  <p>1st - 9th Stage</p>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>The foundation of the cultivation journey. Cultivators refine physical blood, bone, and skin to prepare for drawing in active Qi.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> None</span>
+                      <span><strong>Success Rate:</strong> 100%</span>
+                      <span><strong>Perks:</strong> Unlocks Questing & Daily Missions</span>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>03</span>
-                <div>
-                  <h4>Foundation Establishment</h4>
-                  <p>Early, Middle, Late, Peak</p>
+              </div>
+              <div class="realm-tier" data-tier="2">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">II</div>
+                  <div class="realm-tier-title">
+                    <h4>Qi Gathering</h4>
+                    <p>1st - 9th Stage</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>04</span>
-                <div>
-                  <h4>Core Formation</h4>
-                  <p>Early, Middle, Late, Peak</p>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Drawing spiritual energy from the environment into the dantian to form the first strands of active Qi.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> None</span>
+                      <span><strong>Success Rate:</strong> 90%</span>
+                      <span><strong>Perks:</strong> Unlocks PvP Arena & Basic Gear</span>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>05</span>
-                <div>
-                  <h4>Nascent Soul</h4>
-                  <p>Early, Middle, Late, Peak</p>
+              </div>
+              <div class="realm-tier" data-tier="3">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">III</div>
+                  <div class="realm-tier-title">
+                    <h4>Foundation Establishment</h4>
+                    <p>Early, Middle, Late, Peak</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>06</span>
-                <div>
-                  <h4>Soul Transformation</h4>
-                  <p>Early Soul Transformation, Void Refinement, Spirit Severing, Peak Soul Transformation</p>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Compressing Qi into a liquid spiritual sea, hardening meridians to anchor the cultivation path against deviance.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> Qi Deviation Risk (10%)</span>
+                      <span><strong>Success Rate:</strong> 75%</span>
+                      <span><strong>Perks:</strong> Unlocks Alchemy, Herb Gathering & Pills</span>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>07</span>
-                <div>
-                  <h4>Mahayana</h4>
-                  <p>Body Mahayana, Soul Integration, Dao Integration, Peak Mahayana</p>
+              </div>
+              <div class="realm-tier" data-tier="4">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">IV</div>
+                  <div class="realm-tier-title">
+                    <h4>Core Formation</h4>
+                    <p>Early, Middle, Late, Peak</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
                 </div>
-              </li>
-              <li class="realm-tier">
-                <span>08</span>
-                <div>
-                  <h4>Immortal Realm</h4>
-                  <p>True Immortal, Golden Immortal, Immortal King, Immortal Emperor</p>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Condensing the liquid spiritual sea into a solid Golden Core, achieving a major leap in longevity and combat strength.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> Fire Tribulation</span>
+                      <span><strong>Success Rate:</strong> 60%</span>
+                      <span><strong>Perks:</strong> Unlocks Beast Companions & Hatching</span>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li class="realm-tier is-final">
-                <span>09</span>
-                <div>
-                  <h4>Sovereign Realm</h4>
-                  <p>
-                    Celestial Sovereign, Primordial Sovereign, Ancestral Sovereign,
-                    Heaven Dao Sovereign, Unknown
-                  </p>
+              </div>
+              <div class="realm-tier" data-tier="5">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">V</div>
+                  <div class="realm-tier-title">
+                    <h4>Nascent Soul</h4>
+                    <p>Early, Middle, Late, Peak</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
                 </div>
-              </li>
-            </ol>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Shattering the Golden Core to hatch a miniature spiritual infant, gaining telepathy, spiritual senses, and soul flight.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> Five-Fold Lightning Tribulation</span>
+                      <span><strong>Success Rate:</strong> 45%</span>
+                      <span><strong>Perks:</strong> Unlocks Custom Flames & Spirit Refining</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="realm-tier" data-tier="6">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">VI</div>
+                  <div class="realm-tier-title">
+                    <h4>Soul Transformation</h4>
+                    <p>Early Soul Transformation, Void Refinement, Spirit Severing, Peak Soul Transformation</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
+                </div>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Merging the physical body with the soul to achieve spiritual fusion and void refinement, transcending material constraints.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> Heavenly Tribulation</span>
+                      <span><strong>Success Rate:</strong> 30%</span>
+                      <span><strong>Perks:</strong> Unlocks Gear Set Bonuses & Master Grades</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="realm-tier" data-tier="7">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">VII</div>
+                  <div class="realm-tier-title">
+                    <h4>Mahayana</h4>
+                    <p>Body Mahayana, Soul Integration, Dao Integration, Peak Mahayana</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
+                </div>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Integrating the soul with the Dao itself, preparing to step beyond the boundary of mortality into divine realms.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> 9-Fold Lightning Tribulation</span>
+                      <span><strong>Success Rate:</strong> 20%</span>
+                      <span><strong>Perks:</strong> Unlocks Escrow Auction & Rare Artifacts</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="realm-tier" data-tier="8">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">VIII</div>
+                  <div class="realm-tier-title">
+                    <h4>Immortal Realm</h4>
+                    <p>True Immortal, Golden Immortal, Immortal King, Immortal Emperor</p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
+                </div>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Transcending mortality entirely to gain eternal life, stepping onto the ladder of true deities and celestial kings.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> Immortal Tribulation</span>
+                      <span><strong>Success Rate:</strong> 10%</span>
+                      <span><strong>Perks:</strong> Unlocks Sect Creation & Spiritual Veins</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="realm-tier is-final" data-tier="9">
+                <div class="realm-tier-header">
+                  <div class="realm-tier-badge">IX</div>
+                  <div class="realm-tier-title">
+                    <h4>Sovereign Realm</h4>
+                    <p>
+                      Celestial Sovereign, Primordial Sovereign, Ancestral Sovereign,
+                      Heaven Dao Sovereign, Unknown
+                    </p>
+                  </div>
+                  <i data-lucide="chevron-down" class="realm-chevron" aria-hidden="true"></i>
+                </div>
+                <div class="realm-tier-details">
+                  <div class="realm-details-content">
+                    <p>Gaining absolute mastery over the laws of the universe, standing at the apex of the Nine Heavens as a primordial force.</p>
+                    <div class="realm-stats-grid">
+                      <span><strong>Tribulation:</strong> Chaos Dao Tribulation</span>
+                      <span><strong>Success Rate:</strong> 3%</span>
+                      <span><strong>Perks:</strong> Unlocks Primordial Dominion & Laws</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -415,6 +564,27 @@
         <span>Handcrafted subtitles for the cultivation journey.</span>
       </footer>
     </div>
+
+    <!-- Series Detail Modal -->
+    <div class="modal-overlay" id="seriesModal" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+      <div class="modal-container">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <!-- Floating Discord CTA -->
+    <a class="floating-discord-cta" id="floatingDiscordCta" href="https://discord.gg/donghuacentral" target="_blank" rel="noopener noreferrer" aria-label="Join Discord">
+      <i data-lucide="message-circle" aria-hidden="true"></i>
+      <span>Join Discord</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i data-lucide="arrow-up" aria-hidden="true"></i>
+    </button>
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
