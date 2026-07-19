@@ -235,5 +235,77 @@
       "air_date": "2026-07-24",
       "episode_number": 87
     }
+  },
+  "swallowed-star": {
+    "tmdb_id": 101172,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 8.294,
+    "vote_count": 34,
+    "episodes": 238,
+    "seasons": 1,
+    "status": "Returning Series",
+    "first_air_date": "2020-11-29",
+    "original_name": "吞噬星空",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
+    "overview": "On the Earth, a catastrophe triggered the variation of all kinds of species. The superior survived and the inferior were extinct. Under this circumstance, Luo Feng inherited from the owner of Yunmo Star and became one of the three strongest people on the Earth. He lost his flesh during the fight against giant swallowed monster but then he took the flesh of the monster. In the flesh, he developed a human body. Later, he stepped out of the Earth and headed to the universe.",
+    "last_episode": {
+      "air_date": "2026-07-13",
+      "episode_number": 232
+    },
+    "next_episode": {
+      "air_date": "2026-07-20",
+      "episode_number": 233
+    }
+  },
+  "above-myriads": {
+    "tmdb_id": 325040,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 0,
+    "vote_count": null,
+    "episodes": 14,
+    "seasons": 1,
+    "status": "Returning Series",
+    "first_air_date": "2026-06-09",
+    "original_name": "万人之上",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/dLrtv5XDGQPyB9lJp6U77HUN9Iy.jpg",
+    "overview": "Yi Feng transmigrates to the Immortal River Continent. Born without a spiritual root, he can only make a modest living using the \"essential life skills\" granted by the system. Little does he know that in the eyes of the cultivators, his strength has already reached a god-like level, and every move he makes influences the entire landscape of the Immortal River Continent. Unaware of this, Yi Feng effortlessly resolves one crisis after another, bringing about both thrilling and hilarious moments, while offering new opportunities and choices to the people living on this continent.",
+    "last_episode": {
+      "air_date": "2026-07-14",
+      "episode_number": 8
+    },
+    "next_episode": {
+      "air_date": "2026-07-21",
+      "episode_number": 9
+    }
+  },
+  "tomb-fallen-gods": {
+    "tmdb_id": 206343,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 5.5,
+    "vote_count": 11,
+    "episodes": 95,
+    "seasons": 3,
+    "status": "Returning Series",
+    "first_air_date": "2022-07-21",
+    "original_name": "神墓",
+    "tagline": "Tomb of Fallen Gods",
+    "poster_path": "https://image.tmdb.org/t/p/original/8lV2Mjn5Km7DqlgbbPntYr7rRfV.jpg",
+    "overview": "The book takes the protagonist Chennan's search for his lover Yuxin 10,000 years ago and the pursuit of the secrets of the destruction of gods and demons as clues, leading to the vast six paths, heaven and earth chess game, and deducing a legend full of blood, heroic and poignant, telling the legends of countless heroes and beauties, and discussing human nature, society, life and other elements.",
+    "last_episode": {
+      "air_date": "2026-07-16",
+      "episode_number": 51
+    },
+    "next_episode": {
+      "air_date": "2026-07-23",
+      "episode_number": 52
+    }
   }
 }

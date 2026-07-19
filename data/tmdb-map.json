@@ -8,5 +8,8 @@
   "good-day-to-ascend": { "tmdb_id": 326695, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "sword-of-coming": { "tmdb_id": 259537, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "ever-night": { "tmdb_id": 282136, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
-  "demon-hunter": { "tmdb_id": 229192, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
+  "demon-hunter": { "tmdb_id": 229192, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "swallowed-star": { "tmdb_id": 101172, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "above-myriads": { "tmdb_id": 325040, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "tomb-fallen-gods": { "tmdb_id": 206343, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
 }

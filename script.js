@@ -206,6 +206,50 @@ const series = [
     episodes: "1+",
     genres: ["Cultivation", "Action", "Fantasy"],
     synopsis: "Meng Chuan vows to avenge his mother and protect humanity from invading demons, training his blade and cultivating power to hunt demons and defend his home."
+  },
+  {
+    id: "swallowed-star",
+    name: "Swallowed Star",
+    image: "assets/shows/Swallowed Star.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Sci-Fi", "Cultivation", "Action"],
+    synopsis: "Luo Feng strives to protect his family and defend Earth against giant mutated monsters in a post-apocalyptic world, discovering the cosmic origins of cultivation."
+  },
+  {
+    id: "above-myriads",
+    name: "Above Myriads",
+    image: "assets/shows/Above Myriads.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Cultivation", "Comedy", "Fantasy"],
+    synopsis: "Yi Feng, a mortal, is mistaken for a supreme cultivation master by everyone around him. He navigates encounters with powerful entities while remaining oblivious to his own legendary status."
+  },
+  {
+    id: "tomb-fallen-gods",
+    name: "Tomb of Fallen Gods",
+    image: "assets/shows/Tomb of Fallen Gods.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Cultivation", "Mystery", "Fantasy"],
+    synopsis: "Chen Nan resurrects from his grave after ten thousand years in a world where gods and demons have fallen. He seeks to uncover the truth behind his death and the demise of the divine."
+  },
+  {
+    id: "shridhuu-needs-rest",
+    name: "@Shridhuu Needs Rest",
+    image: "assets/Logo/logo_180.png",
+    width: 180,
+    height: 180,
+    status: "Ongoing",
+    episodes: "N/A",
+    genres: ["Rest", "Sleep"],
+    synopsis: "Shridhuu is resting. No subbing/encoding updates scheduled for today. Recharging the soul."
   }
 ];
 
