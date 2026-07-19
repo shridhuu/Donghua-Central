@@ -1473,6 +1473,130 @@ details.is-closing p {
   font-weight: 900;
 }
 
+/* Schedule Section */
+.day-tabs {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  scrollbar-width: thin;
+}
+
+.day-tab {
+  flex-shrink: 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.day-tab:hover {
+  color: var(--highlight);
+  border-color: var(--highlight);
+}
+
+.day-tab.is-active {
+  color: var(--background);
+  background: var(--highlight);
+  border-color: var(--highlight);
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.schedule-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(17, 23, 46, 0.3);
+}
+
+.schedule-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--dim);
+  margin-bottom: 0.75rem;
+}
+
+.schedule-group {
+  color: var(--highlight);
+  font-weight: 600;
+}
+
+.schedule-card-body {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.schedule-thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.schedule-card-body h3 {
+  font-size: 1rem;
+  margin: 0 0 0.15rem;
+}
+
+.schedule-native-name {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0 0 0.4rem;
+}
+
+.schedule-countdown {
+  color: var(--highlight);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.schedule-note {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--dim);
+  font-size: 0.78rem;
+  margin: 0.75rem 0 0;
+}
+
+.schedule-note svg {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+}
+
+.schedule-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.schedule-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
 @media (max-width: 1180px) {
   .page-shell {
     width: min(100% - 28px, 1080px);
@@ -2410,6 +2534,15 @@ details.is-closing p {
 
   .floating-discord-cta span {
     display: inline;
+  }
+
+  /* Schedule Mobile adjustments */
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schedule-card-body {
+    flex-direction: column;
   }
 }
 

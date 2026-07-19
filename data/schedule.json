@@ -1,0 +1,29 @@
+[
+  {
+    "id": "perfect-world-sun",
+    "showId": "perfect-world",
+    "day": "sunday",
+    "releaseTimeUTC": "13:30",
+    "group": "Donghua Central",
+    "note": "Hardsub released within 2 hours of raw upload",
+    "tags": ["HARDSUB", "WEEKLY", "1080P"]
+  },
+  {
+    "id": "renegade-immortal-mon",
+    "showId": "renegade-immortal",
+    "day": "monday",
+    "releaseTimeUTC": "15:00",
+    "group": "Donghua Central",
+    "note": "",
+    "tags": ["SOFTSUB", "WEEKLY"]
+  },
+  {
+    "id": "mortal-journey-sat",
+    "showId": "mortal-journey",
+    "day": "saturday",
+    "releaseTimeUTC": "12:00",
+    "group": "Donghua Central",
+    "note": "QC final pass may delay release slightly",
+    "tags": ["SOFTSUB", "WEEKLY", "1080P"]
+  }
+]

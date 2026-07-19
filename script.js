@@ -309,7 +309,7 @@ const renderSeries = () => {
 
   const filtered = series.filter(item => {
     const matchesSearch = item.name.toLowerCase().includes(searchQuery) ||
-                          item.synopsis.toLowerCase().includes(searchQuery);
+      item.synopsis.toLowerCase().includes(searchQuery);
 
     if (activeFilter === "all") return matchesSearch;
     if (activeFilter === "ongoing" || activeFilter === "completed") {
@@ -511,6 +511,7 @@ const spyLinks = document.querySelectorAll(".nav-links a");
 const spySections = [
   document.querySelector(".hero-section"),
   document.querySelector("#library"),
+  document.querySelector("#schedule"),
   document.querySelector("#subtitles"),
   document.querySelector("#nine-heavens"),
   document.querySelector("#staff"),
@@ -765,3 +766,154 @@ if (backToTopBtn) {
 if (window.lucide) {
   window.lucide.createIcons();
 }
+
+// ---- Schedule ----
+const DAY_ORDER = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "nonweekly", "tentative"];
+const DAY_LABELS = {
+  monday: "Monday", tuesday: "Tuesday", wednesday: "Wednesday", thursday: "Thursday",
+  friday: "Friday", saturday: "Saturday", sunday: "Sunday",
+  nonweekly: "Non-Weekly", tentative: "Tentative"
+};
+
+let scheduleData = [];
+let activeDay = "monday";
+let countdownInterval = null;
+
+const getNextOccurrence = (day, timeUTC) => {
+  const [h, m] = timeUTC.split(":").map(Number);
+  const now = new Date();
+
+  if (day === "nonweekly" || day === "tentative") return null;
+
+  const dayIndex = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"].indexOf(day);
+  const target = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0));
+  let diffDays = dayIndex - now.getUTCDay();
+  if (diffDays < 0) diffDays += 7;
+  target.setUTCDate(target.getUTCDate() + diffDays);
+
+  const GRACE_MS = 6 * 60 * 60 * 1000; // treat "just released" as still relevant for 6h
+  if (target.getTime() < now.getTime() - GRACE_MS) {
+    target.setUTCDate(target.getUTCDate() + 7);
+  }
+  return target;
+};
+
+const formatCountdown = (target) => {
+  if (!target) return null;
+  const diff = target.getTime() - Date.now();
+  const abs = Math.abs(diff);
+  const totalSeconds = Math.floor(abs / 1000);
+  const d = Math.floor(totalSeconds / 86400);
+  const h = Math.floor((totalSeconds % 86400) / 3600);
+  const m = Math.floor((totalSeconds % 3600) / 60);
+  const s = totalSeconds % 60;
+
+  const label = d > 0 ? `${d}d ${h}h ${m}m` : `${h}h ${m}m ${s}s`;
+  return diff <= 0 ? `Released ${label} ago` : `Releasing in ${label}`;
+};
+
+const formatLocalTime = (day, timeUTC) => {
+  const target = getNextOccurrence(day, timeUTC);
+  if (!target) return "";
+  return new Intl.DateTimeFormat(undefined, {
+    weekday: "short", hour: "numeric", minute: "2-digit", timeZoneName: "short"
+  }).format(target);
+};
+
+const renderDayTabs = () => {
+  const tabsEl = document.querySelector("#dayTabs");
+  if (!tabsEl) return;
+  const activeDays = DAY_ORDER.filter(d => scheduleData.some(item => item.day === d));
+  tabsEl.innerHTML = activeDays.map(day => `
+    <button class="day-tab ${day === activeDay ? "is-active" : ""}" role="tab" aria-selected="${day === activeDay}" data-day="${day}">
+      ${DAY_LABELS[day]}
+    </button>
+  `).join("");
+
+  tabsEl.querySelectorAll(".day-tab").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeDay = btn.dataset.day;
+      renderDayTabs();
+      renderScheduleGrid();
+    });
+  });
+};
+
+const renderScheduleGrid = () => {
+  const gridEl = document.querySelector("#scheduleGrid");
+  const emptyEl = document.querySelector("#scheduleEmpty");
+  if (!gridEl) return;
+
+  const dayItems = scheduleData.filter(item => item.day === activeDay);
+  emptyEl.hidden = dayItems.length > 0;
+
+  gridEl.innerHTML = dayItems.map(item => {
+    const show = series.find(s => s.id === item.showId);
+    if (!show) return "";
+    const target = getNextOccurrence(item.day, item.releaseTimeUTC);
+    const localTime = formatLocalTime(item.day, item.releaseTimeUTC);
+
+    return `
+      <article class="schedule-card">
+        <div class="schedule-card-header">
+          <span class="schedule-group">[${item.group}]</span>
+          ${localTime ? `<span class="schedule-time">${localTime}</span>` : ""}
+        </div>
+        <div class="schedule-card-body">
+          <img src="${show.image}" alt="${show.name}" loading="lazy" class="schedule-thumb" />
+          <div>
+            <h3>${show.name}</h3>
+            ${show.nativeName ? `<p class="schedule-native-name">${show.nativeName}</p>` : ""}
+            <p class="schedule-countdown" data-target="${target ? target.toISOString() : ""}">
+              ${formatCountdown(target) || "Schedule TBA"}
+            </p>
+          </div>
+        </div>
+        ${item.note ? `<p class="schedule-note"><i data-lucide="info" aria-hidden="true"></i> ${item.note}</p>` : ""}
+        <div class="schedule-tags">
+          ${item.tags.map(t => `<span class="schedule-tag">${t}</span>`).join("")}
+        </div>
+      </article>
+    `;
+  }).join("");
+
+  if (window.lucide) window.lucide.createIcons();
+};
+
+const startCountdownTicker = () => {
+  if (countdownInterval) clearInterval(countdownInterval);
+  countdownInterval = setInterval(() => {
+    document.querySelectorAll(".schedule-countdown").forEach(el => {
+      const iso = el.dataset.target;
+      if (!iso) return;
+      el.textContent = formatCountdown(new Date(iso));
+    });
+  }, 1000);
+};
+
+const loadSchedule = async () => {
+  try {
+    const res = await fetch("data/schedule.json");
+    if (!res.ok) throw new Error("schedule.json not found");
+    scheduleData = await res.json();
+    
+    // Auto-select current day of week if active days have schedule entries
+    const dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+    const currentDayName = dayNames[new Date().getDay()];
+    if (scheduleData.some(item => item.day === currentDayName)) {
+      activeDay = currentDayName;
+    } else {
+      const firstActive = DAY_ORDER.find(d => scheduleData.some(item => item.day === d));
+      if (firstActive) activeDay = firstActive;
+    }
+
+    renderDayTabs();
+    renderScheduleGrid();
+    startCountdownTicker();
+  } catch (err) {
+    console.warn("Schedule data unavailable:", err);
+  }
+};
+
+loadSchedule();
+
