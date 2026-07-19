@@ -4,5 +4,6 @@
   "mortal-journey": { "tmdb_id": 106449, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "slay-the-gods": { "tmdb_id": 259231, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "beyond-times-gaze": { "tmdb_id": 281233, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
-  "blades-guardians": { "tmdb_id": 107463, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
+  "blades-guardians": { "tmdb_id": 107463, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "good-day-to-ascend": { "tmdb_id": 326695, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
 }

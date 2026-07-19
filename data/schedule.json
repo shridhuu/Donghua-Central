@@ -1,21 +1,31 @@
 [
   {
-    "id": "perfect-world-sun",
+    "id": "perfect-world-fri",
     "showId": "perfect-world",
-    "day": "sunday",
+    "day": "friday",
     "releaseTimeUTC": "13:30",
     "group": "Donghua Central",
-    "note": "Hardsub released within 2 hours of raw upload",
-    "tags": ["HARDSUB", "WEEKLY", "1080P"]
+    "note": "Softsubs releases after 24-36 hours of raws",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
+    ]
   },
   {
-    "id": "renegade-immortal-mon",
+    "id": "renegade-immortal-sun",
     "showId": "renegade-immortal",
-    "day": "monday",
+    "day": "sunday",
     "releaseTimeUTC": "15:00",
     "group": "Donghua Central",
-    "note": "",
-    "tags": ["SOFTSUB", "WEEKLY"]
+    "note": "Softsubs releases after 4-6 hours of raws",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
+    ]
   },
   {
     "id": "mortal-journey-sat",
@@ -24,6 +34,65 @@
     "releaseTimeUTC": "12:00",
     "group": "Donghua Central",
     "note": "QC final pass may delay release slightly",
-    "tags": ["SOFTSUB", "WEEKLY", "1080P"]
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
+    ]
+  },
+  {
+    "id": "slay-the-gods-thu",
+    "showId": "slay-the-gods",
+    "day": "thursday",
+    "releaseTimeUTC": "12:00",
+    "group": "Donghua Central",
+    "note": "Softsubs releases after 24-36 hours of raws",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
+    ]
+  },
+  {
+    "id": "beyond-times-gaze-wed",
+    "showId": "beyond-times-gaze",
+    "day": "wednesday",
+    "releaseTimeUTC": "10:00",
+    "group": "Donghua Central",
+    "note": "Softsubs releases within 12 hours of raws",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P"
+    ]
+  },
+  {
+    "id": "blades-guardians-nonweekly",
+    "showId": "blades-guardians",
+    "day": "nonweekly",
+    "releaseTimeUTC": "00:00",
+    "group": "Donghua Central",
+    "note": "Full batch releases completed",
+    "tags": [
+      "Softsubs",
+      "Batch",
+      "1080P"
+    ]
+  },
+  {
+    "id": "good-day-to-ascend-sat",
+    "showId": "good-day-to-ascend",
+    "day": "saturday",
+    "releaseTimeUTC": "11:00",
+    "group": "Donghua Central",
+    "note": "Softsubs releases within 24 hours of raw",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
+    ]
   }
 ]

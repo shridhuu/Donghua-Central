@@ -162,6 +162,17 @@ const series = [
     episodes: "14",
     genres: ["Action", "Historical", "Martial Arts"],
     synopsis: "Dao Ma, a powerful mercenary indebted to the court, escorts a mysterious traveler to the capital Chang'an, facing lethal martial experts and political schemes along the way."
+  },
+  {
+    id: "good-day-to-ascend",
+    name: "A Good Day to Ascend",
+    image: "assets/shows/A Good Day to Ascend.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Cultivation", "Action", "Fantasy"],
+    synopsis: "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal."
   }
 ];
 

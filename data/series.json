@@ -28,7 +28,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.256,
+    "rating": 8.3,
     "vote_count": 39,
     "episodes": 200,
     "seasons": 1,
@@ -36,7 +36,7 @@
     "first_air_date": "2023-09-25",
     "original_name": "仙逆",
     "tagline": null,
-    "poster_path": "https://image.tmdb.org/t/p/original/2jEJSCLFjniFT7z4YvyY9Ywo1lc.jpg",
+    "poster_path": "https://image.tmdb.org/t/p/original/mCt5qgkOYEvuHSiSwNByMv6LMoB.jpg",
     "overview": "It tells the story of Wang Lin, an ordinary young man in the countryside, who is moved by his heart and cultivates against immortality. His pursuit is not only for longevity, but also for getting rid of the ants behind it. He firmly believed in human beings and entered the path of cultivation with mediocre qualifications. After experiencing ups and downs, with his wise mind, he gradually reached the pinnacle and became famous in the cultivation world with his own strength.",
     "last_episode": {
       "air_date": "2026-07-12",
@@ -63,12 +63,12 @@
     "poster_path": "https://image.tmdb.org/t/p/original/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
     "overview": "A poor and ordinary boy from a village joins a minor sect in Jiang Hu and becomes an Unofficial Disciple by chance. How will Han Li, a commoner by birth, establish a foothold for himself in his sect? With his mediocre aptitude, he must successfully traverse the treacherous path of cultivation and avoid the notice of those who may do him harm. This is a story of an ordinary mortal who, against all odds, clashes with devilish demons and ancient celestials in order to find his own path towards immortality.",
     "last_episode": {
-      "air_date": "2026-07-11",
-      "episode_number": 182
-    },
-    "next_episode": {
       "air_date": "2026-07-18",
       "episode_number": 183
+    },
+    "next_episode": {
+      "air_date": "2026-07-25",
+      "episode_number": 184
     }
   },
   "slay-the-gods": {
@@ -111,12 +111,12 @@
     "poster_path": "https://image.tmdb.org/t/p/original/vF5RXqbpLTPHwwJWywxx5nZ6nTs.jpg",
     "overview": "Xu Qing lives in a world where the weak are the prey of the strong, and every day is a fight to survive. The aura of a god has polluted the entire world, including the resources necessary to practice cultivation. As a result, cultivators risk mutation and death when they try to become more powerful. Xu Qing’s goals are simple: he wants to survive, and he wants to find his lost family. He lives in brutal, ruthless, and chaotic circumstances, but he encounters good people that become his close friends. He is not crafty and cowardly like Bai Xiaochun. He is not clever and greedy like Meng Hao. He is his own person.",
     "last_episode": {
-      "air_date": "2026-07-11",
-      "episode_number": 30
-    },
-    "next_episode": {
       "air_date": "2026-07-18",
       "episode_number": 31
+    },
+    "next_episode": {
+      "air_date": "2026-07-25",
+      "episode_number": 32
     }
   },
   "blades-guardians": {
@@ -141,6 +141,30 @@
     "next_episode": {
       "air_date": "2026-07-23",
       "episode_number": 8
+    }
+  },
+  "good-day-to-ascend": {
+    "tmdb_id": 326695,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 0,
+    "vote_count": null,
+    "episodes": 30,
+    "seasons": 1,
+    "status": "Returning Series",
+    "first_air_date": "2026-07-18",
+    "original_name": "择日飞升",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/5NKojVuw2Jf0dT9nSgGPlLiBQV5.jpg",
+    "overview": null,
+    "last_episode": {
+      "air_date": "2026-07-18",
+      "episode_number": 3
+    },
+    "next_episode": {
+      "air_date": "2026-07-25",
+      "episode_number": 4
     }
   }
 }
