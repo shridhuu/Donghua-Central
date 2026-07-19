@@ -94,5 +94,44 @@
       "1080P",
       "4K"
     ]
+  },
+  {
+    "id": "sword-of-coming-thu",
+    "showId": "sword-of-coming",
+    "day": "thursday",
+    "releaseTimeUTC": "12:00",
+    "group": "Donghua Central",
+    "note": "Softsubs releases after 24 hours",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P"
+    ]
+  },
+  {
+    "id": "ever-night-sat",
+    "showId": "ever-night",
+    "day": "saturday",
+    "releaseTimeUTC": "13:00",
+    "group": "Donghua Central",
+    "note": "Softsubs releases within 12 hours",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P"
+    ]
+  },
+  {
+    "id": "demon-hunter-thu",
+    "showId": "demon-hunter",
+    "day": "thursday",
+    "releaseTimeUTC": "14:00",
+    "group": "Donghua Central",
+    "note": "Softsubs releases within 24 hours",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P"
+    ]
   }
 ]

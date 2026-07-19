@@ -173,6 +173,39 @@ const series = [
     episodes: "1+",
     genres: ["Cultivation", "Action", "Fantasy"],
     synopsis: "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal."
+  },
+  {
+    id: "sword-of-coming",
+    name: "Sword of Coming",
+    image: "assets/shows/Sword of Coming.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Cultivation", "Action", "Fantasy"],
+    synopsis: "A young orphan boy from a mysterious small town acquires magical swords and sets out on a legendary cultivation journey to protect his loved ones and seek the Dao."
+  },
+  {
+    id: "ever-night",
+    name: "Ever Night",
+    image: "assets/shows/Ever Night.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Cultivation", "Action", "Drama"],
+    synopsis: "Ning Que fights to protect his maid and friend Sang Sang, navigating the dark cultivation world as prophecy warns of the eternal night and total destruction."
+  },
+  {
+    id: "demon-hunter",
+    name: "The Demon Hunter",
+    image: "assets/shows/The Demon Hunter.png",
+    width: 1024,
+    height: 1024,
+    status: "Ongoing",
+    episodes: "1+",
+    genres: ["Cultivation", "Action", "Fantasy"],
+    synopsis: "Meng Chuan vows to avenge his mother and protect humanity from invading demons, training his blade and cultivating power to hunt demons and defend his home."
   }
 ];
 

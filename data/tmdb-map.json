@@ -5,5 +5,8 @@
   "slay-the-gods": { "tmdb_id": 259231, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "beyond-times-gaze": { "tmdb_id": 281233, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "blades-guardians": { "tmdb_id": 107463, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
-  "good-day-to-ascend": { "tmdb_id": 326695, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
+  "good-day-to-ascend": { "tmdb_id": 326695, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "sword-of-coming": { "tmdb_id": 259537, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "ever-night": { "tmdb_id": 282136, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "demon-hunter": { "tmdb_id": 229192, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
 }
