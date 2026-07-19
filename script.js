@@ -915,14 +915,15 @@ const renderScheduleGrid = () => {
           <div>
             <h3>${show.name}</h3>
             ${show.nativeName ? `<p class="schedule-native-name">${show.nativeName}</p>` : ""}
-            <p class="schedule-countdown" data-target="${target ? target.toISOString() : ""}">
-              ${formatCountdown(target) || "Schedule TBA"}
+            <p class="schedule-countdown" data-target="${show.status === 'Completed' ? '' : (target ? target.toISOString() : '')}">
+              ${show.status === 'Completed' ? 'Completed' : (formatCountdown(target) || 'Schedule TBA')}
             </p>
           </div>
         </div>
         ${item.note ? `<p class="schedule-note"><i data-lucide="info" aria-hidden="true"></i> ${item.note}</p>` : ""}
         <div class="schedule-tags">
-          ${item.tags.map(t => `<span class="schedule-tag">${t}</span>`).join("")}
+          ${show.status === 'Completed' ? '<span class="schedule-tag">Completed</span>' : ''}
+          ${item.tags.filter(t => t.toLowerCase() !== 'weekly' || show.status !== 'Completed').map(t => `<span class="schedule-tag">${t}</span>`).join("")}
         </div>
       </article>
     `;
