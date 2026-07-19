@@ -632,7 +632,14 @@ const loadTMDBData = async () => {
       if (tmdbInfo) {
         if (tmdbInfo.rating) item.rating = tmdbInfo.rating;
         if (tmdbInfo.episodes) item.episodes = tmdbInfo.episodes;
-        if (tmdbInfo.status && item.status !== 'Completed') item.status = ['Ended', 'Canceled'].includes(tmdbInfo.status) ? 'Completed' : 'Ongoing';
+        if (item.status !== 'Completed') {
+          if (tmdbInfo.status) {
+            item.status = ['Ended', 'Canceled'].includes(tmdbInfo.status) ? 'Completed' : 'Ongoing';
+          }
+          if (!tmdbInfo.next_episode) {
+            item.status = 'Completed';
+          }
+        }
         if (tmdbInfo.poster_path && tmdbInfo.poster_path.startsWith('http') && tmdbInfo.use_tmdb_poster) {
           item.image = tmdbInfo.poster_path;
         }
