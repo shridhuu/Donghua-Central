@@ -243,9 +243,9 @@ const series = [
   {
     id: "shridhuu-needs-rest",
     name: "@Shridhuu Needs Rest",
-    image: "assets/Logo/logo_180.png",
-    width: 180,
-    height: 180,
+    image: "https://cdn.discordapp.com/avatars/1403304956924264468/d515bf2e9603eec7313ada4f5f9ce49d.png?size=512",
+    width: 512,
+    height: 512,
     status: "Ongoing",
     episodes: "N/A",
     genres: ["Rest", "Sleep"],
@@ -862,6 +862,24 @@ if (window.lucide) {
   window.lucide.createIcons();
 }
 
+window.copyUsername = (text, el) => {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => {
+      const badge = el.querySelector('.copy-badge');
+      if (badge) {
+        const originalHTML = badge.innerHTML;
+        badge.innerHTML = '<span class="copied-indicator">Copied!</span>';
+        setTimeout(() => {
+          badge.innerHTML = originalHTML;
+          if (window.lucide) window.lucide.createIcons();
+        }, 1500);
+      }
+    }).catch(err => {
+      console.warn('Could not copy text: ', err);
+    });
+  }
+};
+
 // ---- Schedule ----
 const DAY_ORDER = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "nonweekly", "tentative"];
 const DAY_LABELS = {
@@ -940,7 +958,7 @@ const renderScheduleGrid = () => {
   if (!gridEl) return;
 
   const dayItems = scheduleData.filter(item => item.day === activeDay);
-  emptyEl.hidden = dayItems.length > 0;
+  emptyEl.style.display = dayItems.length > 0 ? "none" : "flex";
 
   gridEl.innerHTML = dayItems.map(item => {
     const show = series.find(s => s.id === item.showId);
@@ -957,7 +975,16 @@ const renderScheduleGrid = () => {
         <div class="schedule-card-body">
           <img src="${show.image}" alt="${show.name}" loading="lazy" class="schedule-thumb" />
           <div>
-            <h3>${show.name}</h3>
+            ${show.id === 'shridhuu-needs-rest' ? `
+              <h3 class="copiable-username" onclick="copyUsername('Shridhuu', this)">
+                @Shridhuu Needs Rest
+                <span class="copy-badge" title="Copy username">
+                  <i data-lucide="copy" aria-hidden="true"></i>
+                </span>
+              </h3>
+            ` : `
+              <h3>${show.name}</h3>
+            `}
             ${show.nativeName ? `<p class="schedule-native-name">${show.nativeName}</p>` : ""}
             <p class="schedule-countdown" data-target="${show.status === 'Completed' ? '' : (target ? target.toISOString() : '')}">
               ${show.status === 'Completed' ? 'Completed' : (formatCountdown(target) || 'Schedule TBA')}

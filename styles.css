@@ -2629,3 +2629,38 @@ details.is-closing p {
   font-size: 0.78rem;
 }
 
+/* Copiable username style */
+.copiable-username {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.copy-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: rgba(239, 245, 255, 0.05);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.15s ease;
+}
+
+.copiable-username:hover .copy-badge {
+  color: var(--highlight);
+  border-color: var(--highlight);
+  background: rgba(239, 245, 255, 0.1);
+}
+
+.copied-indicator {
+  color: var(--highlight);
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+
