@@ -117,11 +117,12 @@ a {
 
 .brand-mark {
   display: grid;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 34px;
   place-items: center;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 4px;
+  border: 1px solid rgba(239, 245, 255, 0.08);
 }
 
 .brand-mark img {
@@ -312,11 +313,12 @@ a {
 
 .brand-mark {
   display: grid;
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 34px;
   place-items: center;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 4px;
+  border: 1px solid rgba(239, 245, 255, 0.08);
 }
 
 .brand-mark img {
@@ -1702,8 +1704,8 @@ details.is-closing p {
   }
 
   .brand-mark {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 28px;
   }
 
   .discord-btn {
