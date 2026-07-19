@@ -69,15 +69,15 @@
     ]
   },
   {
-    "id": "blades-guardians-nonweekly",
+    "id": "blades-guardians-thu",
     "showId": "blades-guardians",
-    "day": "nonweekly",
-    "releaseTimeUTC": "00:00",
+    "day": "thursday",
+    "releaseTimeUTC": "10:00",
     "group": "Donghua Central",
-    "note": "Full batch releases completed",
+    "note": "Softsubs releases within 24 hours of raw",
     "tags": [
       "Softsubs",
-      "Batch",
+      "Weekly",
       "1080P"
     ]
   },

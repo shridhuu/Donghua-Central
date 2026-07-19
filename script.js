@@ -158,8 +158,8 @@ const series = [
     image: "assets/shows/Blades of the Guardians.png",
     width: 1054,
     height: 1492,
-    status: "Completed",
-    episodes: "14",
+    status: "Ongoing",
+    episodes: "20+",
     genres: ["Action", "Historical", "Martial Arts"],
     synopsis: "Dao Ma, a powerful mercenary indebted to the court, escorts a mysterious traveler to the capital Chang'an, facing lethal martial experts and political schemes along the way."
   },
