@@ -166,7 +166,7 @@ const series = [
   {
     id: "good-day-to-ascend",
     name: "A Good Day to Ascend",
-    image: "assets/shows/A Good Day to Ascend.png",
+    image: "https://image.tmdb.org/t/p/original/5NKojVuw2Jf0dT9nSgGPlLiBQV5.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
@@ -177,7 +177,7 @@ const series = [
   {
     id: "sword-of-coming",
     name: "Sword of Coming",
-    image: "assets/shows/Sword of Coming.png",
+    image: "https://image.tmdb.org/t/p/original/2pT4uBFKymVPLktor6dbeOZzDcJ.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
@@ -188,7 +188,7 @@ const series = [
   {
     id: "ever-night",
     name: "Ever Night",
-    image: "assets/shows/Ever Night.png",
+    image: "https://image.tmdb.org/t/p/original/xS1jaBgymz4Smc3IUNDwh9uYxhX.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
@@ -199,7 +199,7 @@ const series = [
   {
     id: "demon-hunter",
     name: "The Demon Hunter",
-    image: "assets/shows/The Demon Hunter.png",
+    image: "https://image.tmdb.org/t/p/original/ryAX7owZUxkpaBU3VbsQdtI2zLz.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
@@ -210,7 +210,7 @@ const series = [
   {
     id: "swallowed-star",
     name: "Swallowed Star",
-    image: "assets/shows/Swallowed Star.png",
+    image: "https://image.tmdb.org/t/p/original/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
@@ -221,7 +221,7 @@ const series = [
   {
     id: "above-myriads",
     name: "Above Myriads",
-    image: "assets/shows/Above Myriads.png",
+    image: "https://image.tmdb.org/t/p/original/dLrtv5XDGQPyB9lJp6U77HUN9Iy.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
@@ -232,7 +232,7 @@ const series = [
   {
     id: "tomb-fallen-gods",
     name: "Tomb of Fallen Gods",
-    image: "assets/shows/Tomb of Fallen Gods.png",
+    image: "https://image.tmdb.org/t/p/original/8lV2Mjn5Km7DqlgbbPntYr7rRfV.jpg",
     width: 1024,
     height: 1024,
     status: "Ongoing",
