@@ -100,7 +100,7 @@ const series = [
   {
     id: "perfect-world",
     name: "Perfect World",
-    image: "assets/shows/Perfect World.jpg",
+    image: "https://image.tmdb.org/t/p/original/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
     width: 1908,
     height: 1080,
     status: "Ongoing",
@@ -111,7 +111,7 @@ const series = [
   {
     id: "renegade-immortal",
     name: "Renegade Immortal",
-    image: "assets/shows/Renegade Immortal.jpg",
+    image: "https://image.tmdb.org/t/p/original/mCt5qgkOYEvuHSiSwNByMv6LMoB.jpg",
     width: 594,
     height: 336,
     status: "Ongoing",
@@ -122,7 +122,7 @@ const series = [
   {
     id: "mortal-journey",
     name: "A Record of a Mortal's Journey to Immortality",
-    image: "assets/shows/A Record's of mortal journey to Immortallity.jpg",
+    image: "https://image.tmdb.org/t/p/original/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
     width: 500,
     height: 667,
     status: "Ongoing",
@@ -133,7 +133,7 @@ const series = [
   {
     id: "slay-the-gods",
     name: "Slay The Gods",
-    image: "assets/shows/Slay The Gods.png",
+    image: "https://image.tmdb.org/t/p/original/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
     width: 400,
     height: 561,
     status: "Ongoing",
@@ -144,7 +144,7 @@ const series = [
   {
     id: "beyond-times-gaze",
     name: "Beyond Time's Gaze",
-    image: "assets/shows/Beyond Time's Gaze.jpg",
+    image: "https://image.tmdb.org/t/p/original/vF5RXqbpLTPHwwJWywxx5nZ6nTs.jpg",
     width: 3840,
     height: 2160,
     status: "Ongoing",
@@ -155,7 +155,7 @@ const series = [
   {
     id: "blades-guardians",
     name: "Blades of the Guardians",
-    image: "assets/shows/Blades of the Guardians.png",
+    image: "https://image.tmdb.org/t/p/original/ck4VbauqthkMldF661byC693ify.jpg",
     width: 1054,
     height: 1492,
     status: "Ongoing",
