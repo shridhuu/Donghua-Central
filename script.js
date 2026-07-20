@@ -690,6 +690,7 @@ const loadTMDBData = async () => {
         if (tmdbInfo.overview && tmdbInfo.use_tmdb_synopsis) {
           item.synopsis = tmdbInfo.overview;
         }
+        if (tmdbInfo.genres && tmdbInfo.genres.length > 0) item.genres = tmdbInfo.genres;
         if (tmdbInfo.vote_count) item.voteCount = tmdbInfo.vote_count;
         if (tmdbInfo.first_air_date) item.year = tmdbInfo.first_air_date.slice(0, 4);
         if (tmdbInfo.original_name && tmdbInfo.original_name !== item.name) item.nativeName = tmdbInfo.original_name;
