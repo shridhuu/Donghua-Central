@@ -4,7 +4,7 @@ const staff = [
     role: "Owner",
     bio: "Owner of Donghua Central, helping lead the server and keep subtitle releases moving for the community.",
     avatar:
-      "https://cdn.discordapp.com/avatars/1043082788452184064/6eeb22dcb769a59702420b03c0306d58.png?size=4096",
+      "https://cdn.discordapp.com/avatars/1043082788452184064/9d874ce09f2f15543b50e6bf70541b26.png?size=4096",
     discord: "@tempershot7"
   },
   {
@@ -36,8 +36,8 @@ const staff = [
     role: "Imperial Inspector",
     bio: "Imperial Inspector overseeing server operations and staff conduct so Donghua Central stays fair, organized, and welcoming.",
     avatar:
-      "https://cdn.discordapp.com/avatars/863085379850207302/73df16a8d4f385410cdccbeeb58772a0.png?size=512",
-    discord: "@Daksha"
+      "https://cdn.discordapp.com/avatars/863085379850207302/ac3820d0f9c8c244ca2858c5f3595e54.png?size=4096",
+    discord: "@daksha_saint"
   },
   {
     name: "Sheng Tian Yue",
@@ -45,7 +45,7 @@ const staff = [
     bio: "Grand Elder, donghua enjoyer, and active discussion voice who debates, recommends, and helps wherever needed.",
     avatar:
       "https://cdn.discordapp.com/avatars/550972666471907340/1c7c55982aa87ded49b073eb8fbc3466.png?size=512",
-    discord: "@shengtianyue"
+    discord: "@kevinsaintlacour"
   },
   {
     name: "gawwwwwwwdddd",
@@ -249,7 +249,8 @@ const series = [
     status: "Ongoing",
     episodes: "N/A",
     genres: ["Rest", "Sleep"],
-    synopsis: "Shridhuu is resting. No subbing/encoding updates scheduled for today. Recharging the soul."
+    synopsis: "Shridhuu is resting. No subbing/posting updates scheduled for today. Recharging the soul.",
+    excludeFromLibrary: true
   }
 ];
 
@@ -347,6 +348,7 @@ const renderFilterChips = () => {
 
   const genres = new Set();
   series.forEach(item => {
+    if (item.excludeFromLibrary) return;
     if (item.genres) {
       item.genres.forEach(g => genres.add(g.trim()));
     }
@@ -396,6 +398,7 @@ const renderSeries = () => {
   if (!seriesGrid) return;
 
   const filtered = series.filter(item => {
+    if (item.excludeFromLibrary) return false;
     const matchesSearch = item.name.toLowerCase().includes(searchQuery) ||
       item.synopsis.toLowerCase().includes(searchQuery);
 
@@ -1020,10 +1023,10 @@ const loadSchedule = async () => {
     const res = await fetch("data/schedule.json");
     if (!res.ok) throw new Error("schedule.json not found");
     scheduleData = await res.json();
-    
+
     // Auto-select current day of week if active days have schedule entries
     const dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-    const currentDayName = dayNames[new Date().getDay()];
+    const currentDayName = dayNames[new Date().getUTCDay()];
     if (scheduleData.some(item => item.day === currentDayName)) {
       activeDay = currentDayName;
     } else {

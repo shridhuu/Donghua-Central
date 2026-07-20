@@ -1048,8 +1048,15 @@ details p {
     linear-gradient(180deg, transparent 54%, rgba(3, 8, 38, 0.46));
 }
 
-.nine-heavens-banner img {
+.nine-heavens-banner picture {
+  display: block;
   width: 100%;
+}
+
+.nine-heavens-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
   aspect-ratio: 1983 / 793;
   object-fit: cover;
   object-position: center;

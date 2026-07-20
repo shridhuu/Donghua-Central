@@ -73,8 +73,8 @@
         <div class="nav-menu" id="navMenu">
           <nav class="nav-links" aria-label="Primary navigation">
             <a class="is-active" href="#top">Home</a>
-            <a href="#library">Library</a>
             <a href="#schedule">Schedule</a>
+            <a href="#library">Library</a>
             <a href="#subtitles">Subtitles</a>
             <a href="#nine-heavens">Nine Heavens</a>
             <a href="#staff">Staff</a>
@@ -129,6 +129,25 @@
               <strong>Heavens</strong>
             </div>
           </aside>
+        </section>
+
+        <!-- Release Schedule Section -->
+        <section class="panel-band" id="schedule">
+          <div class="section-title">
+            <p class="eyebrow">Weekly Release Tracker</p>
+            <h2>Release Schedule</h2>
+            <p class="section-subtitle">When new episodes drop, tracked in your local time.</p>
+          </div>
+
+          <div class="day-tabs" role="tablist" aria-label="Schedule day selector" id="dayTabs">
+            <!-- populated by JS: one button per day -->
+          </div>
+
+          <div class="schedule-grid" id="scheduleGrid" role="tabpanel">
+            <!-- populated by JS -->
+          </div>
+
+          <p class="no-results" id="scheduleEmpty" hidden>Nothing scheduled for this day yet.</p>
         </section>
 
         <section class="panel-band intro-band" id="subtitles">
@@ -202,25 +221,6 @@
             <div class="filter-chips" id="filterChips"></div>
           </div>
           <div class="series-grid" id="seriesGrid"></div>
-        </section>
-
-        <!-- Release Schedule Section -->
-        <section class="panel-band" id="schedule">
-          <div class="section-title">
-            <p class="eyebrow">Weekly Release Tracker</p>
-            <h2>Release Schedule</h2>
-            <p class="section-subtitle">When new episodes drop, tracked in your local time.</p>
-          </div>
-
-          <div class="day-tabs" role="tablist" aria-label="Schedule day selector" id="dayTabs">
-            <!-- populated by JS: one button per day -->
-          </div>
-
-          <div class="schedule-grid" id="scheduleGrid" role="tabpanel">
-            <!-- populated by JS -->
-          </div>
-
-          <p class="no-results" id="scheduleEmpty" hidden>Nothing scheduled for this day yet.</p>
         </section>
 
         <section class="system-panel" id="nine-heavens">
