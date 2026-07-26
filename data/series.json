@@ -19,12 +19,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-16",
-      "episode_number": 278
-    },
-    "next_episode": {
       "air_date": "2026-07-23",
       "episode_number": 279
+    },
+    "next_episode": {
+      "air_date": "2026-07-30",
+      "episode_number": 280
     }
   },
   "renegade-immortal": {
@@ -32,7 +32,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.175,
+    "rating": 8.2,
     "vote_count": 40,
     "episodes": 200,
     "seasons": 1,
@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-12",
-      "episode_number": 149
-    },
-    "next_episode": {
       "air_date": "2026-07-19",
       "episode_number": 150
+    },
+    "next_episode": {
+      "air_date": "2026-07-26",
+      "episode_number": 151
     }
   },
   "mortal-journey": {
@@ -61,8 +61,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.4,
-    "vote_count": 81,
+    "rating": 8.415,
+    "vote_count": 82,
     "episodes": 190,
     "seasons": 1,
     "status": "Returning Series",
@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-18",
-      "episode_number": 183
-    },
-    "next_episode": {
       "air_date": "2026-07-25",
       "episode_number": 184
+    },
+    "next_episode": {
+      "air_date": "2026-08-01",
+      "episode_number": 185
     }
   },
   "slay-the-gods": {
@@ -90,7 +90,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 7.9,
+    "rating": 7.889,
     "vote_count": 18,
     "episodes": 30,
     "seasons": 2,
@@ -106,12 +106,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-15",
-      "episode_number": 6
-    },
-    "next_episode": {
       "air_date": "2026-07-22",
       "episode_number": 7
+    },
+    "next_episode": {
+      "air_date": "2026-07-29",
+      "episode_number": 8
     }
   },
   "beyond-times-gaze": {
@@ -135,12 +135,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-18",
-      "episode_number": 31
-    },
-    "next_episode": {
       "air_date": "2026-07-25",
       "episode_number": 32
+    },
+    "next_episode": {
+      "air_date": "2026-08-01",
+      "episode_number": 33
     }
   },
   "blades-guardians": {
@@ -163,13 +163,10 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-16",
-      "episode_number": 7
-    },
-    "next_episode": {
       "air_date": "2026-07-23",
       "episode_number": 8
-    }
+    },
+    "next_episode": null
   },
   "good-day-to-ascend": {
     "tmdb_id": 326695,
@@ -184,20 +181,20 @@
     "first_air_date": "2026-07-18",
     "original_name": "择日飞升",
     "tagline": null,
-    "poster_path": "https://image.tmdb.org/t/p/original/5NKojVuw2Jf0dT9nSgGPlLiBQV5.jpg",
-    "overview": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/x2pQPKj5EeXPxw7VCSq1WjCEJgL.jpg",
+    "overview": "In the chaotic times, demons and monsters roam freely, and treacherous officials are in power. With the invasion of the Netherworld, both humans and Netherworld beings wreak havoc on the mortal world, and the wild gods who work for the Netherworld bully the common people. Enraged, Xu Ying, a snake-catcher, rebels and commits the sin of killing a god, and also takes out an incompetent court official. Hunted down by the two realms, his fleeing begins...",
     "genres": [
       "Animation",
       "Action & Adventure",
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-18",
-      "episode_number": 3
-    },
-    "next_episode": {
       "air_date": "2026-07-25",
       "episode_number": 4
+    },
+    "next_episode": {
+      "air_date": "2026-08-01",
+      "episode_number": 5
     }
   },
   "sword-of-coming": {
@@ -247,12 +244,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-16",
-      "episode_number": 14
-    },
-    "next_episode": {
       "air_date": "2026-07-23",
       "episode_number": 15
+    },
+    "next_episode": {
+      "air_date": "2026-07-30",
+      "episode_number": 16
     }
   },
   "demon-hunter": {
@@ -275,12 +272,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-17",
-      "episode_number": 86
-    },
-    "next_episode": {
       "air_date": "2026-07-24",
       "episode_number": 87
+    },
+    "next_episode": {
+      "air_date": "2026-07-31",
+      "episode_number": 88
     }
   },
   "swallowed-star": {
@@ -288,8 +285,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.343,
-    "vote_count": 35,
+    "rating": 8.432,
+    "vote_count": 37,
     "episodes": 238,
     "seasons": 1,
     "status": "Returning Series",
@@ -304,12 +301,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-13",
-      "episode_number": 232
-    },
-    "next_episode": {
       "air_date": "2026-07-20",
       "episode_number": 233
+    },
+    "next_episode": {
+      "air_date": "2026-07-27",
+      "episode_number": 234
     }
   },
   "above-myriads": {
@@ -317,8 +314,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 0,
-    "vote_count": null,
+    "rating": 7,
+    "vote_count": 1,
     "episodes": 14,
     "seasons": 1,
     "status": "Returning Series",
@@ -331,12 +328,12 @@
       "Animation"
     ],
     "last_episode": {
-      "air_date": "2026-07-14",
-      "episode_number": 8
-    },
-    "next_episode": {
       "air_date": "2026-07-21",
       "episode_number": 9
+    },
+    "next_episode": {
+      "air_date": "2026-07-28",
+      "episode_number": 10
     }
   },
   "tomb-fallen-gods": {
@@ -360,12 +357,9 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-16",
-      "episode_number": 51
-    },
-    "next_episode": {
       "air_date": "2026-07-23",
       "episode_number": 52
-    }
+    },
+    "next_episode": null
   }
 }
