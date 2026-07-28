@@ -1,35 +1,11 @@
 [
   {
-    "id": "shridhuu-needs-rest-mon",
-    "showId": "shridhuu-needs-rest",
-    "day": "monday",
-    "releaseTimeUTC": "00:00",
-    "group": "Donghua Central",
-    "note": "No subbing or posting today, I need rest",
-    "tags": [
-      "Rest"
-    ]
-  },
-  {
     "id": "swallowed-star-mon",
     "showId": "swallowed-star",
     "day": "monday",
     "releaseTimeUTC": "12:00",
     "group": "Donghua Central",
     "note": "Releases 3–6h after raws (may delay if busy)",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P"
-    ]
-  },
-  {
-    "id": "above-myriads-tue",
-    "showId": "above-myriads",
-    "day": "tuesday",
-    "releaseTimeUTC": "11:00",
-    "group": "Donghua Central",
-    "note": "Softsubs releases within 12 hours of raw",
     "tags": [
       "Softsubs",
       "Weekly",
@@ -48,72 +24,6 @@
       "Weekly",
       "1080P",
       "4K"
-    ]
-  },
-  {
-    "id": "tomb-fallen-gods-thu",
-    "showId": "tomb-fallen-gods",
-    "day": "thursday",
-    "releaseTimeUTC": "13:00",
-    "group": "Donghua Central",
-    "note": "whenever I feel like",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P"
-    ]
-  },
-  {
-    "id": "slay-the-gods-thu",
-    "showId": "slay-the-gods",
-    "day": "thursday",
-    "releaseTimeUTC": "12:00",
-    "group": "Donghua Central",
-    "note": "Softsubs releases after 24-36 hours of raws",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P",
-      "4K"
-    ]
-  },
-  {
-    "id": "ever-night-thu",
-    "showId": "ever-night",
-    "day": "thursday",
-    "releaseTimeUTC": "14:00",
-    "group": "Donghua Central",
-    "note": "Global Saturday",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P"
-    ]
-  },
-  {
-    "id": "blades-guardians-thu",
-    "showId": "blades-guardians",
-    "day": "thursday",
-    "releaseTimeUTC": "10:00",
-    "group": "Donghua Central",
-    "note": "Softsubs releases within 24 hours of raw",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P"
-    ]
-  },
-  {
-    "id": "demon-hunter-fri",
-    "showId": "demon-hunter",
-    "day": "friday",
-    "releaseTimeUTC": "14:00",
-    "group": "Donghua Central",
-    "note": "Softsubs releases within 24 hours",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P"
     ]
   },
   {
