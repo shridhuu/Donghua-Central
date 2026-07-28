@@ -13,6 +13,28 @@
     ]
   },
   {
+    "id": "shridhuu-needs-rest-tue",
+    "showId": "shridhuu-needs-rest",
+    "day": "tuesday",
+    "releaseTimeUTC": "00:00",
+    "group": "Donghua Central",
+    "note": "No subbing or posting today, I need rest",
+    "tags": [
+      "Rest"
+    ]
+  },
+  {
+    "id": "shridhuu-needs-rest-wed",
+    "showId": "shridhuu-needs-rest",
+    "day": "wednesday",
+    "releaseTimeUTC": "00:00",
+    "group": "Donghua Central",
+    "note": "No subbing or posting today, I need rest",
+    "tags": [
+      "Rest"
+    ]
+  },
+  {
     "id": "perfect-world-thu",
     "showId": "perfect-world",
     "day": "thursday",
@@ -24,6 +46,17 @@
       "Weekly",
       "1080P",
       "4K"
+    ]
+  },
+  {
+    "id": "shridhuu-needs-rest-fri",
+    "showId": "shridhuu-needs-rest",
+    "day": "friday",
+    "releaseTimeUTC": "00:00",
+    "group": "Donghua Central",
+    "note": "No subbing or posting today, I need rest",
+    "tags": [
+      "Rest"
     ]
   },
   {
