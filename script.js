@@ -9,7 +9,7 @@ const staff = [
   },
   {
     name: "Shridhuu",
-    role: "Developer - Royal Celestial Ancestor - Donghua Archivist",
+    role: "Developer - Royal Celestial Ancestor - Donghua Archivist - Subtitle Maker",
     bio: "Developer, subtitle maker, and archivist helping shape Donghua Central's releases, website, and community experience.",
     avatar:
       "https://cdn.discordapp.com/avatars/1403304956924264468/d515bf2e9603eec7313ada4f5f9ce49d.png?size=512",
@@ -20,23 +20,15 @@ const staff = [
     role: "Grand Elder - Council of the Nine Heavens",
     bio: "Grand Elder and head developer of Nine Heavens, building the cultivation systems that make the server feel alive.",
     avatar:
-      "https://cdn.discordapp.com/avatars/922769233950179340/a2694342ef0695505e92c3962fd0545c.png?size=512",
-    discord: "@shayne_rok"
-  },
-  {
-    name: "Divine Extinction",
-    role: "Grand Elder",
-    bio: "Enforcement Elder and long-time donghua and novel fan who guides deeper discussions while keeping the realm civil.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/428902045181804566/093599cef7ca899e11549437b43f4b65.png?size=512",
-    discord: "@divine_extinction"
+      "https://cdn.discordapp.com/avatars/922769233950179340/a2694342ef0695505e92c3962fd0545c.png?size=4096",
+    discord: "@shayneorok95"
   },
   {
     name: "Daksha",
-    role: "Imperial Inspector",
+    role: "Imperial Inspector - Grand Elder",
     bio: "Imperial Inspector overseeing server operations and staff conduct so Donghua Central stays fair, organized, and welcoming.",
     avatar:
-      "https://cdn.discordapp.com/avatars/863085379850207302/ac3820d0f9c8c244ca2858c5f3595e54.png?size=4096",
+      "https://cdn.discordapp.com/avatars/863085379850207302/f41d213dbb7713402918dcbf20ee098c.png?size=4096",
     discord: "@daksha_saint"
   },
   {
@@ -44,24 +36,24 @@ const staff = [
     role: "Grand Elder",
     bio: "Grand Elder, donghua enjoyer, and active discussion voice who debates, recommends, and helps wherever needed.",
     avatar:
-      "https://cdn.discordapp.com/avatars/550972666471907340/1c7c55982aa87ded49b073eb8fbc3466.png?size=512",
+      "https://cdn.discordapp.com/avatars/550972666471907340/6667969afe1ef1e4b1ece2600401babc.png?size=4096",
     discord: "@kevinsaintlacour"
   },
   {
     name: "gawwwwwwwdddd",
-    role: "Elder Developer of NH Game",
-    bio: "Elder Developer focused on Nine Heavens features, gameplay improvements, and the growth of Donghua Central's interactive side.",
+    role: "(Kinda?)Developer of NH Game",
+    bio: "(Kinda?)Developer focused on Nine Heavens features, gameplay improvements, and the growth of Donghua Central's interactive side.",
     avatar:
       "https://cdn.discordapp.com/avatars/406382478102626314/28da68f98c5cda5e2e4a2a47340273ba.png?size=512",
     discord: "@gawwwwwwwdddd"
   },
   {
     name: "Blue",
-    role: "Nine Heavens Development",
-    bio: "Supports Nine Heavens development and stays active in the community, helping the project and server continue to improve.",
+    role: "(Kinda?)Nine Heavens Development",
+    bio: "(Kinda?)Supports Nine Heavens development and stays active in the community, helping the project and server continue to improve.",
     avatar:
       "https://cdn.discordapp.com/avatars/768703559231340544/700fdcbf50bdeccddd6989b5a5132e15.png?size=512",
-    discord: "@blue"
+    discord: "@skyisblue._."
   },
   {
     name: "AG_TouSen",
@@ -77,7 +69,7 @@ const staff = [
     bio: "Donghua and anime lover, fanfic writer, and helpful community elder supporting discussions, reactor channels, and the Artistic Domain.",
     avatar:
       "https://cdn.discordapp.com/avatars/713438739296288779/4e8bc3183cfb9ec04a0aeaafe0ee6875.png?size=4096",
-    discord: "@noir"
+    discord: "@noir4720"
   },
   {
     name: "Chappelet",
@@ -92,7 +84,7 @@ const staff = [
     role: "Freeloader - Grand Elder",
     bio: "Grand Elder who keeps the mood light, shares donghua shots, and helps Donghua Central feel casual, open, and welcoming.",
     avatar: "https://cdn.discordapp.com/avatars/606657480511979521/f601d890821504b0d4408c2f9c634368.png?size=512",
-    discord: "@koriwave"
+    discord: "@mmd67884326"
   },
 ];
 
