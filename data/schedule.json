@@ -11,12 +11,12 @@
     ]
   },
   {
-    "id": "swallowed-star-tue",
+    "id": "swallowed-star-mon",
     "showId": "swallowed-star",
-    "day": "tuesday",
+    "day": "monday",
     "releaseTimeUTC": "12:00",
     "group": "Donghua Central",
-    "note": "Softsubs releases within 24 hours of raw",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
       "Softsubs",
       "Weekly",
@@ -34,6 +34,20 @@
       "Softsubs",
       "Weekly",
       "1080P"
+    ]
+  },
+  {
+    "id": "perfect-world-thu",
+    "showId": "perfect-world",
+    "day": "thursday",
+    "releaseTimeUTC": "13:30",
+    "group": "Donghua Central",
+    "note": "Releases 3–6h after raws (may delay if busy)",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
     ]
   },
   {
@@ -103,26 +117,12 @@
     ]
   },
   {
-    "id": "perfect-world-fri",
-    "showId": "perfect-world",
-    "day": "friday",
-    "releaseTimeUTC": "13:30",
-    "group": "Donghua Central",
-    "note": "Softsubs releases after 24-36 hours of raws",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P",
-      "4K"
-    ]
-  },
-  {
     "id": "good-day-to-ascend-sat",
     "showId": "good-day-to-ascend",
     "day": "saturday",
     "releaseTimeUTC": "11:00",
     "group": "Donghua Central",
-    "note": "Softsubs releases within 24 hours of raw",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
       "Softsubs",
       "Weekly",
@@ -136,9 +136,9 @@
     "day": "saturday",
     "releaseTimeUTC": "12:00",
     "group": "Donghua Central",
-    "note": "QC final pass may delay release slightly",
+    "note": "Official subs with fixes, 3–6h after raws",
     "tags": [
-      "Softsubs",
+      "Official Subs",
       "Weekly",
       "1080P",
       "4K"
@@ -150,7 +150,7 @@
     "day": "sunday",
     "releaseTimeUTC": "15:00",
     "group": "Donghua Central",
-    "note": "Softsubs releases after 4-6 hours of raws",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
       "Softsubs",
       "Weekly",
@@ -164,7 +164,7 @@
     "day": "sunday",
     "releaseTimeUTC": "10:00",
     "group": "Donghua Central",
-    "note": "Softsubs releases within 12 hours of raws",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
       "Softsubs",
       "Weekly",
