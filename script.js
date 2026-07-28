@@ -12,7 +12,7 @@ const staff = [
     role: "Developer - Royal Celestial Ancestor - Donghua Archivist - Subtitle Maker",
     bio: "Developer, subtitle maker, and archivist helping shape Donghua Central's releases, website, and community experience.",
     avatar:
-      "https://cdn.discordapp.com/avatars/1403304956924264468/d515bf2e9603eec7313ada4f5f9ce49d.png?size=512",
+      "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=4096",
     discord: "@Shridhuu"
   },
   {
@@ -235,7 +235,7 @@ const series = [
   {
     id: "shridhuu-needs-rest",
     name: "@Shridhuu Needs Rest",
-    image: "https://cdn.discordapp.com/avatars/1403304956924264468/d515bf2e9603eec7313ada4f5f9ce49d.png?size=512",
+    image: "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=512",
     width: 512,
     height: 512,
     status: "Ongoing",
