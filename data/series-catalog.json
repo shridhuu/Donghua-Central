@@ -1,0 +1,157 @@
+[
+  {
+    "id": "perfect-world",
+    "name": "Perfect World",
+    "image": "https://image.tmdb.org/t/p/original/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
+    "width": 1908,
+    "height": 1080,
+    "status": "Ongoing",
+    "episodes": "170+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "Shi Hao, a born genius from a ruined clan, climbs the path of cultivation to uncover deep secrets of the universe while fighting off enemies in a vast, dangerous world."
+  },
+  {
+    "id": "renegade-immortal",
+    "name": "Renegade Immortal",
+    "image": "https://image.tmdb.org/t/p/original/mCt5qgkOYEvuHSiSwNByMv6LMoB.jpg",
+    "width": 594,
+    "height": 336,
+    "status": "Ongoing",
+    "episodes": "90+",
+    "genres": ["Cultivation", "Action", "Dark Fantasy"],
+    "synopsis": "Wang Lin, mocked for his lack of talent, acquires a mysterious bead. With iron resolve, he walks a bloody path to ascendancy and protect what remains of his soul."
+  },
+  {
+    "id": "mortal-journey",
+    "name": "A Record of a Mortal's Journey to Immortality",
+    "image": "https://image.tmdb.org/t/p/original/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
+    "width": 500,
+    "height": 667,
+    "status": "Ongoing",
+    "episodes": "110+",
+    "genres": ["Cultivation", "Adventure", "Fantasy"],
+    "synopsis": "Han Li, an ordinary mortal with no initial cultivation talent, navigates the dangerous, self-serving world of cultivation using caution, wit, and a mysterious green bottle."
+  },
+  {
+    "id": "slay-the-gods",
+    "name": "Slay The Gods",
+    "image": "https://image.tmdb.org/t/p/original/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
+    "width": 400,
+    "height": 561,
+    "status": "Ongoing",
+    "episodes": "40+",
+    "genres": ["Action", "Modern Fantasy", "Supernatural"],
+    "synopsis": "In a world threatened by mysterious mythological entities, a blind boy named Lin Qiye obtains divine vision and fire to lead a secret defense unit of humanity."
+  },
+  {
+    "id": "beyond-times-gaze",
+    "name": "Beyond Time's Gaze",
+    "image": "https://image.tmdb.org/t/p/original/vF5RXqbpLTPHwwJWywxx5nZ6nTs.jpg",
+    "width": 3840,
+    "height": 2160,
+    "status": "Ongoing",
+    "episodes": "30+",
+    "genres": ["Cultivation", "Mystery", "Fantasy"],
+    "synopsis": "Xu Qing lives in a world corrupted by the gaze of an ancient god. Desperate to survive, he uses stealth, poison, and a shadow artifact to hunt beasts and rise through the ranks."
+  },
+  {
+    "id": "blades-guardians",
+    "name": "Blades of the Guardians",
+    "image": "https://image.tmdb.org/t/p/original/ck4VbauqthkMldF661byC693ify.jpg",
+    "width": 1054,
+    "height": 1492,
+    "status": "Ongoing",
+    "episodes": "20+",
+    "genres": ["Action", "Historical", "Martial Arts"],
+    "synopsis": "Dao Ma, a powerful mercenary indebted to the court, escorts a mysterious traveler to the capital Chang'an, facing lethal martial experts and political schemes along the way."
+  },
+  {
+    "id": "good-day-to-ascend",
+    "name": "A Good Day to Ascend",
+    "image": "https://image.tmdb.org/t/p/original/5NKojVuw2Jf0dT9nSgGPlLiBQV5.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal."
+  },
+  {
+    "id": "sword-of-coming",
+    "name": "Sword of Coming",
+    "image": "https://image.tmdb.org/t/p/original/2pT4uBFKymVPLktor6dbeOZzDcJ.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "A young orphan boy from a mysterious small town acquires magical swords and sets out on a legendary cultivation journey to protect his loved ones and seek the Dao."
+  },
+  {
+    "id": "ever-night",
+    "name": "Ever Night",
+    "image": "https://image.tmdb.org/t/p/original/xS1jaBgymz4Smc3IUNDwh9uYxhX.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Action", "Drama"],
+    "synopsis": "Ning Que fights to protect his maid and friend Sang Sang, navigating the dark cultivation world as prophecy warns of the eternal night and total destruction."
+  },
+  {
+    "id": "demon-hunter",
+    "name": "The Demon Hunter",
+    "image": "https://image.tmdb.org/t/p/original/ryAX7owZUxkpaBU3VbsQdtI2zLz.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "Meng Chuan vows to avenge his mother and protect humanity from invading demons, training his blade and cultivating power to hunt demons and defend his home."
+  },
+  {
+    "id": "swallowed-star",
+    "name": "Swallowed Star",
+    "image": "https://image.tmdb.org/t/p/original/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Sci-Fi", "Cultivation", "Action"],
+    "synopsis": "Luo Feng strives to protect his family and defend Earth against giant mutated monsters in a post-apocalyptic world, discovering the cosmic origins of cultivation."
+  },
+  {
+    "id": "above-myriads",
+    "name": "Above Myriads",
+    "image": "https://image.tmdb.org/t/p/original/dLrtv5XDGQPyB9lJp6U77HUN9Iy.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Comedy", "Fantasy"],
+    "synopsis": "Yi Feng, a mortal, is mistaken for a supreme cultivation master by everyone around him. He navigates encounters with powerful entities while remaining oblivious to his own legendary status."
+  },
+  {
+    "id": "tomb-fallen-gods",
+    "name": "Tomb of Fallen Gods",
+    "image": "https://image.tmdb.org/t/p/original/8lV2Mjn5Km7DqlgbbPntYr7rRfV.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Mystery", "Fantasy"],
+    "synopsis": "Chen Nan resurrects from his grave after ten thousand years in a world where gods and demons have fallen. He seeks to uncover the truth behind his death and the demise of the divine."
+  },
+  {
+    "id": "shridhuu-needs-rest",
+    "name": "@Shridhuu Needs Rest",
+    "image": "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=512",
+    "width": 512,
+    "height": 512,
+    "status": "Ongoing",
+    "episodes": "N/A",
+    "genres": ["Rest", "Sleep"],
+    "synopsis": "Shridhuu is resting. No subbing/posting updates scheduled for today. Recharging the soul.",
+    "excludeFromLibrary": true
+  }
+]

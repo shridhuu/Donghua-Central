@@ -1,250 +1,19 @@
-const staff = [
-  {
-    name: "Temper",
-    role: "Owner",
-    bio: "Owner of Donghua Central, helping lead the server and keep subtitle releases moving for the community.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/1043082788452184064/9d874ce09f2f15543b50e6bf70541b26.png?size=4096",
-    discord: "@tempershot7"
-  },
-  {
-    name: "Shridhuu",
-    role: "Developer - Royal Celestial Ancestor - Donghua Archivist - Subtitle Maker",
-    bio: "Developer, subtitle maker, and archivist helping shape Donghua Central's releases, website, and community experience.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=4096",
-    discord: "@Shridhuu"
-  },
-  {
-    name: "Shayne",
-    role: "Grand Elder - Council of the Nine Heavens",
-    bio: "Grand Elder and head developer of Nine Heavens, building the cultivation systems that make the server feel alive.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/922769233950179340/a2694342ef0695505e92c3962fd0545c.png?size=4096",
-    discord: "@shayneorok95"
-  },
-  {
-    name: "Daksha",
-    role: "Imperial Inspector - Grand Elder",
-    bio: "Imperial Inspector overseeing server operations and staff conduct so Donghua Central stays fair, organized, and welcoming.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/863085379850207302/f41d213dbb7713402918dcbf20ee098c.png?size=4096",
-    discord: "@daksha_saint"
-  },
-  {
-    name: "Sheng Tian Yue",
-    role: "Grand Elder",
-    bio: "Grand Elder, donghua enjoyer, and active discussion voice who debates, recommends, and helps wherever needed.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/550972666471907340/6667969afe1ef1e4b1ece2600401babc.png?size=4096",
-    discord: "@kevinsaintlacour"
-  },
-  {
-    name: "gawwwwwwwdddd",
-    role: "(Kinda?)Developer of NH Game",
-    bio: "(Kinda?)Developer focused on Nine Heavens features, gameplay improvements, and the growth of Donghua Central's interactive side.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/406382478102626314/28da68f98c5cda5e2e4a2a47340273ba.png?size=512",
-    discord: "@gawwwwwwwdddd"
-  },
-  {
-    name: "Blue",
-    role: "(Kinda?)Nine Heavens Development",
-    bio: "(Kinda?)Supports Nine Heavens development and stays active in the community, helping the project and server continue to improve.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/768703559231340544/700fdcbf50bdeccddd6989b5a5132e15.png?size=512",
-    discord: "@skyisblue._."
-  },
-  {
-    name: "AG_TouSen",
-    role: "Grand Elder",
-    bio: "Grand Elder currently in seclusion, guiding cultivators through donghua, novels, updates, discussions, and Nine Heavens rankings.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/1419545987583836180/c139ce8ba4bdc63c2950f012aec37aef.png?size=4096",
-    discord: "@ag_tuosen"
-  },
-  {
-    name: "Noir",
-    role: "Grand Elder",
-    bio: "Donghua and anime lover, fanfic writer, and helpful community elder supporting discussions, reactor channels, and the Artistic Domain.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/713438739296288779/4e8bc3183cfb9ec04a0aeaafe0ee6875.png?size=4096",
-    discord: "@noir4720"
-  },
-  {
-    name: "Chappelet",
-    role: "Grand Elder - Nianfan Hater",
-    bio: "Grand Elder who recommends overlooked donghua, pushes for broader genres, and supports reactor-friendly discovery in the community.",
-    avatar:
-      "https://cdn.discordapp.com/avatars/487735963913551874/4511a7a5a75ee54acb306a0e04999703.png?size=512",
-    discord: "@chappelet"
-  },
-  {
-    name: "KoriWave",
-    role: "Freeloader - Grand Elder",
-    bio: "Grand Elder who keeps the mood light, shares donghua shots, and helps Donghua Central feel casual, open, and welcoming.",
-    avatar: "https://cdn.discordapp.com/avatars/606657480511979521/f601d890821504b0d4408c2f9c634368.png?size=512",
-    discord: "@mmd67884326"
-  },
-];
+let staff = [];
+let series = [];
 
-const series = [
-  {
-    id: "perfect-world",
-    name: "Perfect World",
-    image: "https://image.tmdb.org/t/p/original/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
-    width: 1908,
-    height: 1080,
-    status: "Ongoing",
-    episodes: "170+",
-    genres: ["Cultivation", "Action", "Fantasy"],
-    synopsis: "Shi Hao, a born genius from a ruined clan, climbs the path of cultivation to uncover deep secrets of the universe while fighting off enemies in a vast, dangerous world."
-  },
-  {
-    id: "renegade-immortal",
-    name: "Renegade Immortal",
-    image: "https://image.tmdb.org/t/p/original/mCt5qgkOYEvuHSiSwNByMv6LMoB.jpg",
-    width: 594,
-    height: 336,
-    status: "Ongoing",
-    episodes: "90+",
-    genres: ["Cultivation", "Action", "Dark Fantasy"],
-    synopsis: "Wang Lin, mocked for his lack of talent, acquires a mysterious bead. With iron resolve, he walks a bloody path to ascendancy and protect what remains of his soul."
-  },
-  {
-    id: "mortal-journey",
-    name: "A Record of a Mortal's Journey to Immortality",
-    image: "https://image.tmdb.org/t/p/original/u1VRjvvCIVwb1MUhoxSAUimhoKZ.jpg",
-    width: 500,
-    height: 667,
-    status: "Ongoing",
-    episodes: "110+",
-    genres: ["Cultivation", "Adventure", "Fantasy"],
-    synopsis: "Han Li, an ordinary mortal with no initial cultivation talent, navigates the dangerous, self-serving world of cultivation using caution, wit, and a mysterious green bottle."
-  },
-  {
-    id: "slay-the-gods",
-    name: "Slay The Gods",
-    image: "https://image.tmdb.org/t/p/original/n4lEQkgCDuOP3TNvIjkzn5QjRp.jpg",
-    width: 400,
-    height: 561,
-    status: "Ongoing",
-    episodes: "40+",
-    genres: ["Action", "Modern Fantasy", "Supernatural"],
-    synopsis: "In a world threatened by mysterious mythological entities, a blind boy named Lin Qiye obtains divine vision and fire to lead a secret defense unit of humanity."
-  },
-  {
-    id: "beyond-times-gaze",
-    name: "Beyond Time's Gaze",
-    image: "https://image.tmdb.org/t/p/original/vF5RXqbpLTPHwwJWywxx5nZ6nTs.jpg",
-    width: 3840,
-    height: 2160,
-    status: "Ongoing",
-    episodes: "30+",
-    genres: ["Cultivation", "Mystery", "Fantasy"],
-    synopsis: "Xu Qing lives in a world corrupted by the gaze of an ancient god. Desperate to survive, he uses stealth, poison, and a shadow artifact to hunt beasts and rise through the ranks."
-  },
-  {
-    id: "blades-guardians",
-    name: "Blades of the Guardians",
-    image: "https://image.tmdb.org/t/p/original/ck4VbauqthkMldF661byC693ify.jpg",
-    width: 1054,
-    height: 1492,
-    status: "Ongoing",
-    episodes: "20+",
-    genres: ["Action", "Historical", "Martial Arts"],
-    synopsis: "Dao Ma, a powerful mercenary indebted to the court, escorts a mysterious traveler to the capital Chang'an, facing lethal martial experts and political schemes along the way."
-  },
-  {
-    id: "good-day-to-ascend",
-    name: "A Good Day to Ascend",
-    image: "https://image.tmdb.org/t/p/original/5NKojVuw2Jf0dT9nSgGPlLiBQV5.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Cultivation", "Action", "Fantasy"],
-    synopsis: "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal."
-  },
-  {
-    id: "sword-of-coming",
-    name: "Sword of Coming",
-    image: "https://image.tmdb.org/t/p/original/2pT4uBFKymVPLktor6dbeOZzDcJ.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Cultivation", "Action", "Fantasy"],
-    synopsis: "A young orphan boy from a mysterious small town acquires magical swords and sets out on a legendary cultivation journey to protect his loved ones and seek the Dao."
-  },
-  {
-    id: "ever-night",
-    name: "Ever Night",
-    image: "https://image.tmdb.org/t/p/original/xS1jaBgymz4Smc3IUNDwh9uYxhX.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Cultivation", "Action", "Drama"],
-    synopsis: "Ning Que fights to protect his maid and friend Sang Sang, navigating the dark cultivation world as prophecy warns of the eternal night and total destruction."
-  },
-  {
-    id: "demon-hunter",
-    name: "The Demon Hunter",
-    image: "https://image.tmdb.org/t/p/original/ryAX7owZUxkpaBU3VbsQdtI2zLz.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Cultivation", "Action", "Fantasy"],
-    synopsis: "Meng Chuan vows to avenge his mother and protect humanity from invading demons, training his blade and cultivating power to hunt demons and defend his home."
-  },
-  {
-    id: "swallowed-star",
-    name: "Swallowed Star",
-    image: "https://image.tmdb.org/t/p/original/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Sci-Fi", "Cultivation", "Action"],
-    synopsis: "Luo Feng strives to protect his family and defend Earth against giant mutated monsters in a post-apocalyptic world, discovering the cosmic origins of cultivation."
-  },
-  {
-    id: "above-myriads",
-    name: "Above Myriads",
-    image: "https://image.tmdb.org/t/p/original/dLrtv5XDGQPyB9lJp6U77HUN9Iy.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Cultivation", "Comedy", "Fantasy"],
-    synopsis: "Yi Feng, a mortal, is mistaken for a supreme cultivation master by everyone around him. He navigates encounters with powerful entities while remaining oblivious to his own legendary status."
-  },
-  {
-    id: "tomb-fallen-gods",
-    name: "Tomb of Fallen Gods",
-    image: "https://image.tmdb.org/t/p/original/8lV2Mjn5Km7DqlgbbPntYr7rRfV.jpg",
-    width: 1024,
-    height: 1024,
-    status: "Ongoing",
-    episodes: "1+",
-    genres: ["Cultivation", "Mystery", "Fantasy"],
-    synopsis: "Chen Nan resurrects from his grave after ten thousand years in a world where gods and demons have fallen. He seeks to uncover the truth behind his death and the demise of the divine."
-  },
-  {
-    id: "shridhuu-needs-rest",
-    name: "@Shridhuu Needs Rest",
-    image: "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=512",
-    width: 512,
-    height: 512,
-    status: "Ongoing",
-    episodes: "N/A",
-    genres: ["Rest", "Sleep"],
-    synopsis: "Shridhuu is resting. No subbing/posting updates scheduled for today. Recharging the soul.",
-    excludeFromLibrary: true
+const loadCatalogData = async () => {
+  try {
+    const [staffRes, seriesRes] = await Promise.all([
+      fetch("data/staff.json"),
+      fetch("data/series-catalog.json"),
+    ]);
+    if (staffRes.ok) staff = await staffRes.json();
+    if (seriesRes.ok) series = await seriesRes.json();
+  } catch (err) {
+    console.warn("Failed to load catalog data:", err.message);
   }
-];
+};
+
 
 const staffGrid = document.querySelector("#staffGrid");
 const seriesGrid = document.querySelector("#seriesGrid");
@@ -589,45 +358,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Scrollspy Observer
-const spyLinks = document.querySelectorAll(".nav-links a");
-const spySections = [
-  document.querySelector(".hero-section"),
-  document.querySelector("#library"),
-  document.querySelector("#schedule"),
-  document.querySelector("#subtitles"),
-  document.querySelector("#nine-heavens"),
-  document.querySelector("#staff"),
-  document.querySelector("#faq")
-].filter(Boolean);
 
-const spyObserverOptions = {
-  root: null,
-  rootMargin: "-25% 0px -55% 0px",
-  threshold: 0
-};
-
-const spyObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      let id = entry.target.id;
-      if (entry.target.classList.contains("hero-section")) {
-        id = "top";
-      }
-
-      spyLinks.forEach(link => {
-        const href = link.getAttribute("href");
-        if (href === `#${id}`) {
-          link.classList.add("is-active");
-        } else {
-          link.classList.remove("is-active");
-        }
-      });
-    }
-  });
-}, spyObserverOptions);
-
-spySections.forEach(sec => spyObserver.observe(sec));
 
 // Library filter text action
 if (librarySearch) {
@@ -702,10 +433,14 @@ const loadTMDBData = async () => {
 };
 
 // Initialise
-loadTMDBData();
-renderSkeletons();
-setTimeout(renderStaff, 600);
-initHeroVideo();
+(async () => {
+  renderSkeletons();
+  await loadCatalogData();
+  await loadTMDBData();
+  renderStaff();
+  initHeroVideo();
+  await loadSchedule();
+})();
 
 const faqDetails = document.querySelectorAll(".faq-list details");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -1034,5 +769,5 @@ const loadSchedule = async () => {
   }
 };
 
-loadSchedule();
+
 

@@ -12,7 +12,15 @@ if (!TMDB_TOKEN) {
 }
 
 const mapData = JSON.parse(fs.readFileSync(mapPath, 'utf8'));
-const results = {};
+
+let results = {};
+if (fs.existsSync(outputPath)) {
+  try {
+    results = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+  } catch {
+    results = {};
+  }
+}
 
 // Auto-detect if TMDB_TOKEN is a v3 API Key (32 hex characters) or a v4 Bearer Token
 const isV3Key = /^[a-f0-9]{32}$/i.test(TMDB_TOKEN.trim());

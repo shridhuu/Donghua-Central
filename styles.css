@@ -2671,3 +2671,28 @@ details.is-closing p {
   font-weight: bold;
 }
 
+/* Discord Widget Panel */
+.discord-widget-panel {
+  margin: clamp(1rem, 2vw, 1.5rem) 0;
+  padding: clamp(1.3rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(17, 23, 46, 0.72);
+  text-align: center;
+}
+
+.discord-widget-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.discord-widget-wrap iframe {
+  width: 100%;
+  max-width: 350px;
+  height: 500px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+

@@ -1,93 +1,111 @@
 # Donghua Central Website
 
-Official single-page website for **Donghua Central** — a community for Chinese animation (donghua) fans featuring handcrafted English subtitles, episode release trackers, discussions, novel/audiobook resources, and the Nine Heavens cultivation RPG server game.
+Official website for **Donghua Central** — a community for Chinese animation (donghua) fans featuring handcrafted English subtitles, episode release trackers, discussions, novel/audiobook resources, and the Nine Heavens cultivation RPG server game.
 
 ## Tech Stack
 This is a zero-dependency static web application designed to load instantly and run directly in the browser:
-- **Core**: Semantic HTML5 markup
+- **Core**: Semantic HTML5 markup generated via lightweight build partials
 - **Styling**: Vanilla CSS3 layout system with dark glassmorphic design variables
 - **Logic**: Vanilla ES6 JavaScript (dependency-free)
 - **Icons**: Loaded via the Lucide Icon CDN (`unpkg`)
 - **Fonts**: Loaded from Google Fonts (`Cinzel`, `Cormorant Garamond`, `Manrope`)
 - **Deployment**: Deployed directly to GitHub Pages via GitHub Actions (`static.yml`)
 
-No build step, framework, bundler, or `node_modules` dependency is required at development or runtime.
+No external bundlers, heavy frameworks, or `node_modules` runtime dependencies required.
 
 ## Directory Structure
 ```
-├── .github/workflows/static.yml   # GitHub Actions static deployment workflow
-├── assets/                        # Image, video, and logo assets
-│   ├── Banner/                    # Mockups, banners, and looping background mp4
-│   ├── Logo/                      # Official server GIF logo
-│   └── shows/                     # Poster images for library series
-├── Template/                      # Design system background textures
-├── 404.html                       # Custom themed 404 page
-├── index.html                     # Primary HTML structure
-├── manifest.json                  # Web App Manifest config
-├── robots.txt                     # Crawler indexation guidelines
-├── sitemap.xml                    # SEO page listing
-├── script.js                      # Custom scrollspy, menus, filters, modals, and dynamic lists
-└── styles.css                     # Custom glassmorphic styling, variables, and animations
+├── .github/workflows/
+│   ├── static.yml           # GitHub Actions static deployment workflow
+│   └── refresh-tmdb.yml     # Automated weekly TMDB metadata refresh
+├── data/
+│   ├── staff.json           # Curated staff directory
+│   ├── series-catalog.json  # Curated series catalog
+│   ├── schedule.json        # Release schedule configuration
+│   ├── series.json          # TMDB metadata overlay output
+│   └── tmdb-map.json        # Mappings from series IDs to TMDB IDs
+├── partials/
+│   └── layout.html          # Shared layout template shell
+├── pages/
+│   ├── home.html            # Home page content fragment
+│   ├── schedule.html        # Release schedule fragment
+│   ├── library.html         # Series library fragment
+│   ├── subtitles.html       # Subtitle process fragment
+│   ├── nine-heavens.html    # Nine Heavens RPG fragment
+│   ├── staff.html           # Staff roster fragment
+│   └── faq.html             # FAQ section fragment
+├── scripts/
+│   ├── build-pages.mjs      # Zero-dependency page generator
+│   └── fetch-tmdb.mjs       # TMDB metadata sync script
+├── assets/                  # Images, banners, logos, and video assets
+├── 404.html                 # Custom themed 404 page
+├── index.html               # Generated home page
+├── schedule.html            # Generated schedule page
+├── library.html             # Generated library page
+├── subtitles.html           # Generated subtitles page
+├── nine-heavens.html        # Generated Nine Heavens page
+├── staff.html               # Generated staff page
+├── faq.html                 # Generated FAQ page
+├── manifest.json            # Web App Manifest config
+├── robots.txt               # Crawler indexation guidelines
+├── sitemap.xml              # Generated sitemap
+├── script.js                # Shared client-side interaction script
+└── styles.css               # Shared glassmorphic stylesheet
 ```
 
-## Local Development
-Since this project requires no build tools or package managers, development is straightforward:
+## Local Development & Building
 1. Clone the repository:
    ```bash
    git clone https://github.com/shridhuu/Donghua-Central.git
    ```
-2. Open `index.html` directly in any web browser, or use a local development server like **Live Server** in VS Code to see live changes.
+2. Build the static `.html` pages and `sitemap.xml`:
+   ```bash
+   node scripts/build-pages.mjs
+   ```
+3. Open `index.html` (or any generated `.html` file) directly in your browser, or use a local development server like **Live Server** in VS Code.
 
 ## Editing Dynamic Data
 
-Both the **Staff Grid** and the **Library Series Grid** are rendered dynamically from plain JavaScript arrays inside [script.js](file:///c:/Users/SHRIDHAR/Desktop/DC/script.js).
-
 ### 1. Adding/Editing Staff Members
-Locate the `staff` array at the top of `script.js`. Add or edit items using this schema:
-```javascript
+Staff data is stored in `data/staff.json`. Add or edit items using this schema:
+```json
 {
-  name: "Staff Name",
-  role: "Staff Role / Title",
-  bio: "Short bio or description.",
-  avatar: "Direct link to Discord avatar image (or null/empty for initials fallback)",
-  discord: "@discord_username"
+  "name": "Staff Name",
+  "role": "Staff Role / Title",
+  "bio": "Short bio or description.",
+  "avatar": "Direct link to Discord avatar image",
+  "discord": "@discord_username"
 }
 ```
-*Warning: Do not use signed temporary Discord attachment links (`https://cdn.discordapp.com/attachments/...`) as their access signatures expire in a few weeks. Always use persistent user CDN endpoints (`https://cdn.discordapp.com/avatars/{id}/{hash}`).*
+*Note: Always use persistent CDN avatar links (`https://cdn.discordapp.com/avatars/{id}/{hash}`).*
 
-
-### 2. Adding/Editing Series in Library
-Locate the `series` array in `script.js`. Add or edit items using this schema:
-```javascript
+### 2. Adding/Editing Series in Catalog
+Series catalog data is stored in `data/series-catalog.json`. Add or edit items using this schema:
+```json
 {
-  id: "unique-series-id",
-  name: "Series Name",
-  image: "assets/shows/ImageName.jpg",
-  width: 1920, // Intrinsic pixel width of the image asset
-  height: 1080, // Intrinsic pixel height of the image asset
-  status: "Ongoing" | "Completed",
-  episodes: "Total episode count or range",
-  genres: ["Genre1", "Genre2"], // Utilized for chip filters
-  synopsis: "Brief description of the storyline."
+  "id": "unique-series-id",
+  "name": "Series Name",
+  "image": "https://image.tmdb.org/t/p/original/...",
+  "width": 1024,
+  "height": 1024,
+  "status": "Ongoing",
+  "episodes": "1+",
+  "genres": ["Cultivation", "Action"],
+  "synopsis": "Brief description of storyline."
 }
 ```
-*Note: Make sure to specify the exact `width` and `height` properties representing the image file's intrinsic dimensions to prevent Cumulative Layout Shift (CLS) on load.*
+*Note: Client-side dynamic rendering fetches `data/staff.json` and `data/series-catalog.json` automatically at runtime.*
 
 ## TMDB Metadata Integration Pipeline
 
 The series library integrates with **The Movie Database (TMDB)** to periodically pull updated details (such as ratings and episode counts) without adding client-side API keys or network latency.
 
 ### 1. Structure
-- **Mapping File (`data/tmdb-map.json`)**: Configures mappings between the local website series IDs and TMDB IDs.
-- **Data output (`data/series.json`)**: Formatted data containing ratings, episodes, and statuses fetched from TMDB, used by the client-side javascript loader.
-- **Fetch script (`scripts/fetch-tmdb.mjs`)**: Node script executing local or CI fetch tasks.
+- **Mapping File (`data/tmdb-map.json`)**: Configures mappings between local series IDs and TMDB IDs.
+- **Data Output (`data/series.json`)**: Formatted data containing ratings, episodes, and statuses fetched from TMDB, merged by the client script.
+- **Fetch Script (`scripts/fetch-tmdb.mjs`)**: Node script executing local or CI fetch tasks.
 
-### 2. Overwrite Protection Flags
-To protect curated fan art or custom synopses from being silently replaced by TMDB defaults during pipeline runs, configure the following boolean flags per-series inside `data/tmdb-map.json`:
-- `"use_tmdb_poster": true | false` (Set to `false` to preserve local custom WebP posters)
-- `"use_tmdb_synopsis": true | false` (Set to `false` to preserve local custom hand-written synopsis)
-
-### 3. Local Execution
+### 2. Local Execution
 1. Obtain a **Read Access Token** or **API Key** from TMDB.
 2. Define the token in your local shell environment:
    - **PowerShell**: `Set-Content env:TMDB_TOKEN 'your_tmdb_token_here'`
@@ -97,5 +115,5 @@ To protect curated fan art or custom synopses from being silently replaced by TM
    node scripts/fetch-tmdb.mjs
    ```
 
-### 4. Automatic Updates
+### 3. Automatic Updates
 A GitHub Actions workflow (`.github/workflows/refresh-tmdb.yml`) is scheduled to run the script weekly, committing updates directly to `data/series.json`.
