@@ -2845,5 +2845,11 @@ details.is-closing p {
   font-size: 0.85rem;
 }
 
+.donate-error {
+  color: var(--dim);
+  font-size: 0.9rem;
+}
+
+
 
 

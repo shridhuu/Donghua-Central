@@ -1,0 +1,25 @@
+[
+  {
+    "id": "kofi",
+    "label": "Ko-fi",
+    "icon": "coffee",
+    "type": "link",
+    "value": "https://ko-fi.com/shridhuu",
+    "cta": "Open Ko-fi"
+  },
+  {
+    "id": "usdt-trc20",
+    "label": "USDT (TRC20)",
+    "icon": "bitcoin",
+    "type": "copy",
+    "value": "TYD1234567890USDTAddressPlaceholder"
+  },
+  {
+    "id": "other-methods",
+    "label": "Other Methods",
+    "icon": "message-circle",
+    "type": "link",
+    "value": "https://discord.gg/donghuacentral",
+    "cta": "Contact Shridhuu on Discord"
+  }
+]
