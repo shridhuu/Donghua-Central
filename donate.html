@@ -3,25 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{PAGE_TITLE}}</title>
-    <meta name="description" content="{{PAGE_DESCRIPTION}}" />
+    <title>Donate | Donghua Central</title>
+    <meta name="description" content="Support Shridhuu directly to help keep Donghua Central's subtitles, hosting, and community running." />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/Logo/logo_32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/Logo/logo_180.png" />
     <link rel="manifest" href="manifest.json" />
-    <link rel="canonical" href="{{CANONICAL_URL}}" />
+    <link rel="canonical" href="https://shridhuu.github.io/Donghua-Central/donate.html" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="{{CANONICAL_URL}}" />
-    <meta property="og:title" content="{{PAGE_TITLE}}" />
-    <meta property="og:description" content="{{PAGE_DESCRIPTION}}" />
+    <meta property="og:url" content="https://shridhuu.github.io/Donghua-Central/donate.html" />
+    <meta property="og:title" content="Donate | Donghua Central" />
+    <meta property="og:description" content="Support Shridhuu directly to help keep Donghua Central's subtitles, hosting, and community running." />
     <meta property="og:image" content="https://shridhuu.github.io/Donghua-Central/assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="{{CANONICAL_URL}}" />
-    <meta property="twitter:title" content="{{PAGE_TITLE}}" />
-    <meta property="twitter:description" content="{{PAGE_DESCRIPTION}}" />
+    <meta property="twitter:url" content="https://shridhuu.github.io/Donghua-Central/donate.html" />
+    <meta property="twitter:title" content="Donate | Donghua Central" />
+    <meta property="twitter:description" content="Support Shridhuu directly to help keep Donghua Central's subtitles, hosting, and community running." />
     <meta property="twitter:image" content="https://shridhuu.github.io/Donghua-Central/assets/Banner/2k%20Discord%20Banner%20-%20Donghua%20Central.png" />
 
     <!-- Google Fonts -->
@@ -69,7 +69,14 @@
 
         <div class="nav-menu" id="navMenu">
           <nav class="nav-links" aria-label="Primary navigation">
-            {{NAV_LINKS}}
+            <a class="" href="index.html">Home</a>
+            <a class="" href="schedule.html">Schedule</a>
+            <a class="" href="library.html">Library</a>
+            <a class="" href="subtitles.html">Subtitles</a>
+            <a class="" href="nine-heavens.html">Nine Heavens</a>
+            <a class="" href="staff.html">Staff</a>
+            <a class="" href="faq.html">FAQ</a>
+            <a class="is-active" href="donate.html">Donate</a>
           </nav>
 
           <a class="discord-btn" href="https://discord.gg/donghuacentral" target="_blank" rel="noopener noreferrer">
@@ -80,7 +87,59 @@
       </header>
 
       <main id="main-content">
-{{MAIN_CONTENT}}
+<section class="panel-band" id="donate">
+  <div class="section-title">
+    <p class="eyebrow">Support The Team</p>
+    <h2>Donate to Shridhuu.</h2>
+  </div>
+  <p class="donate-intro">
+    Donghua Central and its subtitles stay free to use. If you'd like to help cover hosting,
+    tools, and the hours that go into every release, you can support Shridhuu directly
+    through any of the channels below.
+  </p>
+
+  <div class="donate-list">
+    <div class="donate-row">
+      <div class="donate-row-label">
+        <i data-lucide="coffee" aria-hidden="true"></i>
+        <span>Ko-fi</span>
+      </div>
+      <a class="outline-btn" href="https://ko-fi.com/shridhuu" target="_blank" rel="noopener noreferrer">
+        <span>Open Ko-fi</span>
+        <i data-lucide="external-link" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <div class="donate-row">
+      <div class="donate-row-label">
+        <i data-lucide="landmark" aria-hidden="true"></i>
+        <span>UPI</span>
+      </div>
+      <button class="donate-copy" onclick="copyToClipboard('shridhar@upi', this)" aria-label="Copy UPI ID">
+        <span>shridhar@upi</span>
+        <i data-lucide="copy" aria-hidden="true"></i>
+        <span class="copy-tooltip">Copied!</span>
+      </button>
+    </div>
+
+    <div class="donate-row">
+      <div class="donate-row-label">
+        <i data-lucide="bitcoin" aria-hidden="true"></i>
+        <span>USDT (TRC20)</span>
+      </div>
+      <button class="donate-copy" onclick="copyToClipboard('TYD1234567890USDTAddressPlaceholder', this)" aria-label="Copy USDT TRC20 address">
+        <span>TYD1234567890USDTAddressPlaceholder</span>
+        <i data-lucide="copy" aria-hidden="true"></i>
+        <span class="copy-tooltip">Copied!</span>
+      </button>
+    </div>
+  </div>
+
+  <p class="donate-note">
+    Every contribution directly supports server maintenance, raw acquiring, and subtitle release quality.
+  </p>
+</section>
+
       </main>
 
       <footer class="site-footer">
@@ -110,7 +169,7 @@
         </div>
 
         <div class="footer-bottom">
-          <span>&copy; {{YEAR}} Donghua Central. Fan-run, not affiliated with the original creators or publishers.</span>
+          <span>&copy; 2026 Donghua Central. Fan-run, not affiliated with the original creators or publishers.</span>
         </div>
       </footer>
     </div>

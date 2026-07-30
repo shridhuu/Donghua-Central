@@ -3,6 +3,7 @@ import path from "path";
 
 const ROOT = process.cwd();
 const SITE_URL = "https://shridhuu.github.io/Donghua-Central";
+const YEAR = new Date().getFullYear();
 
 const NAV_ITEMS = [
   { id: "home", href: "index.html", label: "Home" },
@@ -12,6 +13,7 @@ const NAV_ITEMS = [
   { id: "nine-heavens", href: "nine-heavens.html", label: "Nine Heavens" },
   { id: "staff", href: "staff.html", label: "Staff" },
   { id: "faq", href: "faq.html", label: "FAQ" },
+  { id: "donate", href: "donate.html", label: "Donate" },
 ];
 
 const PAGES = [
@@ -70,6 +72,14 @@ const PAGES = [
     title: "FAQ | Donghua Central",
     description: "Answers to the questions new Donghua Central members ask first.",
   },
+  {
+    id: "donate",
+    contentFile: "pages/donate.html",
+    outputFile: "donate.html",
+    title: "Donate | Donghua Central",
+    description:
+      "Support Shridhuu directly to help keep Donghua Central's subtitles, hosting, and community running.",
+  },
 ];
 
 const read = (rel) => fs.readFileSync(path.join(ROOT, rel), "utf8");
@@ -92,6 +102,7 @@ for (const page of PAGES) {
     .replaceAll("{{PAGE_DESCRIPTION}}", page.description)
     .replaceAll("{{CANONICAL_URL}}", canonicalFor(page.outputFile))
     .replaceAll("{{NAV_LINKS}}", buildNav(page.id))
+    .replaceAll("{{YEAR}}", YEAR)
     .replaceAll("{{MAIN_CONTENT}}", body);
 
   fs.writeFileSync(path.join(ROOT, page.outputFile), html, "utf8");
