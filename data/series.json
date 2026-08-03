@@ -19,12 +19,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-23",
-      "episode_number": 279
-    },
-    "next_episode": {
       "air_date": "2026-07-30",
       "episode_number": 280
+    },
+    "next_episode": {
+      "air_date": "2026-08-06",
+      "episode_number": 281
     }
   },
   "renegade-immortal": {
@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-26",
-      "episode_number": 151
-    },
-    "next_episode": {
       "air_date": "2026-08-02",
       "episode_number": 152
+    },
+    "next_episode": {
+      "air_date": "2026-08-09",
+      "episode_number": 153
     }
   },
   "mortal-journey": {
@@ -61,8 +61,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.415,
-    "vote_count": 82,
+    "rating": 8.4,
+    "vote_count": 83,
     "episodes": 190,
     "seasons": 1,
     "status": "Returning Series",
@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-25",
-      "episode_number": 184
-    },
-    "next_episode": {
       "air_date": "2026-08-01",
       "episode_number": 185
+    },
+    "next_episode": {
+      "air_date": "2026-08-08",
+      "episode_number": 186
     }
   },
   "slay-the-gods": {
@@ -106,12 +106,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-22",
-      "episode_number": 7
-    },
-    "next_episode": {
       "air_date": "2026-07-29",
       "episode_number": 8
+    },
+    "next_episode": {
+      "air_date": "2026-08-05",
+      "episode_number": 9
     }
   },
   "beyond-times-gaze": {
@@ -127,7 +127,7 @@
     "first_air_date": "2025-12-28",
     "original_name": "光阴之外",
     "tagline": null,
-    "poster_path": "https://image.tmdb.org/t/p/original/vF5RXqbpLTPHwwJWywxx5nZ6nTs.jpg",
+    "poster_path": "https://image.tmdb.org/t/p/original/bBK32swltcUfNeWLTDnCqBipRKs.jpg",
     "overview": "Xu Qing lives in a world where the weak are the prey of the strong, and every day is a fight to survive. The aura of a god has polluted the entire world, including the resources necessary to practice cultivation. As a result, cultivators risk mutation and death when they try to become more powerful. Xu Qing’s goals are simple: he wants to survive, and he wants to find his lost family. He lives in brutal, ruthless, and chaotic circumstances, but he encounters good people that become his close friends. He is not crafty and cowardly like Bai Xiaochun. He is not clever and greedy like Meng Hao. He is his own person.",
     "genres": [
       "Animation",
@@ -135,12 +135,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-25",
-      "episode_number": 32
-    },
-    "next_episode": {
       "air_date": "2026-08-01",
       "episode_number": 33
+    },
+    "next_episode": {
+      "air_date": "2026-08-08",
+      "episode_number": 34
     }
   },
   "blades-guardians": {
@@ -189,12 +189,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-25",
-      "episode_number": 4
-    },
-    "next_episode": {
       "air_date": "2026-08-01",
       "episode_number": 5
+    },
+    "next_episode": {
+      "air_date": "2026-08-08",
+      "episode_number": 6
     }
   },
   "sword-of-coming": {
@@ -236,7 +236,7 @@
     "first_air_date": "2026-04-23",
     "original_name": "将夜",
     "tagline": null,
-    "poster_path": "https://image.tmdb.org/t/p/original/xS1jaBgymz4Smc3IUNDwh9uYxhX.jpg",
+    "poster_path": "https://image.tmdb.org/t/p/original/vI6Kl9L6keOc6tupaYfcyaJeTGz.jpg",
     "overview": null,
     "genres": [
       "Animation",
@@ -244,12 +244,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-07-23",
-      "episode_number": 15
-    },
-    "next_episode": {
       "air_date": "2026-07-30",
       "episode_number": 16
+    },
+    "next_episode": {
+      "air_date": "2026-08-06",
+      "episode_number": 17
     }
   },
   "demon-hunter": {
@@ -265,19 +265,19 @@
     "first_air_date": "2023-06-22",
     "original_name": "沧元图",
     "tagline": null,
-    "poster_path": "https://image.tmdb.org/t/p/original/ryAX7owZUxkpaBU3VbsQdtI2zLz.jpg",
+    "poster_path": "https://image.tmdb.org/t/p/original/vbbWp3NKWQ02djYWLE0KBmbNUch.jpg",
     "overview": "Meng Chuan witnessed his mother killed before his eyes, so he trained very hard hoping to one day avenge her death. But his peaceful days were broken as his wedding engagement being called off, an invasion by foreign forces, the sanctuary fallen into enemy hands… In order to protect the people of Ning City, he picked up his sword and vowed to be the strongest. This is a heavy responsibility and a long journey…",
     "genres": [
       "Animation",
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-24",
-      "episode_number": 87
-    },
-    "next_episode": {
       "air_date": "2026-07-31",
       "episode_number": 88
+    },
+    "next_episode": {
+      "air_date": "2026-08-07",
+      "episode_number": 89
     }
   },
   "swallowed-star": {
@@ -285,7 +285,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.432,
+    "rating": 8.4,
     "vote_count": 37,
     "episodes": 238,
     "seasons": 1,
@@ -301,12 +301,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-20",
-      "episode_number": 233
-    },
-    "next_episode": {
       "air_date": "2026-07-27",
       "episode_number": 234
+    },
+    "next_episode": {
+      "air_date": "2026-08-03",
+      "episode_number": 235
     }
   },
   "above-myriads": {
@@ -328,12 +328,12 @@
       "Animation"
     ],
     "last_episode": {
-      "air_date": "2026-07-21",
-      "episode_number": 9
-    },
-    "next_episode": {
       "air_date": "2026-07-28",
       "episode_number": 10
+    },
+    "next_episode": {
+      "air_date": "2026-08-04",
+      "episode_number": 11
     }
   },
   "tomb-fallen-gods": {
