@@ -17,11 +17,12 @@ No external bundlers, heavy frameworks, or `node_modules` runtime dependencies r
 ```
 ├── .github/workflows/
 │   ├── static.yml           # GitHub Actions static deployment workflow
-│   └── refresh-tmdb.yml     # Automated weekly TMDB metadata refresh
+│   └── refresh-tmdb.yml     # Automated TMDB metadata refresh (every 2 hours)
 ├── data/
 │   ├── staff.json           # Curated staff directory
 │   ├── series-catalog.json  # Curated series catalog
 │   ├── schedule.json        # Release schedule configuration
+│   ├── donate.json          # Donation channels configuration
 │   ├── series.json          # TMDB metadata overlay output
 │   └── tmdb-map.json        # Mappings from series IDs to TMDB IDs
 ├── partials/
@@ -46,6 +47,7 @@ No external bundlers, heavy frameworks, or `node_modules` runtime dependencies r
 ├── nine-heavens.html        # Generated Nine Heavens page
 ├── staff.html               # Generated staff page
 ├── faq.html                 # Generated FAQ page
+├── donate.html              # Generated Donate page
 ├── manifest.json            # Web App Manifest config
 ├── robots.txt               # Crawler indexation guidelines
 ├── sitemap.xml              # Generated sitemap
@@ -96,6 +98,20 @@ Series catalog data is stored in `data/series-catalog.json`. Add or edit items u
 ```
 *Note: Client-side dynamic rendering fetches `data/staff.json` and `data/series-catalog.json` automatically at runtime.*
 
+### 3. Adding/Editing Donation Methods
+Donation channels are stored in `data/donate.json` and rendered by `donate.js` on `donate.html` — add, edit, or remove a channel by editing this file, no HTML changes needed. Schema:
+```json
+{
+  "id": "unique-method-id",
+  "label": "Display Name",
+  "icon": "lucide-icon-name",
+  "type": "copy",
+  "value": "The address, handle, or URL",
+  "cta": "Button text (only used when type is \"link\")"
+}
+```
+*Note: `type` is either `"copy"` (renders a click-to-copy button, for wallet addresses/handles) or `"link"` (renders an outbound button using `cta` as its label, for Ko-fi/PayPal/Discord-style links).*
+
 ## TMDB Metadata Integration Pipeline
 
 The series library integrates with **The Movie Database (TMDB)** to periodically pull updated details (such as ratings and episode counts) without adding client-side API keys or network latency.
@@ -116,4 +132,4 @@ The series library integrates with **The Movie Database (TMDB)** to periodically
    ```
 
 ### 3. Automatic Updates
-A GitHub Actions workflow (`.github/workflows/refresh-tmdb.yml`) is scheduled to run the script weekly, committing updates directly to `data/series.json`.
+A GitHub Actions workflow (`.github/workflows/refresh-tmdb.yml`) is scheduled to run the script every 2 hours, committing updates directly to `data/series.json` only when something actually changed.
