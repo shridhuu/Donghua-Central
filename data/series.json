@@ -272,12 +272,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-07-31",
-      "episode_number": 88
-    },
-    "next_episode": {
       "air_date": "2026-08-07",
       "episode_number": 89
+    },
+    "next_episode": {
+      "air_date": "2026-08-14",
+      "episode_number": 90
     }
   },
   "swallowed-star": {
