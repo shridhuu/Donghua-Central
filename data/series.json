@@ -328,12 +328,12 @@
       "Animation"
     ],
     "last_episode": {
-      "air_date": "2026-08-04",
-      "episode_number": 11
-    },
-    "next_episode": {
       "air_date": "2026-08-11",
       "episode_number": 12
+    },
+    "next_episode": {
+      "air_date": "2026-08-18",
+      "episode_number": 13
     }
   },
   "tomb-fallen-gods": {
