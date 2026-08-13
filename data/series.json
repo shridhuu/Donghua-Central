@@ -106,12 +106,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-05",
-      "episode_number": 9
-    },
-    "next_episode": {
       "air_date": "2026-08-12",
       "episode_number": 10
+    },
+    "next_episode": {
+      "air_date": "2026-08-19",
+      "episode_number": 11
     }
   },
   "beyond-times-gaze": {
