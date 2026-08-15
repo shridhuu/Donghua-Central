@@ -106,13 +106,10 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-12",
-      "episode_number": 10
+      "air_date": "2026-08-13",
+      "episode_number": 15
     },
-    "next_episode": {
-      "air_date": "2026-08-19",
-      "episode_number": 11
-    }
+    "next_episode": null
   },
   "beyond-times-gaze": {
     "tmdb_id": 281233,
