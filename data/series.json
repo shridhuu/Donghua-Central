@@ -132,12 +132,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-08",
-      "episode_number": 34
-    },
-    "next_episode": {
       "air_date": "2026-08-15",
       "episode_number": 35
+    },
+    "next_episode": {
+      "air_date": "2026-08-22",
+      "episode_number": 36
     }
   },
   "blades-guardians": {
