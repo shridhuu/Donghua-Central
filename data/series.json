@@ -241,12 +241,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-13",
-      "episode_number": 18
-    },
-    "next_episode": {
       "air_date": "2026-08-20",
       "episode_number": 19
+    },
+    "next_episode": {
+      "air_date": "2026-08-27",
+      "episode_number": 20
     }
   },
   "demon-hunter": {
