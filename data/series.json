@@ -358,5 +358,33 @@
       "episode_number": 52
     },
     "next_episode": null
+  },
+  "jade-dynasty": {
+    "tmdb_id": 206484,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 8.1,
+    "vote_count": 22,
+    "episodes": 104,
+    "seasons": 4,
+    "status": "Returning Series",
+    "first_air_date": "2022-08-02",
+    "original_name": "诛仙",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/oOy0PskfCQyWwsQVdHyM2PoN9H4.jpg",
+    "overview": "Zhang Xiaofan, who turned into an orphan overnight, becomes a disciple of the Qingyun Sect. After five years of training, he performs well in the Seven Peak Martial Arts Competition. He's sent to the Kongsang Mountain to defeat the evil. During the journey, he and his senior, Lu Xueqi, met with an accident, and got to know and save the lady of the cult, Bi Yao. At the same time, new danger is ahead of him.",
+    "genres": [
+      "Animation",
+      "Action & Adventure"
+    ],
+    "last_episode": {
+      "air_date": "2026-08-21",
+      "episode_number": 3
+    },
+    "next_episode": {
+      "air_date": "2026-08-28",
+      "episode_number": 4
+    }
   }
 }

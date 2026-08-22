@@ -170,13 +170,13 @@
   {
     "id": "jade-dynasty",
     "name": "Jade Dynasty",
-    "image": "https://image.tmdb.org/t/p/original/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
+    "image": "https://image.tmdb.org/t/p/original/oOy0PskfCQyWwsQVdHyM2PoN9H4.jpg",
     "width": 1024,
     "height": 1024,
     "status": "Ongoing",
-    "episodes": "1+",
+    "episodes": "100+",
     "genres": ["Cultivation", "Action", "Fantasy"],
-    "synopsis": "Zhang Xiaofan, an innocent village boy, becomes involved in the conflict between righteous and evil cultivation sects.",
+    "synopsis": "Zhang Xiaofan, an innocent village boy who turned into an orphan overnight, becomes a disciple of the Qingyun Sect and embarks on a dangerous journey through the cultivation world.",
     "currentlyWorkingOn": true,
     "workingOnNote": ""
   },
