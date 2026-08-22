@@ -2747,12 +2747,19 @@ details.is-closing p {
   border: 1px solid var(--line);
 }
 
-/* Hero Subaction Link */
+/* Hero Subaction Links */
+.hero-subactions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
 .hero-subaction {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  margin-top: 1rem;
   color: var(--muted);
   font-size: 0.85rem;
   font-weight: 700;
@@ -2768,6 +2775,12 @@ details.is-closing p {
 .hero-subaction svg {
   width: 16px;
   height: 16px;
+}
+
+.hero-donate-subaction strong {
+  color: var(--highlight);
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* Donate Page */
