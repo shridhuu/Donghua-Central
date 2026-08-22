@@ -6,7 +6,7 @@ METHOD:PUBLISH
 X-WR-CALNAME:Donghua Central Release Schedule
 BEGIN:VEVENT
 UID:swallowed-star-mon@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260824T120000Z
 RRULE:FREQ=WEEKLY;BYDAY=MO
 SUMMARY:[Donghua Central] Swallowed Star
@@ -14,7 +14,7 @@ DESCRIPTION:Releases 3–6h after raws (may delay if busy)
 END:VEVENT
 BEGIN:VEVENT
 UID:shridhuu-needs-rest-tue@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260825T000000Z
 RRULE:FREQ=WEEKLY;BYDAY=TU
 SUMMARY:[Donghua Central] @Shridhuu Needs Rest
@@ -22,7 +22,7 @@ DESCRIPTION:No subbing or posting today\, I need rest
 END:VEVENT
 BEGIN:VEVENT
 UID:shridhuu-needs-rest-wed@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260826T000000Z
 RRULE:FREQ=WEEKLY;BYDAY=WE
 SUMMARY:[Donghua Central] @Shridhuu Needs Rest
@@ -30,7 +30,7 @@ DESCRIPTION:No subbing or posting today\, I need rest
 END:VEVENT
 BEGIN:VEVENT
 UID:perfect-world-thu@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260827T133000Z
 RRULE:FREQ=WEEKLY;BYDAY=TH
 SUMMARY:[Donghua Central] Perfect World
@@ -38,7 +38,7 @@ DESCRIPTION:Releases 3–6h after raws (may delay if busy)
 END:VEVENT
 BEGIN:VEVENT
 UID:shridhuu-needs-rest-fri@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260828T000000Z
 RRULE:FREQ=WEEKLY;BYDAY=FR
 SUMMARY:[Donghua Central] @Shridhuu Needs Rest
@@ -46,7 +46,7 @@ DESCRIPTION:No subbing or posting today\, I need rest
 END:VEVENT
 BEGIN:VEVENT
 UID:good-day-to-ascend-sat@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260822T110000Z
 RRULE:FREQ=WEEKLY;BYDAY=SA
 SUMMARY:[Donghua Central] A Good Day to Ascend
@@ -54,7 +54,7 @@ DESCRIPTION:Releases 3–6h after raws (may delay if busy)
 END:VEVENT
 BEGIN:VEVENT
 UID:mortal-journey-sat@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260822T120000Z
 RRULE:FREQ=WEEKLY;BYDAY=SA
 SUMMARY:[Donghua Central] A Record of a Mortal's Journey to Immortality
@@ -62,7 +62,7 @@ DESCRIPTION:Official subs with fixes\, 3–6h after raws
 END:VEVENT
 BEGIN:VEVENT
 UID:renegade-immortal-sun@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260823T150000Z
 RRULE:FREQ=WEEKLY;BYDAY=SU
 SUMMARY:[Donghua Central] Renegade Immortal
@@ -70,7 +70,7 @@ DESCRIPTION:Releases 3–6h after raws (may delay if busy)
 END:VEVENT
 BEGIN:VEVENT
 UID:beyond-times-gaze-sun@donghuacentral
-DTSTAMP:20260822T161230Z
+DTSTAMP:20260822T161640Z
 DTSTART:20260823T100000Z
 RRULE:FREQ=WEEKLY;BYDAY=SU
 SUMMARY:[Donghua Central] Beyond Time's Gaze
