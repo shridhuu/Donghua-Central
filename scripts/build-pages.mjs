@@ -7,13 +7,13 @@ const YEAR = new Date().getFullYear();
 
 const NAV_ITEMS = [
   { id: "home", href: "index.html", label: "Home" },
+  { id: "donate", href: "donate.html", label: "Donate" },
   { id: "schedule", href: "schedule.html", label: "Schedule" },
   { id: "library", href: "library.html", label: "Library" },
   { id: "subtitles", href: "subtitles.html", label: "Subtitles" },
   { id: "nine-heavens", href: "nine-heavens.html", label: "Nine Heavens" },
   { id: "staff", href: "staff.html", label: "Staff" },
   { id: "faq", href: "faq.html", label: "FAQ" },
-  { id: "donate", href: "donate.html", label: "Donate" },
 ];
 
 const PAGES = [
