@@ -8,7 +8,9 @@
     "status": "Ongoing",
     "episodes": "170+",
     "genres": ["Cultivation", "Action", "Fantasy"],
-    "synopsis": "Shi Hao, a born genius from a ruined clan, climbs the path of cultivation to uncover deep secrets of the universe while fighting off enemies in a vast, dangerous world."
+    "synopsis": "Shi Hao, a born genius from a ruined clan, climbs the path of cultivation to uncover deep secrets of the universe while fighting off enemies in a vast, dangerous world.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 274"
   },
   {
     "id": "renegade-immortal",
@@ -19,7 +21,9 @@
     "status": "Ongoing",
     "episodes": "90+",
     "genres": ["Cultivation", "Action", "Dark Fantasy"],
-    "synopsis": "Wang Lin, mocked for his lack of talent, acquires a mysterious bead. With iron resolve, he walks a bloody path to ascendancy and protect what remains of his soul."
+    "synopsis": "Wang Lin, mocked for his lack of talent, acquires a mysterious bead. With iron resolve, he walks a bloody path to ascendancy and protect what remains of his soul.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 149"
   },
   {
     "id": "mortal-journey",
@@ -52,7 +56,9 @@
     "status": "Ongoing",
     "episodes": "30+",
     "genres": ["Cultivation", "Mystery", "Fantasy"],
-    "synopsis": "Xu Qing lives in a world corrupted by the gaze of an ancient god. Desperate to survive, he uses stealth, poison, and a shadow artifact to hunt beasts and rise through the ranks."
+    "synopsis": "Xu Qing lives in a world corrupted by the gaze of an ancient god. Desperate to survive, he uses stealth, poison, and a shadow artifact to hunt beasts and rise through the ranks.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 1"
   },
   {
     "id": "blades-guardians",
@@ -60,10 +66,12 @@
     "image": "https://image.tmdb.org/t/p/original/ck4VbauqthkMldF661byC693ify.jpg",
     "width": 1054,
     "height": 1492,
-    "status": "Ongoing",
+    "status": "Completed",
     "episodes": "20+",
     "genres": ["Action", "Historical", "Martial Arts"],
-    "synopsis": "Dao Ma, a powerful mercenary indebted to the court, escorts a mysterious traveler to the capital Chang'an, facing lethal martial experts and political schemes along the way."
+    "synopsis": "Dao Ma, a powerful mercenary indebted to the court, escorts a mysterious traveler to the capital Chang'an, facing lethal martial experts and political schemes along the way.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "Season 2 — Completed"
   },
   {
     "id": "good-day-to-ascend",
@@ -74,7 +82,9 @@
     "status": "Ongoing",
     "episodes": "1+",
     "genres": ["Cultivation", "Action", "Fantasy"],
-    "synopsis": "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal."
+    "synopsis": "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 1"
   },
   {
     "id": "sword-of-coming",
@@ -118,7 +128,9 @@
     "status": "Ongoing",
     "episodes": "1+",
     "genres": ["Sci-Fi", "Cultivation", "Action"],
-    "synopsis": "Luo Feng strives to protect his family and defend Earth against giant mutated monsters in a post-apocalyptic world, discovering the cosmic origins of cultivation."
+    "synopsis": "Luo Feng strives to protect his family and defend Earth against giant mutated monsters in a post-apocalyptic world, discovering the cosmic origins of cultivation.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 233"
   },
   {
     "id": "above-myriads",
@@ -141,6 +153,32 @@
     "episodes": "1+",
     "genres": ["Cultivation", "Mystery", "Fantasy"],
     "synopsis": "Chen Nan resurrects from his grave after ten thousand years in a world where gods and demons have fallen. He seeks to uncover the truth behind his death and the demise of the divine."
+  },
+  {
+    "id": "guan",
+    "name": "GuAn",
+    "image": "https://image.tmdb.org/t/p/original/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Action"],
+    "synopsis": "GuAn follows an ancient cultivator battling ancient techniques and sect rivalries.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 1"
+  },
+  {
+    "id": "jade-dynasty",
+    "name": "Jade Dynasty",
+    "image": "https://image.tmdb.org/t/p/original/qy60bm9admmgpkmcPeW4BvRjjVm.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "Zhang Xiaofan, an innocent village boy, becomes involved in the conflict between righteous and evil cultivation sects.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": ""
   },
   {
     "id": "shridhuu-needs-rest",

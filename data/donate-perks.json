@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Donor Role",
+    "description": "A dedicated role in the Discord server, so everyone can see you help keep things running.",
+    "icon": "badge-check"
+  },
+  {
+    "title": "Name In Credits",
+    "description": "Your name or handle listed on the site's About page.",
+    "icon": "star"
+  },
+  {
+    "title": "Early Access",
+    "description": "Early access to select releases before they're posted publicly.",
+    "icon": "clock"
+  }
+]

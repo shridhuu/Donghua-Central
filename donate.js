@@ -48,3 +48,30 @@
     if (window.lucide) window.lucide.createIcons();
   }
 })();
+
+(async () => {
+  const perksList = document.querySelector("#donatePerks");
+  if (!perksList) return; // only present on donate.html — safe no-op on every other page
+
+  const renderPerk = (perk) => `
+    <div class="perk-card">
+      <i data-lucide="${perk.icon || "gift"}" aria-hidden="true"></i>
+      <h4>${perk.title}</h4>
+      <p>${perk.description}</p>
+    </div>
+  `;
+
+  try {
+    const res = await fetch("data/donate-perks.json");
+    if (!res.ok) throw new Error("data/donate-perks.json not found");
+    const perks = await res.json();
+    if (perks.length === 0) return; // no perks configured — section stays hidden
+
+    perksList.innerHTML = perks.map(renderPerk).join("");
+    document.querySelector("#donatePerksWrap")?.removeAttribute("hidden");
+  } catch (err) {
+    console.warn("Failed to load donor perks:", err.message);
+  } finally {
+    if (window.lucide) window.lucide.createIcons();
+  }
+})();

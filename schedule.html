@@ -94,6 +94,16 @@
     <p class="section-subtitle">When new episodes drop, tracked in your local time.</p>
   </div>
 
+  <div class="schedule-info">
+    <ul>
+      <li>Release times are stored in UTC and shown here in <strong>your local time zone</strong>, converted automatically by your browser.</li>
+      <li>Countdowns update live — no need to refresh the page.</li>
+      <li>Times are approximate; check each card's note for typical delay windows.</li>
+      <li>Non-Weekly and Tentative entries don't have a fixed time, so they're not included in the calendar feed below.</li>
+      <li>Subscribe to this schedule in your calendar app via the <a href="schedule.ics">iCal feed</a>.</li>
+    </ul>
+  </div>
+
   <div class="day-tabs" role="tablist" aria-label="Schedule day selector" id="dayTabs">
     <!-- populated by JS: one button per day -->
   </div>
@@ -130,6 +140,12 @@
             <a href="https://discord.gg/donghuacentral" target="_blank" rel="noopener noreferrer">Join Discord</a>
             <a href="donate.html">Donate</a>
           </nav>
+
+          <nav class="footer-links" aria-label="More">
+            <span class="footer-links-title">More</span>
+            <a href="about.html">About</a>
+            <a href="terms.html">Terms of Republishing</a>
+          </nav>
         </div>
 
         <div class="footer-bottom">
@@ -162,5 +178,6 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="script.js"></script>
     <script src="donate.js"></script>
+    <script src="about.js"></script>
   </body>
 </html>

@@ -23,6 +23,7 @@ No external bundlers, heavy frameworks, or `node_modules` runtime dependencies r
 │   ├── series-catalog.json  # Curated series catalog
 │   ├── schedule.json        # Release schedule configuration
 │   ├── donate.json          # Donation channels configuration
+│   ├── donate-perks.json    # Donor perks configuration
 │   ├── series.json          # TMDB metadata overlay output
 │   └── tmdb-map.json        # Mappings from series IDs to TMDB IDs
 ├── partials/
@@ -34,7 +35,10 @@ No external bundlers, heavy frameworks, or `node_modules` runtime dependencies r
 │   ├── subtitles.html       # Subtitle process fragment
 │   ├── nine-heavens.html    # Nine Heavens RPG fragment
 │   ├── staff.html           # Staff roster fragment
-│   └── faq.html             # FAQ section fragment
+│   ├── faq.html             # FAQ section fragment
+│   ├── donate.html          # Donate section fragment
+│   ├── terms.html            # Terms of Republishing fragment
+│   └── about.html           # About section fragment
 ├── scripts/
 │   ├── build-pages.mjs      # Zero-dependency page generator
 │   └── fetch-tmdb.mjs       # TMDB metadata sync script
@@ -48,10 +52,15 @@ No external bundlers, heavy frameworks, or `node_modules` runtime dependencies r
 ├── staff.html               # Generated staff page
 ├── faq.html                 # Generated FAQ page
 ├── donate.html              # Generated Donate page
+├── terms.html               # Generated Terms page
+├── about.html               # Generated About page
 ├── manifest.json            # Web App Manifest config
 ├── robots.txt               # Crawler indexation guidelines
 ├── sitemap.xml              # Generated sitemap
+├── schedule.ics             # Generated iCal schedule feed
 ├── script.js                # Shared client-side interaction script
+├── donate.js                # Client-side donation & perks loader
+├── about.js                 # Client-side working-on loader
 └── styles.css               # Shared glassmorphic stylesheet
 ```
 
@@ -60,7 +69,7 @@ No external bundlers, heavy frameworks, or `node_modules` runtime dependencies r
    ```bash
    git clone https://github.com/shridhuu/Donghua-Central.git
    ```
-2. Build the static `.html` pages and `sitemap.xml`:
+2. Build the static `.html` pages, `sitemap.xml`, and `schedule.ics`:
    ```bash
    node scripts/build-pages.mjs
    ```
@@ -93,7 +102,9 @@ Series catalog data is stored in `data/series-catalog.json`. Add or edit items u
   "status": "Ongoing",
   "episodes": "1+",
   "genres": ["Cultivation", "Action"],
-  "synopsis": "Brief description of storyline."
+  "synopsis": "Brief description of storyline.",
+  "currentlyWorkingOn": true,
+  "workingOnNote": "from Episode 1"
 }
 ```
 *Note: Client-side dynamic rendering fetches `data/staff.json` and `data/series-catalog.json` automatically at runtime.*
@@ -111,6 +122,16 @@ Donation channels are stored in `data/donate.json` and rendered by `donate.js` o
 }
 ```
 *Note: `type` is either `"copy"` (renders a click-to-copy button, for wallet addresses/handles) or `"link"` (renders an outbound button using `cta` as its label, for Ko-fi/PayPal/Discord-style links).*
+
+### 4. Adding/Editing Donor Perks
+Donor perks are stored in `data/donate-perks.json` and rendered by `donate.js` on `donate.html`. Schema:
+```json
+{
+  "title": "Perk Title",
+  "description": "Short perk description.",
+  "icon": "lucide-icon-name"
+}
+```
 
 ## TMDB Metadata Integration Pipeline
 

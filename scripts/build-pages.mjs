@@ -80,9 +80,80 @@ const PAGES = [
     description:
       "Support Shridhuu directly to help keep Donghua Central's subtitles, hosting, and community running.",
   },
+  {
+    id: "terms",
+    contentFile: "pages/terms.html",
+    outputFile: "terms.html",
+    title: "Terms of Republishing | Donghua Central",
+    description:
+      "Rules for redistributing Donghua Central's subtitle releases elsewhere: credit requirements, no paywalling, and courtesy guidelines.",
+  },
+  {
+    id: "about",
+    contentFile: "pages/about.html",
+    outputFile: "about.html",
+    title: "About | Donghua Central",
+    description: "The person behind Donghua Central, what's currently being worked on, and the tools the site runs on.",
+  },
 ];
 
 const read = (rel) => fs.readFileSync(path.join(ROOT, rel), "utf8");
+
+const scheduleData = JSON.parse(read("data/schedule.json"));
+const catalog = JSON.parse(read("data/series-catalog.json"));
+
+const DAY_TO_ICAL = {
+  sunday: "SU", monday: "MO", tuesday: "TU", wednesday: "WE",
+  thursday: "TH", friday: "FR", saturday: "SA",
+};
+
+const pad2 = (n) => String(n).padStart(2, "0");
+
+const escapeICS = (text) =>
+  String(text).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\n/g, "\\n");
+
+const buildICS = () => {
+  const now = new Date();
+  const dtstamp = `${now.getUTCFullYear()}${pad2(now.getUTCMonth() + 1)}${pad2(now.getUTCDate())}T${pad2(now.getUTCHours())}${pad2(now.getUTCMinutes())}${pad2(now.getUTCSeconds())}Z`;
+  const dayIndexOf = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+
+  const events = scheduleData
+    .filter((item) => DAY_TO_ICAL[item.day]) // skip nonweekly/tentative — no fixed recurrence
+    .map((item) => {
+      const show = catalog.find((s) => s.id === item.showId);
+      const title = show ? show.name : item.showId;
+      const [h, m] = item.releaseTimeUTC.split(":").map(Number);
+
+      // Anchor DTSTART on the next occurrence of that weekday so the RRULE starts correctly
+      const anchor = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), h, m, 0));
+      let diff = dayIndexOf.indexOf(item.day) - now.getUTCDay();
+      if (diff < 0) diff += 7;
+      anchor.setUTCDate(anchor.getUTCDate() + diff);
+      const dtstart = `${anchor.getUTCFullYear()}${pad2(anchor.getUTCMonth() + 1)}${pad2(anchor.getUTCDate())}T${pad2(h)}${pad2(m)}00Z`;
+
+      return [
+        "BEGIN:VEVENT",
+        `UID:${item.id}@donghuacentral`,
+        `DTSTAMP:${dtstamp}`,
+        `DTSTART:${dtstart}`,
+        `RRULE:FREQ=WEEKLY;BYDAY=${DAY_TO_ICAL[item.day]}`,
+        `SUMMARY:${escapeICS(`[${item.group}] ${title}`)}`,
+        item.note ? `DESCRIPTION:${escapeICS(item.note)}` : null,
+        "END:VEVENT",
+      ].filter(Boolean).join("\r\n");
+    });
+
+  return [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Donghua Central//Release Schedule//EN",
+    "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH",
+    `X-WR-CALNAME:${escapeICS("Donghua Central Release Schedule")}`,
+    ...events,
+    "END:VCALENDAR",
+  ].join("\r\n") + "\r\n";
+};
 
 const buildNav = (activeId) =>
   NAV_ITEMS.map(
@@ -119,3 +190,6 @@ const urlEntries = PAGES.map((page) => {
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
 fs.writeFileSync(path.join(ROOT, "sitemap.xml"), sitemap, "utf8");
 console.log("Built sitemap.xml");
+
+fs.writeFileSync(path.join(ROOT, "schedule.ics"), buildICS(), "utf8");
+console.log("Built schedule.ics");

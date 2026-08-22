@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 133" width="120" height="16">
+  <defs>
+    <linearGradient id="tmdbGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#90cea1" />
+      <stop offset="50%" stop-color="#3cb2d0" />
+      <stop offset="100%" stop-color="#01b4e4" />
+    </linearGradient>
+  </defs>
+  <rect width="185" height="133" rx="16" fill="#032541"/>
+  <text x="25" y="90" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="64" fill="url(#tmdbGradient)">TMDB</text>
+</svg>
