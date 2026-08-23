@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-15",
-      "episode_number": 187
-    },
-    "next_episode": {
       "air_date": "2026-08-22",
       "episode_number": 188
+    },
+    "next_episode": {
+      "air_date": "2026-08-29",
+      "episode_number": 189
     }
   },
   "slay-the-gods": {
