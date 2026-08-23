@@ -76,13 +76,13 @@
   {
     "id": "good-day-to-ascend",
     "name": "A Good Day to Ascend",
-    "image": "https://image.tmdb.org/t/p/original/5NKojVuw2Jf0dT9nSgGPlLiBQV5.jpg",
+    "image": "https://image.tmdb.org/t/p/original/x2pQPKj5EeXPxw7VCSq1WjCEJgL.jpg",
     "width": 1024,
     "height": 1024,
     "status": "Ongoing",
     "episodes": "1+",
     "genres": ["Cultivation", "Action", "Fantasy"],
-    "synopsis": "A young man finds himself crossing paths with bizarre cultivators and ascension tribulations. Armed with quick wit and luck, he navigates the journey of becoming immortal.",
+    "synopsis": "In chaotic times of demons and Netherworld, snake-catcher Xu Ying kills a corrupt god and embarks on a dangerous escape across realms.",
     "currentlyWorkingOn": true,
     "workingOnNote": "from Episode 1"
   },
@@ -157,7 +157,7 @@
   {
     "id": "guan",
     "name": "GuAn",
-    "image": "https://image.tmdb.org/t/p/original/dShQsQFLSivwCIRjC7crsnznPXY.jpg",
+    "image": "https://image.tmdb.org/t/p/original/hizh0OcUTNFJzSxPH0jtHyWNDCi.jpg",
     "width": 1024,
     "height": 1024,
     "status": "Ongoing",
@@ -178,7 +178,33 @@
     "genres": ["Cultivation", "Action", "Fantasy"],
     "synopsis": "Zhang Xiaofan, an innocent village boy who turned into an orphan overnight, becomes a disciple of the Qingyun Sect and embarks on a dangerous journey through the cultivation world.",
     "currentlyWorkingOn": true,
-    "workingOnNote": ""
+    "workingOnNote": "from Episode 1"
+  },
+  {
+    "id": "the-great-ruler",
+    "name": "The Great Ruler",
+    "image": "https://image.tmdb.org/t/p/original/6eI62O2pqkvwqjhLGd7EOHIPjq7.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "80+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "In a vast world where planes converge, Mu Chen emerges from the Great Thousand World to forge his own legend towards becoming the Great Ruler.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 1"
+  },
+  {
+    "id": "golden-curse",
+    "name": "Golden Curse",
+    "image": "https://image.tmdb.org/t/p/original/mCrTWs2VDsg4cV7j12ykJeDG85a.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "1+",
+    "genres": ["Cultivation", "Supernatural", "Action"],
+    "synopsis": "Dou Zhanlong, history's sinister God of Wealth, defies fate and breaks free from an endless cycle of reincarnation in a world of secret occult arts.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 1"
   },
   {
     "id": "shridhuu-needs-rest",

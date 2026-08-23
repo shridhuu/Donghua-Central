@@ -386,5 +386,91 @@
       "air_date": "2026-08-28",
       "episode_number": 4
     }
+  },
+  "guan": {
+    "tmdb_id": 303287,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 10,
+    "vote_count": 1,
+    "episodes": 26,
+    "seasons": 1,
+    "status": "Returning Series",
+    "first_air_date": "2026-07-28",
+    "original_name": "一斩苍穹",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/hizh0OcUTNFJzSxPH0jtHyWNDCi.jpg",
+    "overview": null,
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Drama"
+    ],
+    "last_episode": {
+      "air_date": "2026-08-18",
+      "episode_number": 5
+    },
+    "next_episode": {
+      "air_date": "2026-08-25",
+      "episode_number": 6
+    }
+  },
+  "the-great-ruler": {
+    "tmdb_id": 226045,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 9.1,
+    "vote_count": 8,
+    "episodes": 104,
+    "seasons": 1,
+    "status": "Returning Series",
+    "first_air_date": "2023-06-30",
+    "original_name": "大主宰",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/6eI62O2pqkvwqjhLGd7EOHIPjq7.jpg",
+    "overview": "In the vast world, planes converge and numerous races thrive. A gathering of extraordinary talents unfolds, where one after another, supreme beings from the lower planes come forth. In this boundless realm, they weave captivating legends that inspire admiration, pursuing the path to dominance.",
+    "genres": [
+      "Animation",
+      "Action & Adventure"
+    ],
+    "last_episode": {
+      "air_date": "2026-08-21",
+      "episode_number": 87
+    },
+    "next_episode": {
+      "air_date": "2026-08-28",
+      "episode_number": 88
+    }
+  },
+  "golden-curse": {
+    "tmdb_id": 330609,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 0,
+    "vote_count": null,
+    "episodes": 16,
+    "seasons": 1,
+    "status": "Returning Series",
+    "first_air_date": "2026-08-16",
+    "original_name": "财神窦占龙",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/mCrTWs2VDsg4cV7j12ykJeDG85a.jpg",
+    "overview": "Following the success of “Candle in the Tomb”, Tianxia Bachang returns with a dark, adult-oriented folk legend that blends the ordinary world with eerie supernatural realms, reinventing the aesthetics of Chinese horror. In a world of thirty-six secret schools and seventy-two occult arts, the art of “Treasure Hunting” reigns supreme, allowing those who master it to tap into the forces of heaven and earth in pursuit of fortune. Follow Dou Zhanlong, history’s most sinister “God of Wealth,” as he defies fate, rewrites his destiny, and breaks free from an endless cycle of reincarnation.",
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Drama"
+    ],
+    "last_episode": {
+      "air_date": "2026-08-16",
+      "episode_number": 3
+    },
+    "next_episode": {
+      "air_date": "2026-08-23",
+      "episode_number": 4
+    }
   }
 }

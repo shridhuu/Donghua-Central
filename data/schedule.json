@@ -13,14 +13,17 @@
     ]
   },
   {
-    "id": "shridhuu-needs-rest-tue",
-    "showId": "shridhuu-needs-rest",
+    "id": "guan-tue",
+    "showId": "guan",
     "day": "tuesday",
-    "releaseTimeUTC": "00:00",
+    "releaseTimeUTC": "12:00",
     "group": "Donghua Central",
-    "note": "No subbing or posting today, I need rest",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
-      "Rest"
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
     ]
   },
   {
@@ -49,14 +52,31 @@
     ]
   },
   {
-    "id": "shridhuu-needs-rest-fri",
-    "showId": "shridhuu-needs-rest",
+    "id": "jade-dynasty-fri",
+    "showId": "jade-dynasty",
     "day": "friday",
-    "releaseTimeUTC": "00:00",
+    "releaseTimeUTC": "10:00",
     "group": "Donghua Central",
-    "note": "No subbing or posting today, I need rest",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
-      "Rest"
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
+    ]
+  },
+  {
+    "id": "the-great-ruler-fri",
+    "showId": "the-great-ruler",
+    "day": "friday",
+    "releaseTimeUTC": "12:00",
+    "group": "Donghua Central",
+    "note": "Releases 3–6h after raws (may delay if busy)",
+    "tags": [
+      "Softsubs",
+      "Weekly",
+      "1080P",
+      "4K"
     ]
   },
   {
@@ -74,14 +94,27 @@
     ]
   },
   {
-    "id": "mortal-journey-sat",
-    "showId": "mortal-journey",
+    "id": "beyond-times-gaze-sat",
+    "showId": "beyond-times-gaze",
     "day": "saturday",
     "releaseTimeUTC": "12:00",
     "group": "Donghua Central",
-    "note": "Official subs with fixes, 3–6h after raws",
+    "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
-      "Official Subs",
+      "Softsubs",
+      "Weekly",
+      "1080P"
+    ]
+  },
+  {
+    "id": "golden-curse-sun",
+    "showId": "golden-curse",
+    "day": "sunday",
+    "releaseTimeUTC": "10:00",
+    "group": "Donghua Central",
+    "note": "Releases 3–6h after raws (may delay if busy)",
+    "tags": [
+      "Softsubs",
       "Weekly",
       "1080P",
       "4K"
@@ -99,19 +132,6 @@
       "Weekly",
       "1080P",
       "4K"
-    ]
-  },
-  {
-    "id": "beyond-times-gaze-sun",
-    "showId": "beyond-times-gaze",
-    "day": "sunday",
-    "releaseTimeUTC": "10:00",
-    "group": "Donghua Central",
-    "note": "Releases 3–6h after raws (may delay if busy)",
-    "tags": [
-      "Softsubs",
-      "Weekly",
-      "1080P"
     ]
   }
 ]
