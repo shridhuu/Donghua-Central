@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-08-16",
-      "episode_number": 154
-    },
-    "next_episode": {
       "air_date": "2026-08-23",
       "episode_number": 155
+    },
+    "next_episode": {
+      "air_date": "2026-08-30",
+      "episode_number": 156
     }
   },
   "mortal-journey": {
