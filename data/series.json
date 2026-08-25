@@ -282,8 +282,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.561,
-    "vote_count": 41,
+    "rating": 8.5,
+    "vote_count": 42,
     "episodes": 238,
     "seasons": 1,
     "status": "Returning Series",
@@ -298,13 +298,10 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-08-17",
-      "episode_number": 237
-    },
-    "next_episode": {
       "air_date": "2026-08-24",
       "episode_number": 238
-    }
+    },
+    "next_episode": null
   },
   "above-myriads": {
     "tmdb_id": 325040,
