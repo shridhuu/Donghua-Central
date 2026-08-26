@@ -8,11 +8,46 @@
     "cta": "Open Ko-fi"
   },
   {
+    "id": "binance-id",
+    "label": "Binance ID",
+    "icon": "wallet",
+    "type": "copy",
+    "value": "1056725256"
+  },
+  {
     "id": "usdt-trc20",
     "label": "USDT (TRC20)",
+    "icon": "coins",
+    "type": "copy",
+    "value": "TEwCBpydE5T2sg7GAmRWTfp6YoHNQxjkGB"
+  },
+  {
+    "id": "usdt-bep20",
+    "label": "USDT (BEP20)",
+    "icon": "coins",
+    "type": "copy",
+    "value": "0x02bfbddda8088a34c66ec4083b93e44a2811e186"
+  },
+  {
+    "id": "solana",
+    "label": "Solana (SOL)",
+    "icon": "zap",
+    "type": "copy",
+    "value": "4kjuTvZFWTcc7Xi4BCWuZ7ohBSzKG4N2FGnVxG2ZE39o"
+  },
+  {
+    "id": "bitcoin",
+    "label": "Bitcoin (BTC)",
     "icon": "bitcoin",
     "type": "copy",
-    "value": "TYD1234567890USDTAddressPlaceholder"
+    "value": "17qtb6zNXH19kh6GgZKfgQ2Dq6kjZfXzSq"
+  },
+  {
+    "id": "litecoin",
+    "label": "Litecoin (LTC)",
+    "icon": "coins",
+    "type": "copy",
+    "value": "Lf2yTzovtS5wat1obWAmGtKftHb8JzuaGm"
   },
   {
     "id": "other-methods",
