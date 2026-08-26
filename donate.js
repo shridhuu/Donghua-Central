@@ -53,6 +53,8 @@
   const perksList = document.querySelector("#donatePerks");
   if (!perksList) return; // only present on donate.html — safe no-op on every other page
 
+  if (window.lucide) window.lucide.createIcons();
+
   const renderPerk = (perk) => {
     const bulletsHtml = perk.bullets && perk.bullets.length > 0
       ? `<ul class="perk-bullets">${perk.bullets.map(b => `<li><i data-lucide="check" aria-hidden="true"></i><span>${b}</span></li>`).join("")}</ul>`
@@ -74,7 +76,7 @@
     const res = await fetch("data/donate-perks.json");
     if (!res.ok) throw new Error("data/donate-perks.json not found");
     const perks = await res.json();
-    if (perks.length === 0) return; // no perks configured — section stays hidden
+    if (perks.length === 0) return;
 
     perksList.innerHTML = perks.map(renderPerk).join("");
     document.querySelector("#donatePerksWrap")?.removeAttribute("hidden");
