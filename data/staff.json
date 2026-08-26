@@ -3,49 +3,49 @@
     "name": "Temper",
     "role": "Owner",
     "bio": "Owner of Donghua Central, helping lead the server for the community.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1540757334232400052/image.png?ex=6a8b1d96&is=6a89cc16&hm=cbf9ecf86f573db6556272796fb6222d414c4dc182cbd846b60b957928a0cc2d&",
+    "avatar": "assets/staff/temper.jpg",
     "discord": "@tempershot7"
   },
   {
     "name": "Shridhuu",
     "role": "Developer - Royal Celestial Ancestor - Donghua Archivist - Subtitle Maker",
     "bio": "Developer, subtitle maker, and archivist helping shape Donghua Central's releases, website, and community experience.",
-    "avatar": "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=4096",
+    "avatar": "assets/staff/shridhuu.jpg",
     "discord": "@Shridhuu"
   },
   {
     "name": "Shayne",
     "role": "Grand Envoy - Council of the Nine Heavens",
     "bio": "Grand Envoy and head developer of Nine Heavens, building the cultivation systems that make the server feel alive.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1540757624717451436/image.png?ex=6a8b1ddb&is=6a89cc5b&hm=4d6466aa24f3ae895eaa7bec17ce2eda92dfe1b505f944176fefa2d0eef105f1&",
+    "avatar": "assets/staff/shayne.jpg",
     "discord": "@shayneorok95"
   },
   {
     "name": "Daksha",
     "role": "Imperial Inspector - Grand Envoy",
     "bio": "Imperial Inspector overseeing server operations and staff conduct so Donghua Central stays fair, organized, and welcoming.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1540757174827884654/image.png?ex=6a8b1d70&is=6a89cbf0&hm=47b33686c48ac20516f0d04f914db5572ae4891520498c4ccf5f3c1e62a51737&",
+    "avatar": "assets/staff/daksha.jpg",
     "discord": "@daksha_saint"
   },
   {
     "name": "Ā-Yuán",
     "role": "Grand Envoy",
     "bio": "Grand Envoy, donghua enjoyer, and active discussion voice who debates, recommends, and helps wherever needed.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1540757446539346031/image.png?ex=6a8b1db1&is=6a89cc31&hm=c599852427853d8c8ac2f6dcd441b4c73c00884899de55040180831f3437b2b2&",
+    "avatar": "assets/staff/ayuan.jpg",
     "discord": "@kevinsaintlacour"
   },
   {
     "name": "Hun Tiandi",
     "role": "Disciplinary Envoy",
     "bio": "Disciplinary Envoy who loves adding emojis to chat, keeps the mood light, and steps in to handle situations whenever active, and Gets Bullied.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1540766578386280599/image.png?ex=6a8b2632&is=6a89d4b2&hm=ace123acd73df5d95c600b67f9491321c8ded1c5835047d414e6573066a16b34&",
+    "avatar": "assets/staff/huntiandi.jpg",
     "discord": "@huntiandi220208"
   },
   {
     "name": "The Great Ruler YZ",
     "role": "Disciplinary Envoy",
     "bio": "Disciplinary Envoy and dedicated The Great Ruler FANGIRL, ensuring fair, active, and balanced chat moderation across the server.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1540767066540482651/image.png?ex=6a8b26a6&is=6a89d526&hm=ef2b8ee1cf130e345a7890ae34735a9a2bde46b72c1bd41e0eb078d2315a55f0&",
+    "avatar": "assets/staff/great_ruler_yz.jpg",
     "discord": "@yzcreats"
   }
 ]

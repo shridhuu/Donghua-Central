@@ -39,8 +39,8 @@ const renderStaffAvatar = (member) => {
   }
 
   return `
-    <img src="${member.avatar}" alt="${member.name}" loading="lazy" onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='grid';" />
-    <div class="staff-fallback" style="display: none;" aria-hidden="true">${initials}</div>
+    <div class="staff-fallback" aria-hidden="true">${initials}</div>
+    <img src="${member.avatar}" alt="${member.name}" loading="lazy" onerror="this.onerror=null;this.remove();" />
   `;
 };
 
