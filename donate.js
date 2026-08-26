@@ -53,13 +53,22 @@
   const perksList = document.querySelector("#donatePerks");
   if (!perksList) return; // only present on donate.html — safe no-op on every other page
 
-  const renderPerk = (perk) => `
-    <div class="perk-card">
-      <i data-lucide="${perk.icon || "gift"}" aria-hidden="true"></i>
-      <h4>${perk.title}</h4>
-      <p>${perk.description}</p>
-    </div>
-  `;
+  const renderPerk = (perk) => {
+    const bulletsHtml = perk.bullets && perk.bullets.length > 0
+      ? `<ul class="perk-bullets">${perk.bullets.map(b => `<li><i data-lucide="check" aria-hidden="true"></i><span>${b}</span></li>`).join("")}</ul>`
+      : "";
+
+    return `
+      <div class="perk-card">
+        <div class="perk-header">
+          <i data-lucide="${perk.icon || "gift"}" aria-hidden="true"></i>
+          <h4>${perk.title}</h4>
+        </div>
+        <p>${perk.description}</p>
+        ${bulletsHtml}
+      </div>
+    `;
+  };
 
   try {
     const res = await fetch("data/donate-perks.json");

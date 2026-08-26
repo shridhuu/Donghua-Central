@@ -1,17 +1,38 @@
 [
   {
-    "title": "Donor Role",
-    "description": "A dedicated role in the Discord server, so everyone can see you help keep things running.",
-    "icon": "badge-check"
+    "title": "Supporter Role",
+    "icon": "tag",
+    "description": "Receive the Supporter Role for approximately 1 month with full access to Donator Perks.",
+    "bullets": [
+      "Receive the Supporter Role for ~1 month.",
+      "Includes 1 month of Donator Perks."
+    ]
   },
   {
-    "title": "Name In Credits",
-    "description": "Your name or handle listed on the site's About page.",
-    "icon": "star"
+    "title": "Exclusive Content",
+    "icon": "tv",
+    "description": "Access to our exclusive supporter-only content channel.",
+    "bullets": [
+      "Access to exclusive supporter content channel.",
+      "Content shared specifically for supporters."
+    ]
   },
   {
-    "title": "Early Access",
-    "description": "Early access to select releases before they're posted publicly.",
-    "icon": "clock"
+    "title": "Translation Requests",
+    "icon": "globe",
+    "description": "Request a translation for any show of your choice.",
+    "bullets": [
+      "Request a translation for any show of your choice.",
+      "Limited to up to 26 episodes per request."
+    ]
+  },
+  {
+    "title": "Supporter Discussions",
+    "icon": "messages-square",
+    "description": "Access to the Supporter-only discussion channel.",
+    "bullets": [
+      "Access to Supporter-only discussion channel.",
+      "Discuss shows, translations, and upcoming projects."
+    ]
   }
 ]

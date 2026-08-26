@@ -2943,43 +2943,121 @@ details.is-closing p {
 /* Donor Perks Section */
 .donate-perks {
   margin-top: 2.5rem;
+  max-width: 860px;
 }
 
 .donate-perks > h3 {
   font-family: "Cinzel", serif;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+  color: var(--heading);
 }
 
 .perks-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  max-width: 720px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  max-width: 860px;
 }
 
 .perk-card {
-  padding: 1.1rem;
+  padding: 1.25rem;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 10px;
   background: rgba(17, 23, 46, 0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: border-color 200ms ease, transform 200ms ease;
 }
 
-.perk-card svg {
+.perk-card:hover {
+  border-color: rgba(255, 215, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.perk-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.perk-header svg {
   width: 22px;
   height: 22px;
   color: var(--highlight);
-  margin-bottom: 0.6rem;
+  flex-shrink: 0;
 }
 
-.perk-card h4 {
-  font-size: 1rem;
-  margin-bottom: 0.35rem;
+.perk-header h4 {
+  font-size: 1.05rem;
   color: var(--text);
+  font-weight: 700;
+  margin: 0;
 }
 
 .perk-card p {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.perk-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.perk-bullets li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.83rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.perk-bullets li svg {
+  width: 14px;
+  height: 14px;
+  color: var(--highlight);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.donate-quote-callout {
+  margin-top: 1.75rem;
+  padding: 1.1rem 1.35rem;
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  border-radius: 8px;
+  background: rgba(255, 215, 0, 0.04);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  max-width: 860px;
+}
+
+.donate-quote-callout .heart-icon {
+  width: 20px;
+  height: 20px;
+  color: #ff4b6e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.donate-quote-callout p {
+  font-size: 0.92rem;
+  color: var(--text);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.donate-quote-callout strong {
+  color: var(--highlight);
 }
 
 /* About Page */
