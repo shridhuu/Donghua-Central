@@ -2943,7 +2943,7 @@ details.is-closing p {
 /* Donor Perks Section */
 .donate-perks {
   margin-top: 2.5rem;
-  max-width: 860px;
+  width: 100%;
 }
 
 .donate-perks > h3 {
@@ -2955,12 +2955,18 @@ details.is-closing p {
 
 .perks-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.25rem;
-  max-width: 860px;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .perks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
   .perks-grid {
     grid-template-columns: 1fr;
   }
@@ -3044,7 +3050,7 @@ details.is-closing p {
   display: flex;
   align-items: flex-start;
   gap: 0.85rem;
-  max-width: 860px;
+  width: 100%;
 }
 
 .donate-quote-callout .heart-icon {
