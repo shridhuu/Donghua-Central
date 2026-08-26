@@ -3,21 +3,21 @@
     "name": "Temper",
     "role": "Owner",
     "bio": "Owner of Donghua Central, helping lead the server for the community.",
-    "avatar": "assets/staff/temper.jpg",
+    "avatar": "assets/staff/temper.png",
     "discord": "@tempershot7"
   },
   {
     "name": "Shridhuu",
     "role": "Developer - Royal Celestial Ancestor - Donghua Archivist - Subtitle Maker",
     "bio": "Developer, subtitle maker, and archivist helping shape Donghua Central's releases, website, and community experience.",
-    "avatar": "assets/staff/shridhuu.jpg",
+    "avatar": "assets/staff/shridhuu.png",
     "discord": "@Shridhuu"
   },
   {
     "name": "Shayne",
     "role": "Grand Envoy - Council of the Nine Heavens",
     "bio": "Grand Envoy and head developer of Nine Heavens, building the cultivation systems that make the server feel alive.",
-    "avatar": "assets/staff/shayne.jpg",
+    "avatar": "assets/staff/shayne.png",
     "discord": "@shayneorok95"
   },
   {
@@ -31,21 +31,28 @@
     "name": "Ā-Yuán",
     "role": "Grand Envoy",
     "bio": "Grand Envoy, donghua enjoyer, and active discussion voice who debates, recommends, and helps wherever needed.",
-    "avatar": "assets/staff/ayuan.jpg",
+    "avatar": "assets/staff/ayuan.png",
     "discord": "@kevinsaintlacour"
-  },
-  {
-    "name": "Hun Tiandi",
-    "role": "Disciplinary Envoy",
-    "bio": "Disciplinary Envoy who loves adding emojis to chat, keeps the mood light, and steps in to handle situations whenever active, and Gets Bullied.",
-    "avatar": "assets/staff/huntiandi.jpg",
-    "discord": "@huntiandi220208"
   },
   {
     "name": "The Great Ruler YZ",
     "role": "Disciplinary Envoy",
     "bio": "Disciplinary Envoy and dedicated The Great Ruler FANGIRL, ensuring fair, active, and balanced chat moderation across the server.",
-    "avatar": "assets/staff/great_ruler_yz.jpg",
+    "avatar": "assets/staff/great_ruler_yz.png",
     "discord": "@yzcreats"
+  },
+  {
+    "name": "Hun Tiandi",
+    "role": "Probationary Envoy",
+    "bio": "Disciplinary Envoy who loves adding emojis to chat, keeps the mood light, and steps in to handle situations whenever active, and Gets Bullied.",
+    "avatar": "assets/staff/huntiandi.png",
+    "discord": "@huntiandi220208"
+  },
+  {
+    "name": "Yun Che's Royal spawn point",
+    "role": "Disciplinary Envoy",
+    "bio": "Nine Heavens Bug catcher, Shayne's nightmare",
+    "avatar": "assets/staff/yun_che_royal.png",
+    "discord": "@z_karen_lp"
   }
 ]
