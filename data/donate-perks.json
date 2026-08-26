@@ -2,10 +2,10 @@
   {
     "title": "Supporter Role",
     "icon": "tag",
-    "description": "Receive the Supporter Role for approximately 1 month with full access to Donator Perks.",
+    "description": "Receive the Supporter Role for approximately 1 month.",
     "bullets": [
-      "Receive the Supporter Role for ~1 month.",
-      "Includes 1 month of Donator Perks."
+      "Receive the Supporter Role for approximately 1 month.",
+      "Includes 1 month of access to all Donator Perks."
     ]
   },
   {
@@ -13,14 +13,14 @@
     "icon": "tv",
     "description": "Access to our exclusive supporter-only content channel.",
     "bullets": [
-      "Access to exclusive supporter content channel.",
-      "Content shared specifically for supporters."
+      "Access to our exclusive supporter-only content channel.",
+      "Get access to content shared specifically for supporters."
     ]
   },
   {
     "title": "Translation Requests",
     "icon": "globe",
-    "description": "Request a translation for any show of your choice.",
+    "description": "Request a translation for any show of your choice ($8.99+ contribution).",
     "bullets": [
       "Donators who contribute $8.99 or more can request a translation for any show of their choice.",
       "Translation requests are limited to up to 26 episodes per request.",
@@ -32,8 +32,8 @@
     "icon": "messages-square",
     "description": "Access to the Supporter-only discussion channel.",
     "bullets": [
-      "Access to Supporter-only discussion channel.",
-      "Discuss shows, translations, and upcoming projects."
+      "Access to the Supporter-only discussion channel.",
+      "A place for supporters to discuss shows, translations, upcoming projects, and more."
     ]
   }
 ]

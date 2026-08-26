@@ -2955,9 +2955,15 @@ details.is-closing p {
 
 .perks-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
   max-width: 860px;
+}
+
+@media (max-width: 768px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .perk-card {

@@ -55,10 +55,15 @@
 
   if (window.lucide) window.lucide.createIcons();
 
+  // If perksList already contains static pre-rendered perk cards, keep them intact
+  if (perksList.children.length > 0) return;
+
   const renderPerk = (perk) => {
     const bulletsHtml = perk.bullets && perk.bullets.length > 0
       ? `<ul class="perk-bullets">${perk.bullets.map(b => `<li><i data-lucide="check" aria-hidden="true"></i><span>${b}</span></li>`).join("")}</ul>`
       : "";
+
+    const descHtml = perk.description ? `<p>${perk.description}</p>` : "";
 
     return `
       <div class="perk-card">
@@ -66,7 +71,7 @@
           <i data-lucide="${perk.icon || "gift"}" aria-hidden="true"></i>
           <h4>${perk.title}</h4>
         </div>
-        <p>${perk.description}</p>
+        ${descHtml}
         ${bulletsHtml}
       </div>
     `;
@@ -76,7 +81,7 @@
     const res = await fetch("data/donate-perks.json");
     if (!res.ok) throw new Error("data/donate-perks.json not found");
     const perks = await res.json();
-    if (perks.length === 0) return;
+    if (!perks || perks.length === 0) return;
 
     perksList.innerHTML = perks.map(renderPerk).join("");
     document.querySelector("#donatePerksWrap")?.removeAttribute("hidden");
