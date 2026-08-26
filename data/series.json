@@ -322,13 +322,10 @@
       "Animation"
     ],
     "last_episode": {
-      "air_date": "2026-08-18",
-      "episode_number": 13
-    },
-    "next_episode": {
       "air_date": "2026-08-25",
       "episode_number": 14
-    }
+    },
+    "next_episode": null
   },
   "tomb-fallen-gods": {
     "tmdb_id": 206343,
