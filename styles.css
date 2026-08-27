@@ -2837,6 +2837,24 @@ details.is-closing p {
   min-width: 140px;
 }
 
+.donate-badge-unavailable {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.15rem 0.55rem;
+  border-radius: 4px;
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #f87171;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.donate-row-disabled {
+  opacity: 0.92;
+  border-color: rgba(239, 68, 68, 0.25);
+}
+
 .donate-copy {
   display: inline-flex;
   align-items: center;

@@ -3,9 +3,10 @@
     "id": "kofi",
     "label": "Ko-fi",
     "icon": "coffee",
-    "type": "link",
-    "value": "https://ko-fi.com/shridhuu",
-    "cta": "Open Ko-fi"
+    "type": "unavailable",
+    "status": "Unavailable for now",
+    "value": "https://discord.gg/donghuacentral",
+    "cta": "Contact @shridhuu on Discord"
   },
   {
     "id": "binance-id",
@@ -55,6 +56,6 @@
     "icon": "message-circle",
     "type": "link",
     "value": "https://discord.gg/donghuacentral",
-    "cta": "Contact Shridhuu on Discord"
+    "cta": "Contact @shridhuu on Discord"
   }
 ]

@@ -5,6 +5,22 @@
   const renderRow = (method) => {
     const icon = method.icon || "circle-dollar-sign";
 
+    if (method.type === "unavailable") {
+      return `
+        <div class="donate-row donate-row-disabled">
+          <div class="donate-row-label">
+            <i data-lucide="${icon}" aria-hidden="true"></i>
+            <span>${method.label}</span>
+            <span class="donate-badge-unavailable">${method.status || "Unavailable for now"}</span>
+          </div>
+          <a class="outline-btn" href="${method.value}" target="_blank" rel="noopener noreferrer">
+            <span>${method.cta || "Contact @shridhuu on Discord"}</span>
+            <i data-lucide="external-link" aria-hidden="true"></i>
+          </a>
+        </div>
+      `;
+    }
+
     if (method.type === "copy") {
       return `
         <div class="donate-row">
