@@ -90,8 +90,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8,
-    "vote_count": 20,
+    "rating": 7.952,
+    "vote_count": 21,
     "episodes": 30,
     "seasons": 2,
     "status": "Returning Series",
@@ -301,7 +301,10 @@
       "air_date": "2026-08-24",
       "episode_number": 238
     },
-    "next_episode": null
+    "next_episode": {
+      "air_date": "2026-08-31",
+      "episode_number": 239
+    }
   },
   "above-myriads": {
     "tmdb_id": 325040,
