@@ -1,6 +1,7 @@
 (async () => {
   const donateList = document.querySelector("#donateList");
   if (!donateList) return; // only present on donate.html — safe no-op on every other page
+  if (donateList.children.length > 0) return; // static content already present — don't fetch-and-clobber it
 
   const renderRow = (method) => {
     const icon = method.icon || "circle-dollar-sign";

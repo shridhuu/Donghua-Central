@@ -183,23 +183,21 @@ const renderSeries = () => {
 
   seriesGrid.innerHTML = filtered.map(item => {
     return `
-      <article class="series-card" data-id="${item.id}" role="button" tabindex="0" aria-label="View details for ${item.name}">
+      <a class="series-card" href="series-${item.id}.html" data-id="${item.id}" aria-label="View details for ${item.name}">
         <div class="series-card-media">
           ${buildPosterMarkup(item, `${item.name} Poster`)}
         </div>
         <span>${item.status}</span>
         <h3>${item.name}</h3>
-      </article>
+      </a>
     `;
   }).join("");
 
   document.querySelectorAll(".series-card").forEach(card => {
-    card.addEventListener("click", () => openModal(card.dataset.id));
-    card.addEventListener("keydown", (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        openModal(card.dataset.id);
-      }
+    card.addEventListener("click", (e) => {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return;
+      e.preventDefault();
+      openModal(card.dataset.id);
     });
   });
 

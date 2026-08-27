@@ -267,8 +267,6 @@ a {
   background: linear-gradient(90deg, transparent, rgba(214, 168, 77, 0.42), transparent);
   content: "";
 }
-  text-decoration: none;
-}
 
 img {
   display: block;
@@ -1596,7 +1594,7 @@ details.is-closing p {
 
 .schedule-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 1.25rem;
 }
 
@@ -2226,6 +2224,19 @@ details.is-closing p {
   background: rgba(30, 33, 53, 0.9);
 }
 
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.back-link:hover {
+  color: var(--highlight);
+}
+
 .modal-body {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -2763,6 +2774,25 @@ details.is-closing p {
   height: 500px;
   border-radius: 12px;
   border: 1px solid var(--line);
+  background: rgba(17, 23, 46, 0.4);
+}
+
+@media (max-width: 640px) {
+  .discord-widget-wrap iframe {
+    height: 400px;
+  }
+}
+
+.discord-widget-fallback {
+  margin-top: 0.75rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--dim);
+}
+
+.discord-widget-fallback a {
+  color: var(--accent);
+  text-decoration: underline;
 }
 
 /* Hero Subaction Links */
@@ -2978,13 +3008,13 @@ details.is-closing p {
   width: 100%;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1180px) {
   .perks-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
   .perks-grid {
     grid-template-columns: 1fr;
   }

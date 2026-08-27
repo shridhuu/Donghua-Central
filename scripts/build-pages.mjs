@@ -76,7 +76,7 @@ const PAGES = [
     id: "donate",
     contentFile: "pages/donate.html",
     outputFile: "donate.html",
-    title: "Donate | Donghua Central",
+    title: "Buy Me a Coffee | Donghua Central",
     description:
       "Support Shridhuu directly to help keep Donghua Central's subtitles, hosting, and community running.",
   },
@@ -88,19 +88,13 @@ const PAGES = [
     description:
       "Rules for redistributing Donghua Central's subtitle releases elsewhere: credit requirements, no paywalling, and courtesy guidelines.",
   },
-  {
-    id: "about",
-    contentFile: "pages/about.html",
-    outputFile: "about.html",
-    title: "About | Donghua Central",
-    description: "The person behind Donghua Central, what's currently being worked on, and the tools the site runs on.",
-  },
 ];
 
 const read = (rel) => fs.readFileSync(path.join(ROOT, rel), "utf8");
 
 const scheduleData = JSON.parse(read("data/schedule.json"));
 const catalog = JSON.parse(read("data/series-catalog.json"));
+const tmdbOverlay = JSON.parse(read("data/series.json"));
 
 const DAY_TO_ICAL = {
   sunday: "SU", monday: "MO", tuesday: "TU", wednesday: "WE",
@@ -155,6 +149,78 @@ const buildICS = () => {
   ].join("\r\n") + "\r\n";
 };
 
+const buildRSS = () => {
+  const now = new Date().toUTCString();
+
+  const items = scheduleData
+    .filter((item) => item.day !== "tentative")
+    .map((item) => {
+      const show = catalog.find((s) => s.id === item.showId);
+      const title = show ? show.name : item.showId;
+      const dayLabel = item.day === "nonweekly" ? "Non-Weekly" : item.day[0].toUpperCase() + item.day.slice(1);
+
+      return [
+        "    <item>",
+        `      <title>${escapeICS(`[${item.group}] ${title} — ${dayLabel}`)}</title>`,
+        `      <link>${SITE_URL}/schedule.html</link>`,
+        `      <guid isPermaLink="false">${item.id}@donghuacentral-schedule</guid>`,
+        `      <pubDate>${now}</pubDate>`,
+        item.note ? `      <description>${escapeICS(item.note)}</description>` : null,
+        "    </item>",
+      ].filter(Boolean).join("\n");
+    });
+
+  return [
+    '<?xml version="1.0" encoding="UTF-8"?>',
+    '<rss version="2.0">',
+    "  <channel>",
+    "    <title>Donghua Central Release Schedule</title>",
+    `    <link>${SITE_URL}/schedule.html</link>`,
+    "    <description>Current weekly release schedule for Donghua Central — refreshed on every deploy, not a log of past releases.</description>",
+    `    <lastBuildDate>${now}</lastBuildDate>`,
+    ...items,
+    "  </channel>",
+    "</rss>",
+  ].join("\n") + "\n";
+};
+
+const seriesDetailBody = (item) => {
+  const tmdbInfo = tmdbOverlay[item.id] || {};
+  const genres = tmdbInfo.genres?.length ? tmdbInfo.genres : item.genres;
+  const synopsis = tmdbInfo.overview && tmdbInfo.use_tmdb_synopsis ? tmdbInfo.overview : item.synopsis;
+  const poster =
+    tmdbInfo.poster_path && tmdbInfo.poster_path.startsWith("http") && tmdbInfo.use_tmdb_poster
+      ? tmdbInfo.poster_path
+      : item.image;
+
+  return `
+<section class="panel-band" id="series-detail">
+  <a class="back-link" href="library.html">&larr; Back to Library</a>
+  <div class="modal-body">
+    <div class="modal-media">
+      <img src="${poster}" alt="${item.name} Poster" width="${item.width || 300}" height="${item.height || 450}" />
+    </div>
+    <div class="modal-info">
+      <h2>${item.name}</h2>
+      ${tmdbInfo.original_name && tmdbInfo.original_name !== item.name ? `<p class="modal-native-name">${tmdbInfo.original_name}</p>` : ""}
+      <div class="modal-meta-row">
+        <span class="modal-badge status-${item.status.toLowerCase()}">${item.status}</span>
+        ${tmdbInfo.first_air_date ? `<span class="modal-year">${tmdbInfo.first_air_date.slice(0, 4)}</span>` : ""}
+        <span class="modal-episodes"><strong>Episodes:</strong> ${item.episodes}</span>
+        ${tmdbInfo.rating ? `<span class="modal-rating"><strong>${tmdbInfo.rating.toFixed(1)}</strong>/10</span>` : ""}
+      </div>
+      <p class="modal-synopsis">${synopsis}</p>
+      <div class="modal-genres">
+        ${genres.map((g) => `<span class="genre-tag">${g}</span>`).join("")}
+      </div>
+      <a class="primary-btn" href="https://discord.gg/donghuacentral" target="_blank" rel="noopener noreferrer">
+        <span>Discuss on Discord</span>
+      </a>
+    </div>
+  </div>
+</section>`;
+};
+
 const buildNav = (activeId) =>
   NAV_ITEMS.map(
     (item) =>
@@ -180,11 +246,28 @@ for (const page of PAGES) {
   console.log(`Built ${page.outputFile}`);
 }
 
-// Regenerate sitemap.xml from the same page list — no more hand-maintained single-entry file
+// Generate static detail pages for each series in library catalog
+const librarySeries = catalog.filter((s) => !s.excludeFromLibrary);
+for (const item of librarySeries) {
+  const outputFile = `series-${item.id}.html`;
+  const html = layout
+    .replaceAll("{{PAGE_TITLE}}", `${item.name} | Donghua Central`)
+    .replaceAll("{{PAGE_DESCRIPTION}}", item.synopsis.slice(0, 155))
+    .replaceAll("{{CANONICAL_URL}}", canonicalFor(outputFile))
+    .replaceAll("{{NAV_LINKS}}", buildNav("library"))
+    .replaceAll("{{YEAR}}", YEAR)
+    .replaceAll("{{MAIN_CONTENT}}", seriesDetailBody(item));
+
+  fs.writeFileSync(path.join(ROOT, outputFile), html, "utf8");
+}
+console.log(`Built ${librarySeries.length} series detail pages`);
+
+// Regenerate sitemap.xml with lastmod dates
+const today = new Date().toISOString().slice(0, 10);
 const urlEntries = PAGES.map((page) => {
   const loc = canonicalFor(page.outputFile);
   const priority = page.id === "home" ? "1.0" : "0.7";
-  return `  <url>\n    <loc>${loc}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
+  return `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }).join("\n");
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urlEntries}\n</urlset>\n`;
@@ -193,3 +276,6 @@ console.log("Built sitemap.xml");
 
 fs.writeFileSync(path.join(ROOT, "schedule.ics"), buildICS(), "utf8");
 console.log("Built schedule.ics");
+
+fs.writeFileSync(path.join(ROOT, "feed.xml"), buildRSS(), "utf8");
+console.log("Built feed.xml");

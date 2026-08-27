@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 133" width="120" height="16">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 40" width="120" height="26">
   <defs>
-    <linearGradient id="tmdbGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="tmdbBrandGradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#90cea1" />
-      <stop offset="50%" stop-color="#3cb2d0" />
       <stop offset="100%" stop-color="#01b4e4" />
     </linearGradient>
   </defs>
-  <rect width="185" height="133" rx="16" fill="#032541"/>
-  <text x="25" y="90" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="64" fill="url(#tmdbGradient)">TMDB</text>
+  <g fill="url(#tmdbBrandGradient)">
+    <path d="M12.047 14.908c-.144-.067-1.127-.47-2.613-.47-1.116 0-1.89.261-2.316.782-.266.326-.412.75-.412 1.22 0 1.258.918 1.942 2.73 2.037.946.05 1.58.196 1.884.437.294.233.44.577.44.98 0 .54-.25.968-.745 1.272-.495.305-1.21.458-2.124.458-1.503 0-2.684-.46-3.51-1.37l-1.47 2.025c1.29 1.34 3.037 2.01 5.244 2.01 1.705 0 3.048-.37 4.028-1.11.98-.74 1.47-1.74 1.47-3 0-1.04-.374-1.874-1.122-2.502-.748-.628-1.92-.993-3.516-1.095-1.01-.065-1.63-.193-1.86-.383-.23-.19-.345-.453-.345-.79 0-.414.21-.735.63-.963.42-.228 1.054-.342 1.902-.342 1.155 0 2.046.25 2.673.75l1.458-2.025c-1.054-.88-2.42-1.32-4.098-1.32zM.001 7.513v2.85h4.155v14.124h3.695V10.363h4.156v-2.85H.001zm15.11 0v16.974h3.695V7.513h-3.695z" transform="translate(0, 4)"/>
+    <text x="32" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="24" letter-spacing="1">TMDB</text>
+  </g>
 </svg>
