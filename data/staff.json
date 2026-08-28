@@ -3,63 +3,63 @@
     "name": "Temper",
     "role": "Sect Master / Owner",
     "bio": "Owner of Donghua Central, helping lead the server for the community.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542152177470930965/image.png?ex=6a9030a2&is=6a8edf22&hm=0b88bdee37a0289c6cf34f42daad69fa991e13bb250a2e29330a848f7bf6ee6b&",
+    "avatar": "assets/staff/Temper.png",
     "discord": "@tempershot7"
   },
   {
     "name": "Shridhuu",
     "role": "Royal Celestial Ancestor - Developer - Donghua Archivist - Subtitle Maker",
     "bio": "Developer, subtitle maker, and archivist helping shape Donghua Central's releases, website, and community experience.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542152050589175908/image.png?ex=6a903084&is=6a8edf04&hm=7f640b6282b9b3383ff3cea528cfbb6e3643e11b87e5c535b5546637595bd886&",
+    "avatar": "assets/staff/Shridhuu.png",
     "discord": "@Shridhuu"
   },
   {
     "name": "Shayne",
     "role": "Grand Elder - Council of the Nine Heavens",
     "bio": "Grand Envoy and head developer of Nine Heavens, building the cultivation systems that make the server feel alive.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542150878528544900/image.png?ex=6a902f6d&is=6a8edded&hm=bb31a08555faf0a0fb81b782149a495849469bad0c3018373d31ac752c614c91&",
+    "avatar": "assets/staff/Shayne.png",
     "discord": "@shayneorok95"
   },
   {
     "name": "Daksha",
     "role": "Imperial Inspector - Grand Envoy",
     "bio": "Imperial Inspector overseeing server operations and staff conduct so Donghua Central stays fair, organized, and welcoming.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542155050879680624/image.png?ex=6a90334f&is=6a8ee1cf&hm=e255b0eccde8aa3ee7ac6d96b51b2421a28d9bb20899967f0fb103299ff0f725&",
+    "avatar": "assets/staff/Daksha.png",
     "discord": "@daksha_saint"
   },
   {
     "name": "Kevin",
     "role": "Grand Envoy",
     "bio": "Grand Envoy, donghua enjoyer, and active discussion voice who debates, recommends, and helps wherever needed.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542152322958753892/image.png?ex=6a9030c5&is=6a8edf45&hm=b0713ea42b0d9bef9cb4c85c59b69fad27d58ca710c22cb74f5e3e2c76300077&",
+    "avatar": "assets/staff/Kevin.png",
     "discord": "@kevinsaintlacour"
   },
   {
     "name": "The Great Ruler YZ",
     "role": "Disciplinary Envoy",
     "bio": "Disciplinary Envoy and dedicated The Great Ruler FANGIRL, ensuring fair, active, and balanced chat moderation across the server.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542151928396648510/image.png?ex=6a903067&is=6a8edee7&hm=27a3677bfc09e9001cf1c6c62e6218a8b53b0ebe9262d018345a6a61762e2f74&",
+    "avatar": "assets/staff/YZ.png",
     "discord": "@yzcreats"
   },
   {
     "name": "Karen",
     "role": "Disciplinary Envoy",
     "bio": "Nine Heavens Bug catcher, Shayne's nightmare",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542151685877669958/image.png?ex=6a90302d&is=6a8edead&hm=7c0c5ff265535330eaea7bfff6590172c4d4e30b2f76af51eb2dc258b7dbae91&",
+    "avatar": "assets/staff/Karen.png",
     "discord": "@z_karen_lp"
   },
   {
     "name": "Hun Tiandi",
     "role": "Probationary Envoy",
     "bio": "Disciplinary Envoy who loves adding emojis to chat, keeps the mood light, and steps in to handle situations whenever active, and Gets Bullied.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542151143709220895/image.png?ex=6a902fac&is=6a8ede2c&hm=5a29ca7b664878236b0326d6abe9229f04b89417dea22ba4540b45430de844cd&",
+    "avatar": "assets/staff/HunTiandi.png",
     "discord": "@huntiandi220208"
   },
   {
     "name": "kaira",
     "role": "Probationary Envoy",
     "bio": "Just a little girl who's passionately curious and love's doing what she loves.",
-    "avatar": "https://cdn.discordapp.com/attachments/1498569155836776490/1542506947859845230/IMG_20260827_201052.jpg?ex=6a917b0a&is=6a90298a&hm=252992518126364ab6300d50bdb48dc32125d2e8a685e36fe6b8ac9840b3c873&",
+    "avatar": "assets/staff/Kaira.png",
     "discord": "@grwskai"
   }
 ]
