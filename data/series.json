@@ -19,12 +19,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-08-20",
-      "episode_number": 283
-    },
-    "next_episode": {
       "air_date": "2026-08-27",
       "episode_number": 284
+    },
+    "next_episode": {
+      "air_date": "2026-09-03",
+      "episode_number": 285
     }
   },
   "renegade-immortal": {
@@ -241,13 +241,10 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-20",
-      "episode_number": 19
-    },
-    "next_episode": {
       "air_date": "2026-08-27",
       "episode_number": 20
-    }
+    },
+    "next_episode": null
   },
   "demon-hunter": {
     "tmdb_id": 229192,
