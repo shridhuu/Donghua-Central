@@ -1,6 +1,7 @@
 (async () => {
   const workingOnList = document.querySelector("#aboutWorkingOn");
   if (!workingOnList) return; // only present on about.html — safe no-op on every other page
+  if (workingOnList.children.length > 0) return; // static pre-rendered list present — don't fetch-and-clobber
 
   try {
     const res = await fetch("data/series-catalog.json");
