@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-22",
-      "episode_number": 188
-    },
-    "next_episode": {
       "air_date": "2026-08-29",
       "episode_number": 189
+    },
+    "next_episode": {
+      "air_date": "2026-09-05",
+      "episode_number": 190
     }
   },
   "slay-the-gods": {
@@ -132,12 +132,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-22",
-      "episode_number": 36
-    },
-    "next_episode": {
       "air_date": "2026-08-29",
       "episode_number": 37
+    },
+    "next_episode": {
+      "air_date": "2026-09-05",
+      "episode_number": 38
     }
   },
   "blades-guardians": {
@@ -186,12 +186,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-22",
-      "episode_number": 8
-    },
-    "next_episode": {
       "air_date": "2026-08-29",
       "episode_number": 9
+    },
+    "next_episode": {
+      "air_date": "2026-09-05",
+      "episode_number": 10
     }
   },
   "sword-of-coming": {
@@ -241,8 +241,8 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-27",
-      "episode_number": 20
+      "air_date": "2026-08-20",
+      "episode_number": 19
     },
     "next_episode": null
   },
@@ -443,8 +443,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 0,
-    "vote_count": null,
+    "rating": 8,
+    "vote_count": 1,
     "episodes": 16,
     "seasons": 1,
     "status": "Returning Series",
@@ -463,7 +463,7 @@
       "episode_number": 4
     },
     "next_episode": {
-      "air_date": "2026-09-28",
+      "air_date": "2026-08-30",
       "episode_number": 5
     }
   }
