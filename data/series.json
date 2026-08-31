@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-08-23",
-      "episode_number": 155
-    },
-    "next_episode": {
       "air_date": "2026-08-30",
       "episode_number": 156
+    },
+    "next_episode": {
+      "air_date": "2026-09-06",
+      "episode_number": 157
     }
   },
   "mortal-journey": {
@@ -459,12 +459,9 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-23",
-      "episode_number": 4
-    },
-    "next_episode": {
       "air_date": "2026-08-30",
       "episode_number": 5
-    }
+    },
+    "next_episode": null
   }
 }
