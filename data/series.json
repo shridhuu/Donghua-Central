@@ -402,12 +402,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-25",
-      "episode_number": 6
-    },
-    "next_episode": {
       "air_date": "2026-09-01",
       "episode_number": 7
+    },
+    "next_episode": {
+      "air_date": "2026-09-08",
+      "episode_number": 8
     }
   },
   "the-great-ruler": {
