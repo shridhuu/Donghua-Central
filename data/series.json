@@ -373,12 +373,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-08-28",
-      "episode_number": 4
-    },
-    "next_episode": {
       "air_date": "2026-09-04",
       "episode_number": 5
+    },
+    "next_episode": {
+      "air_date": "2026-09-11",
+      "episode_number": 6
     }
   },
   "guan": {
@@ -430,12 +430,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-08-28",
-      "episode_number": 88
-    },
-    "next_episode": {
       "air_date": "2026-09-04",
       "episode_number": 89
+    },
+    "next_episode": {
+      "air_date": "2026-09-11",
+      "episode_number": 90
     }
   },
   "golden-curse": {
