@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-29",
-      "episode_number": 189
-    },
-    "next_episode": {
       "air_date": "2026-09-05",
       "episode_number": 190
+    },
+    "next_episode": {
+      "air_date": "2026-09-12",
+      "episode_number": 191
     }
   },
   "slay-the-gods": {
@@ -132,12 +132,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-29",
-      "episode_number": 37
-    },
-    "next_episode": {
       "air_date": "2026-09-05",
       "episode_number": 38
+    },
+    "next_episode": {
+      "air_date": "2026-09-12",
+      "episode_number": 39
     }
   },
   "blades-guardians": {
@@ -462,6 +462,9 @@
       "air_date": "2026-08-30",
       "episode_number": 5
     },
-    "next_episode": null
+    "next_episode": {
+      "air_date": "2026-09-06",
+      "episode_number": 6
+    }
   }
 }
