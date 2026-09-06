@@ -186,12 +186,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-29",
-      "episode_number": 9
-    },
-    "next_episode": {
       "air_date": "2026-09-05",
       "episode_number": 10
+    },
+    "next_episode": {
+      "air_date": "2026-09-12",
+      "episode_number": 11
     }
   },
   "sword-of-coming": {
