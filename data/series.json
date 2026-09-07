@@ -459,12 +459,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-08-30",
-      "episode_number": 5
-    },
-    "next_episode": {
       "air_date": "2026-09-06",
       "episode_number": 6
+    },
+    "next_episode": {
+      "air_date": "2026-09-13",
+      "episode_number": 7
     }
   }
 }
