@@ -90,8 +90,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8,
-    "vote_count": 21,
+    "rating": 8.045,
+    "vote_count": 22,
     "episodes": 30,
     "seasons": 2,
     "status": "Returning Series",
@@ -132,12 +132,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-09-05",
-      "episode_number": 38
-    },
-    "next_episode": {
       "air_date": "2026-09-12",
       "episode_number": 39
+    },
+    "next_episode": {
+      "air_date": "2026-09-19",
+      "episode_number": 40
     }
   },
   "blades-guardians": {
