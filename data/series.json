@@ -61,8 +61,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.424,
-    "vote_count": 85,
+    "rating": 8.419,
+    "vote_count": 86,
     "episodes": 206,
     "seasons": 1,
     "status": "Returning Series",
@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-09-05",
-      "episode_number": 190
-    },
-    "next_episode": {
       "air_date": "2026-09-12",
       "episode_number": 191
+    },
+    "next_episode": {
+      "air_date": "2026-09-19",
+      "episode_number": 192
     }
   },
   "slay-the-gods": {
@@ -186,12 +186,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-09-05",
-      "episode_number": 10
-    },
-    "next_episode": {
       "air_date": "2026-09-12",
       "episode_number": 11
+    },
+    "next_episode": {
+      "air_date": "2026-09-19",
+      "episode_number": 12
     }
   },
   "sword-of-coming": {
