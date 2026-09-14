@@ -32,8 +32,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.2,
-    "vote_count": 41,
+    "rating": 8.214,
+    "vote_count": 42,
     "episodes": 200,
     "seasons": 1,
     "status": "Returning Series",
@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-06",
-      "episode_number": 157
-    },
-    "next_episode": {
       "air_date": "2026-09-13",
       "episode_number": 158
+    },
+    "next_episode": {
+      "air_date": "2026-09-20",
+      "episode_number": 159
     }
   },
   "mortal-journey": {
