@@ -32,8 +32,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.3,
-    "vote_count": 43,
+    "rating": 8.295,
+    "vote_count": 44,
     "episodes": 200,
     "seasons": 1,
     "status": "Returning Series",
@@ -430,12 +430,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-11",
-      "episode_number": 90
-    },
-    "next_episode": {
       "air_date": "2026-09-18",
       "episode_number": 91
+    },
+    "next_episode": {
+      "air_date": "2026-09-25",
+      "episode_number": 92
     }
   },
   "golden-curse": {
