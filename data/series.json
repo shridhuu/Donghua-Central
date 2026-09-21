@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-13",
-      "episode_number": 158
-    },
-    "next_episode": {
       "air_date": "2026-09-20",
       "episode_number": 159
+    },
+    "next_episode": {
+      "air_date": "2026-09-27",
+      "episode_number": 160
     }
   },
   "mortal-journey": {
@@ -358,7 +358,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.043,
+    "rating": 8,
     "vote_count": 23,
     "episodes": 104,
     "seasons": 4,
@@ -459,12 +459,9 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-09-13",
-      "episode_number": 7
-    },
-    "next_episode": {
       "air_date": "2026-09-20",
       "episode_number": 8
-    }
+    },
+    "next_episode": null
   }
 }
