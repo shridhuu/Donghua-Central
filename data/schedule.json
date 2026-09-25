@@ -107,10 +107,10 @@
     ]
   },
   {
-    "id": "golden-curse-sun",
-    "showId": "golden-curse",
-    "day": "sunday",
-    "releaseTimeUTC": "10:00",
+    "id": "battle-through-the-heavens-sat",
+    "showId": "battle-through-the-heavens",
+    "day": "saturday",
+    "releaseTimeUTC": "13:00",
     "group": "Donghua Central",
     "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [
@@ -121,10 +121,10 @@
     ]
   },
   {
-    "id": "battle-through-the-heavens-sun",
-    "showId": "battle-through-the-heavens",
+    "id": "golden-curse-sun",
+    "showId": "golden-curse",
     "day": "sunday",
-    "releaseTimeUTC": "12:00",
+    "releaseTimeUTC": "10:00",
     "group": "Donghua Central",
     "note": "Releases 3–6h after raws (may delay if busy)",
     "tags": [

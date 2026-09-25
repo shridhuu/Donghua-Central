@@ -401,10 +401,7 @@ const loadTMDBData = async () => {
         if (tmdbInfo.rating) item.rating = tmdbInfo.rating;
         if (tmdbInfo.episodes) item.episodes = tmdbInfo.episodes;
         if (item.status !== 'Completed') {
-          if (tmdbInfo.status) {
-            item.status = ['Ended', 'Canceled'].includes(tmdbInfo.status) ? 'Completed' : 'Ongoing';
-          }
-          if (!tmdbInfo.next_episode) {
+          if (tmdbInfo.status && ['Ended', 'Canceled'].includes(tmdbInfo.status)) {
             item.status = 'Completed';
           }
         }
