@@ -19,12 +19,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-17",
-      "episode_number": 287
-    },
-    "next_episode": {
       "air_date": "2026-09-24",
       "episode_number": 288
+    },
+    "next_episode": {
+      "air_date": "2026-12-31",
+      "episode_number": 289
     }
   },
   "renegade-immortal": {
@@ -373,12 +373,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-18",
-      "episode_number": 7
-    },
-    "next_episode": {
       "air_date": "2026-09-24",
       "episode_number": 8
+    },
+    "next_episode": {
+      "air_date": "2026-10-01",
+      "episode_number": 9
     }
   },
   "guan": {
