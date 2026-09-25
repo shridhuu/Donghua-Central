@@ -469,9 +469,9 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.3,
-    "vote_count": 48,
-    "episodes": 160,
+    "rating": 8.048,
+    "vote_count": 62,
+    "episodes": 279,
     "seasons": 5,
     "status": "Returning Series",
     "first_air_date": "2017-01-07",
@@ -482,9 +482,15 @@
     "genres": [
       "Animation",
       "Action & Adventure",
-      "Sci-Fi & Fantasy"
+      "Drama"
     ],
-    "last_episode": null,
-    "next_episode": null
+    "last_episode": {
+      "air_date": "2026-09-19",
+      "episode_number": 211
+    },
+    "next_episode": {
+      "air_date": "2026-09-26",
+      "episode_number": 212
+    }
   }
 }
