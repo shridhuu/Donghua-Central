@@ -15,5 +15,6 @@
   "jade-dynasty": { "tmdb_id": 206484, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "guan": { "tmdb_id": 303287, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
   "the-great-ruler": { "tmdb_id": 226045, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
-  "golden-curse": { "tmdb_id": 330609, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
+  "golden-curse": { "tmdb_id": 330609, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true },
+  "battle-through-the-heavens": { "tmdb_id": 79481, "type": "tv", "use_tmdb_poster": true, "use_tmdb_synopsis": true }
 }

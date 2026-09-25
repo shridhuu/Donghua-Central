@@ -463,5 +463,28 @@
       "episode_number": 8
     },
     "next_episode": null
+  },
+  "battle-through-the-heavens": {
+    "tmdb_id": 79481,
+    "type": "tv",
+    "use_tmdb_poster": true,
+    "use_tmdb_synopsis": true,
+    "rating": 8.3,
+    "vote_count": 48,
+    "episodes": 160,
+    "seasons": 5,
+    "status": "Returning Series",
+    "first_air_date": "2017-01-07",
+    "original_name": "斗破苍穹",
+    "tagline": null,
+    "poster_path": "https://image.tmdb.org/t/p/original/oyoahIcdamTXwjIaL3CqZ1v5CLl.jpg",
+    "overview": "In a land where no magic is present. A land where the strong make the rules and weak have to obey. A land filled with alluring treasures and beauty, yet also filled with unforeseen danger. Three years ago, Xiao Yan, who had shown talents none had seen in decades, suddenly lost everything. His powers, his reputation, and his promise to his mother. What sorcery has caused him to lose all of his powers? And why has his fiancee suddenly shown up?",
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy"
+    ],
+    "last_episode": null,
+    "next_episode": null
   }
 }

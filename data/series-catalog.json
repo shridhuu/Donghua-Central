@@ -207,6 +207,19 @@
     "workingOnNote": "from Episode 1"
   },
   {
+    "id": "battle-through-the-heavens",
+    "name": "Battle Through the Heavens",
+    "image": "https://image.tmdb.org/t/p/original/oyoahIcdamTXwjIaL3CqZ1v5CLl.jpg",
+    "width": 1024,
+    "height": 1024,
+    "status": "Ongoing",
+    "episodes": "160+",
+    "genres": ["Cultivation", "Action", "Fantasy"],
+    "synopsis": "In a world of Dou Qi where the strong rule and the weak obey, Xiao Yan, a former prodigy who mysteriously lost his powers, fights to reclaim his strength, protect his honor, and unearth ancient secrets with the guidance of his master, Yao Lao.",
+    "currentlyWorkingOn": true,
+    "workingOnNote": "from Episode 1"
+  },
+  {
     "id": "shridhuu-needs-rest",
     "name": "@Shridhuu Needs Rest",
     "image": "https://cdn.discordapp.com/avatars/1403304956924264468/19f2a6ec3101d1ccbfff34470bcef51d.png?size=512",
