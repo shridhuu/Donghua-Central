@@ -4,8 +4,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.1,
-    "vote_count": 27,
+    "rating": 8.071,
+    "vote_count": 28,
     "episodes": 338,
     "seasons": 1,
     "status": "Returning Series",
@@ -145,7 +145,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 7.1,
+    "rating": 7.095,
     "vote_count": 21,
     "episodes": 23,
     "seasons": 2,
@@ -266,12 +266,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-18",
-      "episode_number": 95
-    },
-    "next_episode": {
       "air_date": "2026-09-25",
       "episode_number": 96
+    },
+    "next_episode": {
+      "air_date": "2026-10-02",
+      "episode_number": 97
     }
   },
   "swallowed-star": {
@@ -430,12 +430,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-18",
-      "episode_number": 91
-    },
-    "next_episode": {
       "air_date": "2026-09-25",
       "episode_number": 92
+    },
+    "next_episode": {
+      "air_date": "2026-10-02",
+      "episode_number": 93
     }
   },
   "golden-curse": {
