@@ -462,7 +462,10 @@
       "air_date": "2026-09-20",
       "episode_number": 8
     },
-    "next_episode": null
+    "next_episode": {
+      "air_date": "2026-09-27",
+      "episode_number": 9
+    }
   },
   "battle-through-the-heavens": {
     "tmdb_id": 79481,
