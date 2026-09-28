@@ -4,7 +4,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.071,
+    "rating": 8.1,
     "vote_count": 28,
     "episodes": 338,
     "seasons": 1,
@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-20",
-      "episode_number": 159
-    },
-    "next_episode": {
       "air_date": "2026-09-27",
       "episode_number": 160
+    },
+    "next_episode": {
+      "air_date": "2026-10-04",
+      "episode_number": 161
     }
   },
   "mortal-journey": {
@@ -90,7 +90,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 7.87,
+    "rating": 7.9,
     "vote_count": 23,
     "episodes": 30,
     "seasons": 2,
@@ -199,7 +199,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.357,
+    "rating": 8.4,
     "vote_count": 28,
     "episodes": 53,
     "seasons": 3,
@@ -279,7 +279,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.511,
+    "rating": 8.5,
     "vote_count": 46,
     "episodes": 260,
     "seasons": 1,
@@ -459,12 +459,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-09-20",
-      "episode_number": 8
-    },
-    "next_episode": {
       "air_date": "2026-09-27",
       "episode_number": 9
+    },
+    "next_episode": {
+      "air_date": "2026-10-04",
+      "episode_number": 10
     }
   },
   "battle-through-the-heavens": {
