@@ -295,12 +295,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-21",
-      "episode_number": 242
-    },
-    "next_episode": {
       "air_date": "2026-09-28",
       "episode_number": 243
+    },
+    "next_episode": {
+      "air_date": "2026-10-05",
+      "episode_number": 244
     }
   },
   "above-myriads": {
