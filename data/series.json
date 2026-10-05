@@ -459,12 +459,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-09-27",
-      "episode_number": 9
-    },
-    "next_episode": {
       "air_date": "2026-10-04",
       "episode_number": 10
+    },
+    "next_episode": {
+      "air_date": "2026-10-11",
+      "episode_number": 11
     }
   },
   "battle-through-the-heavens": {
