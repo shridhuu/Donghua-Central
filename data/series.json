@@ -279,7 +279,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.543,
+    "rating": 8.5,
     "vote_count": 47,
     "episodes": 260,
     "seasons": 1,
@@ -295,12 +295,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-09-28",
-      "episode_number": 243
-    },
-    "next_episode": {
       "air_date": "2026-10-05",
       "episode_number": 244
+    },
+    "next_episode": {
+      "air_date": "2026-10-12",
+      "episode_number": 245
     }
   },
   "above-myriads": {
