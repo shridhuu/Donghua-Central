@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-03",
-      "episode_number": 194
-    },
-    "next_episode": {
       "air_date": "2026-10-10",
       "episode_number": 195
+    },
+    "next_episode": {
+      "air_date": "2026-10-17",
+      "episode_number": 196
     }
   },
   "slay-the-gods": {
@@ -488,12 +488,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-03",
-      "episode_number": 213
-    },
-    "next_episode": {
       "air_date": "2026-10-10",
       "episode_number": 214
+    },
+    "next_episode": {
+      "air_date": "2026-10-17",
+      "episode_number": 215
     }
   }
 }
