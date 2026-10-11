@@ -132,12 +132,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-03",
-      "episode_number": 42
-    },
-    "next_episode": {
       "air_date": "2026-10-10",
       "episode_number": 43
+    },
+    "next_episode": {
+      "air_date": "2026-10-17",
+      "episode_number": 44
     }
   },
   "blades-guardians": {
@@ -186,12 +186,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-03",
-      "episode_number": 14
-    },
-    "next_episode": {
       "air_date": "2026-10-10",
       "episode_number": 15
+    },
+    "next_episode": {
+      "air_date": "2026-10-17",
+      "episode_number": 16
     }
   },
   "sword-of-coming": {
