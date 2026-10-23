@@ -61,7 +61,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.5,
+    "rating": 8.461,
     "vote_count": 89,
     "episodes": 209,
     "seasons": 1,
@@ -373,12 +373,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-15",
-      "episode_number": 11
-    },
-    "next_episode": {
       "air_date": "2026-10-22",
       "episode_number": 12
+    },
+    "next_episode": {
+      "air_date": "2026-10-29",
+      "episode_number": 13
     }
   },
   "guan": {
