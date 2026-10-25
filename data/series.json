@@ -77,12 +77,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-17",
-      "episode_number": 196
-    },
-    "next_episode": {
       "air_date": "2026-10-24",
       "episode_number": 197
+    },
+    "next_episode": {
+      "air_date": "2026-10-31",
+      "episode_number": 198
     }
   },
   "slay-the-gods": {
@@ -132,12 +132,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-17",
-      "episode_number": 44
-    },
-    "next_episode": {
       "air_date": "2026-10-24",
       "episode_number": 45
+    },
+    "next_episode": {
+      "air_date": "2026-10-31",
+      "episode_number": 46
     }
   },
   "blades-guardians": {
@@ -186,12 +186,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-17",
-      "episode_number": 16
-    },
-    "next_episode": {
       "air_date": "2026-10-24",
       "episode_number": 17
+    },
+    "next_episode": {
+      "air_date": "2026-10-31",
+      "episode_number": 18
     }
   },
   "sword-of-coming": {
@@ -488,12 +488,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-17",
-      "episode_number": 215
-    },
-    "next_episode": {
       "air_date": "2026-10-24",
       "episode_number": 216
+    },
+    "next_episode": {
+      "air_date": "2026-10-31",
+      "episode_number": 217
     }
   }
 }
