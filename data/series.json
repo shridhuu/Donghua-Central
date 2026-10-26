@@ -279,8 +279,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.573,
-    "vote_count": 48,
+    "rating": 8.602,
+    "vote_count": 49,
     "episodes": 260,
     "seasons": 1,
     "status": "Returning Series",
@@ -459,12 +459,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-18",
-      "episode_number": 12
-    },
-    "next_episode": {
       "air_date": "2026-10-25",
       "episode_number": 13
+    },
+    "next_episode": {
+      "air_date": "2026-11-01",
+      "episode_number": 14
     }
   },
   "battle-through-the-heavens": {
