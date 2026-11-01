@@ -76,12 +76,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-24",
-      "episode_number": 197
-    },
-    "next_episode": {
       "air_date": "2026-10-31",
       "episode_number": 198
+    },
+    "next_episode": {
+      "air_date": "2026-11-07",
+      "episode_number": 199
     }
   },
   "slay-the-gods": {
@@ -131,12 +131,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-24",
-      "episode_number": 45
-    },
-    "next_episode": {
       "air_date": "2026-10-31",
       "episode_number": 46
+    },
+    "next_episode": {
+      "air_date": "2026-11-07",
+      "episode_number": 47
     }
   },
   "blades-guardians": {
@@ -185,12 +185,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-10-24",
-      "episode_number": 17
-    },
-    "next_episode": {
       "air_date": "2026-10-31",
       "episode_number": 18
+    },
+    "next_episode": {
+      "air_date": "2026-11-07",
+      "episode_number": 19
     }
   },
   "sword-of-coming": {
@@ -252,7 +252,7 @@
     "use_tmdb_synopsis": true,
     "rating": 9.1,
     "vote_count": 21,
-    "episodes": 105,
+    "episodes": 121,
     "seasons": 1,
     "status": "Returning Series",
     "first_air_date": "2023-06-22",
