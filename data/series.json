@@ -471,8 +471,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8,
-    "vote_count": 62,
+    "rating": 8.079,
+    "vote_count": 63,
     "episodes": 279,
     "seasons": 5,
     "status": "Returning Series",
@@ -486,12 +486,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-24",
-      "episode_number": 216
-    },
-    "next_episode": {
       "air_date": "2026-10-31",
       "episode_number": 217
+    },
+    "next_episode": {
+      "air_date": "2026-11-07",
+      "episode_number": 218
     }
   }
 }
