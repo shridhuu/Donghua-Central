@@ -61,8 +61,8 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.5,
-    "vote_count": 91,
+    "rating": 8.495,
+    "vote_count": 92,
     "episodes": 210,
     "seasons": 1,
     "status": "Returning Series",
@@ -372,12 +372,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-29",
-      "episode_number": 13
-    },
-    "next_episode": {
       "air_date": "2026-11-05",
       "episode_number": 14
+    },
+    "next_episode": {
+      "air_date": "2026-11-12",
+      "episode_number": 15
     }
   },
   "guan": {
