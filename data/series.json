@@ -89,7 +89,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 7.9,
+    "rating": 7.87,
     "vote_count": 23,
     "episodes": 30,
     "seasons": 2,
@@ -265,12 +265,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-30",
-      "episode_number": 101
-    },
-    "next_episode": {
       "air_date": "2026-11-06",
       "episode_number": 102
+    },
+    "next_episode": {
+      "air_date": "2026-11-13",
+      "episode_number": 103
     }
   },
   "swallowed-star": {
@@ -429,12 +429,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-30",
-      "episode_number": 97
-    },
-    "next_episode": {
       "air_date": "2026-11-06",
       "episode_number": 98
+    },
+    "next_episode": {
+      "air_date": "2026-11-13",
+      "episode_number": 99
     }
   },
   "golden-curse": {
