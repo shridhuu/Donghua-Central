@@ -486,12 +486,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-10-31",
-      "episode_number": 217
-    },
-    "next_episode": {
       "air_date": "2026-11-07",
       "episode_number": 218
+    },
+    "next_episode": {
+      "air_date": "2026-11-14",
+      "episode_number": 219
     }
   }
 }
