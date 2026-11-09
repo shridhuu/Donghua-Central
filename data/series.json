@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-01",
-      "episode_number": 165
-    },
-    "next_episode": {
       "air_date": "2026-11-08",
       "episode_number": 166
+    },
+    "next_episode": {
+      "air_date": "2026-11-15",
+      "episode_number": 167
     }
   },
   "mortal-journey": {
@@ -458,12 +458,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-11-01",
-      "episode_number": 14
-    },
-    "next_episode": {
       "air_date": "2026-11-08",
       "episode_number": 15
+    },
+    "next_episode": {
+      "air_date": "2026-11-15",
+      "episode_number": 16
     }
   },
   "battle-through-the-heavens": {
