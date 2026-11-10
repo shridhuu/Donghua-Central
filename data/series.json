@@ -233,7 +233,7 @@
     "original_name": "将夜",
     "tagline": null,
     "poster_path": "https://image.tmdb.org/t/p/original/vI6Kl9L6keOc6tupaYfcyaJeTGz.jpg",
-    "overview": null,
+    "overview": "The protagonist Ning Que travels to a seemingly real Tang Dynasty world, only to find that it is a dangerous world of cultivation. He originally thought that he could live a life of luxury and become superior, but he finds that he had no talent for cultivation. Additionally, he witnessed the massacre of his entire family at the age of four and was hunted for thousands of miles. While escaping death, he picked up a black umbrella in a sea of ​​blood and corpses and found the infant Sangsang. In despair, he found the motivation to live. Unwilling to bow to fate, he takes the big black umbrella and Sangsang, and begins a thrilling counterattack.",
     "genres": [
       "Animation",
       "Action & Adventure",
@@ -294,12 +294,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-02",
-      "episode_number": 248
-    },
-    "next_episode": {
       "air_date": "2026-11-09",
       "episode_number": 249
+    },
+    "next_episode": {
+      "air_date": "2026-11-16",
+      "episode_number": 250
     }
   },
   "above-myriads": {
@@ -401,12 +401,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-11-02",
-      "episode_number": 16
-    },
-    "next_episode": {
       "air_date": "2026-11-09",
       "episode_number": 17
+    },
+    "next_episode": {
+      "air_date": "2026-11-16",
+      "episode_number": 18
     }
   },
   "the-great-ruler": {
