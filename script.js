@@ -19,8 +19,12 @@ const staffGrid = document.querySelector("#staffGrid");
 const seriesGrid = document.querySelector("#seriesGrid");
 const librarySearch = document.querySelector("#librarySearch");
 const filterChipsContainer = document.querySelector("#filterChips");
+const statusChipsContainer = document.querySelector("#statusChips");
+const searchClearBtn = document.querySelector("#searchClear");
+const resultsCountEl = document.querySelector("#resultsCount");
 
-let activeFilter = "all";
+let activeStatusFilter = "all";
+let activeGenreFilter = "all";
 let searchQuery = "";
 
 const getInitials = (name) =>
@@ -103,6 +107,20 @@ const renderSkeletons = () => {
   `).join("");
 };
 
+// Status Filter Chips Handler
+const initStatusChips = () => {
+  if (!statusChipsContainer) return;
+  const buttons = statusChipsContainer.querySelectorAll(".filter-chip");
+  buttons.forEach(btn => {
+    btn.onclick = () => {
+      buttons.forEach(b => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+      activeStatusFilter = btn.dataset.status;
+      renderSeries();
+    };
+  });
+};
+
 // Dynamic Genre Chips Generation
 const renderFilterChips = () => {
   if (!filterChipsContainer) return;
@@ -116,15 +134,13 @@ const renderFilterChips = () => {
   });
 
   let html = `
-    <button class="filter-chip ${activeFilter === 'all' ? 'is-active' : ''}" data-filter="all">All</button>
-    <button class="filter-chip ${activeFilter === 'ongoing' ? 'is-active' : ''}" data-filter="ongoing">Ongoing</button>
-    <button class="filter-chip ${activeFilter === 'completed' ? 'is-active' : ''}" data-filter="completed">Completed</button>
+    <button class="filter-chip ${activeGenreFilter === 'all' ? 'is-active' : ''}" data-genre="all">All Genres</button>
   `;
 
   Array.from(genres).sort().forEach(genre => {
     const filterVal = genre.toLowerCase();
     html += `
-      <button class="filter-chip ${activeFilter === filterVal ? 'is-active' : ''}" data-filter="${filterVal}">${genre}</button>
+      <button class="filter-chip ${activeGenreFilter === filterVal ? 'is-active' : ''}" data-genre="${filterVal}">${genre}</button>
     `;
   });
 
@@ -135,7 +151,7 @@ const renderFilterChips = () => {
     chip.addEventListener("click", () => {
       newChips.forEach(c => c.classList.remove("is-active"));
       chip.classList.add("is-active");
-      activeFilter = chip.dataset.filter;
+      activeGenreFilter = chip.dataset.genre;
       renderSeries();
     });
   });
@@ -150,7 +166,7 @@ const buildPosterMarkup = (item, altText, extraAttrs = "") => {
   return `
     <picture>
       <source srcset="${webpSrc}" type="image/webp">
-      <img src="${item.image}" alt="${altText}" loading="lazy" width="${item.width}" height="${item.height}" ${extraAttrs} />
+      <img src="${item.image}" alt="${altText}" loading="lazy" width="${item.width || 300}" height="${item.height || 450}" ${extraAttrs} />
     </picture>
   `;
 };
@@ -158,37 +174,84 @@ const buildPosterMarkup = (item, altText, extraAttrs = "") => {
 const renderSeries = () => {
   if (!seriesGrid) return;
 
-  const filtered = series.filter(item => {
-    if (item.excludeFromLibrary) return false;
-    const matchesSearch = item.name.toLowerCase().includes(searchQuery) ||
-      item.synopsis.toLowerCase().includes(searchQuery);
+  const totalVisible = series.filter(item => !item.excludeFromLibrary);
 
-    if (activeFilter === "all") return matchesSearch;
-    if (activeFilter === "ongoing" || activeFilter === "completed") {
-      return matchesSearch && item.status.toLowerCase() === activeFilter;
+  const filtered = totalVisible.filter(item => {
+    const q = searchQuery.toLowerCase();
+    const matchesSearch = !q ||
+      item.name.toLowerCase().includes(q) ||
+      (item.synopsis && item.synopsis.toLowerCase().includes(q)) ||
+      (item.genres && item.genres.some(g => g.toLowerCase().includes(q)));
+
+    if (!matchesSearch) return false;
+
+    // Status filter
+    if (activeStatusFilter === "ongoing" && item.status.toLowerCase() !== "ongoing") return false;
+    if (activeStatusFilter === "completed" && item.status.toLowerCase() !== "completed") return false;
+    if (activeStatusFilter === "working-on" && !item.currentlyWorkingOn) return false;
+
+    // Genre filter
+    if (activeGenreFilter !== "all") {
+      if (!item.genres || !item.genres.some(g => g.toLowerCase() === activeGenreFilter)) return false;
     }
-    return matchesSearch && item.genres.some(g => g.toLowerCase() === activeFilter);
+
+    return true;
   });
+
+  if (resultsCountEl) {
+    if (searchQuery || activeStatusFilter !== "all" || activeGenreFilter !== "all") {
+      resultsCountEl.textContent = `Showing ${filtered.length} of ${totalVisible.length} series`;
+    } else {
+      resultsCountEl.textContent = `${totalVisible.length} series in catalog`;
+    }
+  }
 
   if (filtered.length === 0) {
     seriesGrid.innerHTML = `
       <div class="no-results">
-        <i data-lucide="alert-circle" aria-hidden="true"></i>
-        <p>No series found matching your criteria.</p>
+        <i data-lucide="book-x" aria-hidden="true"></i>
+        <p>No scrolls match your cultivation criteria.</p>
+        <button class="reset-filters-btn" id="resetFiltersBtn">Reset Filters</button>
       </div>
     `;
+    const resetBtn = document.querySelector("#resetFiltersBtn");
+    resetBtn?.addEventListener("click", () => {
+      activeStatusFilter = "all";
+      activeGenreFilter = "all";
+      searchQuery = "";
+      if (librarySearch) librarySearch.value = "";
+      if (searchClearBtn) searchClearBtn.hidden = true;
+      initStatusChips();
+      renderFilterChips();
+      renderSeries();
+    });
     if (window.lucide) window.lucide.createIcons();
     return;
   }
 
   seriesGrid.innerHTML = filtered.map(item => {
+    const ratingMarkup = item.rating
+      ? `<span class="series-rating-badge" title="TMDB Rating"><i data-lucide="star" aria-hidden="true"></i> ${Number(item.rating).toFixed(1)}</span>`
+      : "";
+    const workingBadge = item.currentlyWorkingOn
+      ? `<span class="series-working-badge" title="${item.workingOnNote || 'Active translation'}"><i data-lucide="sparkles" aria-hidden="true"></i> ${item.workingOnNote || 'Shridhuu Subs'}</span>`
+      : "";
+    const statusClass = item.status.toLowerCase() === "ongoing" ? "status-ongoing" : "status-completed";
+
     return `
       <a class="series-card" href="series-${item.id}.html" data-id="${item.id}" aria-label="View details for ${item.name}">
         <div class="series-card-media">
           ${buildPosterMarkup(item, `${item.name} Poster`)}
         </div>
-        <span>${item.status}</span>
-        <h3>${item.name}</h3>
+        <div class="series-card-badges">
+          <span class="series-status-pill ${statusClass}">${item.status}</span>
+          ${ratingMarkup}
+        </div>
+        ${workingBadge}
+        <div class="series-card-info">
+          <h3>${item.name}</h3>
+          ${item.episodes ? `<span class="series-episodes-pill">${item.episodes}</span>` : ""}
+        </div>
       </a>
     `;
   }).join("");
@@ -358,11 +421,34 @@ window.addEventListener("scroll", () => {
 
 
 
-// Library filter text action
+// Library search and keyboard shortcut
 if (librarySearch) {
   librarySearch.addEventListener("input", (e) => {
     searchQuery = e.target.value.toLowerCase().trim();
+    if (searchClearBtn) {
+      searchClearBtn.hidden = !searchQuery;
+    }
     renderSeries();
+  });
+
+  if (searchClearBtn) {
+    searchClearBtn.addEventListener("click", () => {
+      librarySearch.value = "";
+      searchQuery = "";
+      searchClearBtn.hidden = true;
+      librarySearch.focus();
+      renderSeries();
+    });
+  }
+
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "/" && document.activeElement !== librarySearch && !["INPUT", "TEXTAREA"].includes(document.activeElement?.tagName)) {
+      e.preventDefault();
+      librarySearch.focus();
+      librarySearch.select();
+    } else if (e.key === "Escape" && document.activeElement === librarySearch) {
+      librarySearch.blur();
+    }
   });
 }
 
@@ -422,6 +508,7 @@ const loadTMDBData = async () => {
   } catch (err) {
     console.warn('Using curated local fallback series data:', err.message);
   } finally {
+    initStatusChips();
     renderFilterChips();
     renderSeries();
   }
@@ -606,7 +693,7 @@ window.copyUsername = (text, el) => {
   }
 };
 
-// ---- Schedule ----
+// ---- Schedule Engine ----
 const DAY_ORDER = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday", "nonweekly", "tentative"];
 const DAY_LABELS = {
   monday: "Monday", tuesday: "Tuesday", wednesday: "Wednesday", thursday: "Thursday",
@@ -618,7 +705,29 @@ let scheduleData = [];
 let activeDay = "monday";
 let countdownInterval = null;
 
+const updateTimezoneBadge = () => {
+  const tzEl = document.querySelector("#detectedTz");
+  const userTzEl = document.querySelector("#userTimezone");
+  try {
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "UTC";
+    const now = new Date();
+    const offsetMin = -now.getTimezoneOffset();
+    const sign = offsetMin >= 0 ? "+" : "-";
+    const hours = Math.floor(Math.abs(offsetMin) / 60);
+    const mins = Math.abs(offsetMin) % 60;
+    const offsetStr = `UTC${sign}${hours}${mins ? ":" + String(mins).padStart(2, "0") : ""}`;
+    const cleanTz = tz.replace(/_/g, " ");
+    const text = `${cleanTz} (${offsetStr})`;
+    if (tzEl) tzEl.textContent = text;
+    if (userTzEl) userTzEl.textContent = text;
+  } catch (err) {
+    if (tzEl) tzEl.textContent = "Local Time";
+    if (userTzEl) userTzEl.textContent = "Local Time";
+  }
+};
+
 const getNextOccurrence = (day, timeUTC) => {
+  if (!timeUTC) return null;
   const [h, m] = timeUTC.split(":").map(Number);
   const now = new Date();
 
@@ -648,7 +757,7 @@ const formatCountdown = (target) => {
   const s = totalSeconds % 60;
 
   const label = d > 0 ? `${d}d ${h}h ${m}m` : `${h}h ${m}m ${s}s`;
-  return diff <= 0 ? `Released ${label} ago` : `Releasing in ${label}`;
+  return diff <= 0 ? `Aired ${label} ago` : `Airs in ${label}`;
 };
 
 const formatLocalTime = (day, timeUTC) => {
@@ -663,11 +772,24 @@ const renderDayTabs = () => {
   const tabsEl = document.querySelector("#dayTabs");
   if (!tabsEl) return;
   const activeDays = DAY_ORDER.filter(d => scheduleData.some(item => item.day === d));
-  tabsEl.innerHTML = activeDays.map(day => `
-    <button class="day-tab ${day === activeDay ? "is-active" : ""}" role="tab" aria-selected="${day === activeDay}" data-day="${day}">
-      ${DAY_LABELS[day]}
-    </button>
-  `).join("");
+
+  const dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+  const todayName = dayNames[new Date().getDay()];
+
+  tabsEl.innerHTML = activeDays.map(day => {
+    const isSelected = day === activeDay;
+    const isToday = day === todayName;
+    const count = scheduleData.filter(item => item.day === day).length;
+    const isRest = day === "wednesday" && scheduleData.some(item => item.day === day && item.showId === "shridhuu-needs-rest");
+
+    return `
+      <button class="day-tab ${isSelected ? "is-active" : ""} ${isToday ? "is-today" : ""}" role="tab" aria-selected="${isSelected}" data-day="${day}">
+        <span class="day-tab-name">${DAY_LABELS[day]}</span>
+        ${isToday ? '<span class="day-today-badge">Today</span>' : ''}
+        ${isRest ? '<span class="day-count-badge is-rest">Rest</span>' : `<span class="day-count-badge">${count}</span>`}
+      </button>
+    `;
+  }).join("");
 
   tabsEl.querySelectorAll(".day-tab").forEach(btn => {
     btn.addEventListener("click", () => {
@@ -684,7 +806,7 @@ const renderScheduleGrid = () => {
   if (!gridEl) return;
 
   const dayItems = scheduleData.filter(item => item.day === activeDay);
-  emptyEl.style.display = dayItems.length > 0 ? "none" : "flex";
+  if (emptyEl) emptyEl.style.display = dayItems.length > 0 ? "none" : "flex";
 
   gridEl.innerHTML = dayItems.map(item => {
     const show = series.find(s => s.id === item.showId);
@@ -692,16 +814,37 @@ const renderScheduleGrid = () => {
     const target = getNextOccurrence(item.day, item.releaseTimeUTC);
     const localTime = formatLocalTime(item.day, item.releaseTimeUTC);
 
+    const isCompleted = show.status === "Completed";
+    const isRest = show.id === "shridhuu-needs-rest";
+
+    let countdownMarkup = "";
+    if (isCompleted) {
+      countdownMarkup = `<span class="countdown-badge is-completed"><i data-lucide="check-circle" aria-hidden="true"></i> Completed Series</span>`;
+    } else if (isRest) {
+      countdownMarkup = `<span class="countdown-badge is-rest"><i data-lucide="coffee" aria-hidden="true"></i> Seclusion &amp; Rest</span>`;
+    } else if (target) {
+      const countdownText = formatCountdown(target) || "Scheduled";
+      const diff = target.getTime() - Date.now();
+      const statusClass = diff <= 0 ? "is-aired" : (diff < 6 * 3600 * 1000 ? "is-imminent" : "is-upcoming");
+      const iconName = diff <= 0 ? "check" : (diff < 6 * 3600 * 1000 ? "zap" : "clock");
+      countdownMarkup = `
+        <span class="countdown-badge ${statusClass}" data-target="${target.toISOString()}">
+          <i data-lucide="${iconName}" aria-hidden="true"></i>
+          <span class="countdown-text">${countdownText}</span>
+        </span>
+      `;
+    }
+
     return `
-      <article class="schedule-card">
+      <article class="schedule-card ${isRest ? 'is-rest-card' : ''}">
         <div class="schedule-card-header">
-          <span class="schedule-group">[${item.group}]</span>
-          ${localTime ? `<span class="schedule-time">${localTime}</span>` : ""}
+          <span class="schedule-group"><i data-lucide="shield" aria-hidden="true"></i> ${item.group}</span>
+          ${localTime ? `<span class="schedule-time"><i data-lucide="clock-3" aria-hidden="true"></i> ${localTime}</span>` : ""}
         </div>
         <div class="schedule-card-body">
           <img src="${show.image}" alt="${show.name}" loading="lazy" class="schedule-thumb" />
-          <div>
-            ${show.id === 'shridhuu-needs-rest' ? `
+          <div class="schedule-card-main">
+            ${isRest ? `
               <h3 class="copiable-username" onclick="copyUsername('Shridhuu', this)">
                 @Shridhuu Needs Rest
                 <span class="copy-badge" title="Copy username">
@@ -709,18 +852,16 @@ const renderScheduleGrid = () => {
                 </span>
               </h3>
             ` : `
-              <h3>${show.name}</h3>
+              <h3><a href="series-${show.id}.html">${show.name}</a></h3>
             `}
             ${show.nativeName ? `<p class="schedule-native-name">${show.nativeName}</p>` : ""}
-            <p class="schedule-countdown" data-target="${show.status === 'Completed' ? '' : (target ? target.toISOString() : '')}">
-              ${show.status === 'Completed' ? 'Completed' : (formatCountdown(target) || 'Schedule TBA')}
-            </p>
+            ${countdownMarkup}
           </div>
         </div>
-        ${item.note ? `<p class="schedule-note"><i data-lucide="info" aria-hidden="true"></i> ${item.note}</p>` : ""}
+        ${item.note ? `<div class="schedule-note"><i data-lucide="info" aria-hidden="true"></i> <span>${item.note}</span></div>` : ""}
         <div class="schedule-tags">
-          ${show.status === 'Completed' ? '<span class="schedule-tag">Completed</span>' : ''}
-          ${item.tags.filter(t => t.toLowerCase() !== 'weekly' || show.status !== 'Completed').map(t => `<span class="schedule-tag">${t}</span>`).join("")}
+          ${isCompleted ? '<span class="schedule-tag tag-completed">Completed</span>' : ''}
+          ${item.tags.filter(t => t.toLowerCase() !== 'weekly' || !isCompleted).map(t => `<span class="schedule-tag">${t}</span>`).join("")}
         </div>
       </article>
     `;
@@ -732,10 +873,18 @@ const renderScheduleGrid = () => {
 const startCountdownTicker = () => {
   if (countdownInterval) clearInterval(countdownInterval);
   countdownInterval = setInterval(() => {
-    document.querySelectorAll(".schedule-countdown").forEach(el => {
+    document.querySelectorAll(".countdown-badge[data-target]").forEach(el => {
       const iso = el.dataset.target;
       if (!iso) return;
-      el.textContent = formatCountdown(new Date(iso));
+      const target = new Date(iso);
+      const textEl = el.querySelector(".countdown-text");
+      if (textEl) {
+        textEl.textContent = formatCountdown(target);
+      }
+      const diff = target.getTime() - Date.now();
+      el.classList.toggle("is-aired", diff <= 0);
+      el.classList.toggle("is-imminent", diff > 0 && diff < 6 * 3600 * 1000);
+      el.classList.toggle("is-upcoming", diff >= 6 * 3600 * 1000);
     });
   }, 1000);
 };
@@ -746,9 +895,11 @@ const loadSchedule = async () => {
     if (!res.ok) throw new Error("schedule.json not found");
     scheduleData = await res.json();
 
+    updateTimezoneBadge();
+
     // Auto-select current day of week if active days have schedule entries
     const dayNames = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
-    const currentDayName = dayNames[new Date().getUTCDay()];
+    const currentDayName = dayNames[new Date().getDay()];
     if (scheduleData.some(item => item.day === currentDayName)) {
       activeDay = currentDayName;
     } else {

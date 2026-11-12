@@ -90,22 +90,57 @@
 <section class="panel-band" id="library">
   <div class="section-title split">
     <div>
-      <p class="eyebrow">Featured Library</p>
-      <h2>Series the realm keeps returning to.</h2>
+      <div class="section-badge"><i data-lucide="book-open" aria-hidden="true"></i> Immortal Archive</div>
+      <h2>Curated Series Library</h2>
     </div>
     <p>
-      A mix of staff picks and community favorites: ongoing cultivation staples, massive
-      fantasy worlds, and titles that keep discussion channels alive.
+      Handcrafted translations, ongoing cultivation staples, and complete archives. Filter by release status or genre, or jump straight to any title with fast search.
     </p>
   </div>
-  <div class="library-filters">
-    <div class="search-wrapper">
-      <i data-lucide="search" aria-hidden="true"></i>
-      <input type="text" id="librarySearch" placeholder="Search series..." aria-label="Search series" />
+
+  <div class="library-command-bar">
+    <div class="search-box">
+      <i data-lucide="search" class="search-icon" aria-hidden="true"></i>
+      <input
+        type="text"
+        id="librarySearch"
+        placeholder="Search series by title or synopsis... (Press / to focus)"
+        aria-label="Search series library"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <kbd class="search-shortcut" title="Press forward slash to focus">/</kbd>
+      <button id="searchClear" class="search-clear-btn" aria-label="Clear search query" hidden>
+        <i data-lucide="x" aria-hidden="true"></i>
+      </button>
     </div>
-    <div class="filter-chips" id="filterChips"></div>
+    <div class="library-meta-counter">
+      <span id="resultsCount">Loading library...</span>
+    </div>
   </div>
-  <div class="series-grid" id="seriesGrid"></div>
+
+  <div class="filter-deck">
+    <div class="filter-row status-filter-row" aria-label="Filter by release status">
+      <span class="filter-label"><i data-lucide="activity" aria-hidden="true"></i> Status:</span>
+      <div class="status-chips" id="statusChips">
+        <button class="filter-chip is-active" data-status="all">All Releases</button>
+        <button class="filter-chip" data-status="ongoing">Ongoing</button>
+        <button class="filter-chip" data-status="working-on">Shridhuu Working On</button>
+        <button class="filter-chip" data-status="completed">Completed</button>
+      </div>
+    </div>
+
+    <div class="filter-row genre-filter-row" aria-label="Filter by genre">
+      <span class="filter-label"><i data-lucide="tag" aria-hidden="true"></i> Genres:</span>
+      <div class="filter-chips" id="filterChips">
+        <!-- populated dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <div class="series-grid" id="seriesGrid">
+    <!-- populated dynamically by JS -->
+  </div>
 </section>
 
       </main>

@@ -89,31 +89,43 @@
       <main id="main-content">
 <section class="panel-band" id="schedule">
   <div class="section-title">
-    <p class="eyebrow">Weekly Release Tracker</p>
+    <div class="section-badge"><i data-lucide="compass" aria-hidden="true"></i> Weekly Epigraph</div>
     <h2>Release Schedule</h2>
-    <p class="section-subtitle">When new episodes drop, tracked in your local time.</p>
+    <p class="section-subtitle">Episode drops tracked live in your local coordinate (<span id="userTimezone">Detecting timezone...</span>).</p>
   </div>
 
-  <div class="schedule-info">
-    <ul>
-      <li>Release times are stored in UTC and shown here in <strong>your local time zone</strong>, converted automatically by your browser.</li>
-      <li>Countdowns update live — no need to refresh the page.</li>
-      <li>Times are approximate; check each card's note for typical delay windows.</li>
-      <li>Non-Weekly and Tentative entries don't have a fixed time, so they're not included in the calendar feed below.</li>
-      <li>Subscribe to this schedule in your calendar app via the <a href="schedule.ics">iCal feed</a>.</li>
-      <li>Prefer a feed reader? Subscribe via <a href="feed.xml">RSS</a>.</li>
-    </ul>
+  <div class="schedule-controls">
+    <div class="timezone-chip" id="tzBadge" title="Your browser's detected local timezone">
+      <i data-lucide="globe" aria-hidden="true"></i>
+      <span id="detectedTz">Detecting timezone...</span>
+    </div>
+
+    <div class="schedule-sync-actions">
+      <a class="sync-action-btn" href="schedule.ics" download="donghua-central.ics" title="Subscribe via Apple Calendar, Google Calendar, or Outlook">
+        <i data-lucide="calendar-plus" aria-hidden="true"></i>
+        <span>iCal Feed</span>
+      </a>
+      <a class="sync-action-btn" href="feed.xml" target="_blank" rel="noopener noreferrer" title="Subscribe via RSS feed">
+        <i data-lucide="rss" aria-hidden="true"></i>
+        <span>RSS Feed</span>
+      </a>
+    </div>
   </div>
 
-  <div class="day-tabs" role="tablist" aria-label="Schedule day selector" id="dayTabs">
-    <!-- populated by JS: one button per day -->
+  <div class="day-tabs-wrapper">
+    <div class="day-tabs" role="tablist" aria-label="Schedule day selector" id="dayTabs">
+      <!-- populated dynamically by JS: day buttons with counts and today pill -->
+    </div>
   </div>
 
   <div class="schedule-grid" id="scheduleGrid" role="tabpanel">
-    <!-- populated by JS -->
+    <!-- populated dynamically by JS -->
   </div>
 
-  <p class="no-results" id="scheduleEmpty" hidden>Nothing scheduled for this day yet.</p>
+  <div class="no-results" id="scheduleEmpty" hidden>
+    <i data-lucide="moon" aria-hidden="true"></i>
+    <p>No disciples releasing scrolls on this day. The realm is in secluded meditation.</p>
+  </div>
 </section>
 
       </main>
