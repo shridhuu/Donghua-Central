@@ -372,12 +372,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-05",
-      "episode_number": 14
-    },
-    "next_episode": {
       "air_date": "2026-11-12",
       "episode_number": 15
+    },
+    "next_episode": {
+      "air_date": "2026-11-19",
+      "episode_number": 16
     }
   },
   "guan": {
