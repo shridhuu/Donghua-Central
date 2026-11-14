@@ -61,7 +61,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.511,
+    "rating": 8.5,
     "vote_count": 93,
     "episodes": 210,
     "seasons": 1,
@@ -265,12 +265,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-06",
-      "episode_number": 102
-    },
-    "next_episode": {
       "air_date": "2026-11-13",
       "episode_number": 103
+    },
+    "next_episode": {
+      "air_date": "2026-11-20",
+      "episode_number": 104
     }
   },
   "swallowed-star": {
