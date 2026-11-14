@@ -429,12 +429,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-06",
-      "episode_number": 98
-    },
-    "next_episode": {
       "air_date": "2026-11-13",
       "episode_number": 99
+    },
+    "next_episode": {
+      "air_date": "2026-11-20",
+      "episode_number": 100
     }
   },
   "golden-curse": {
