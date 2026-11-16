@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-08",
-      "episode_number": 166
-    },
-    "next_episode": {
       "air_date": "2026-11-15",
       "episode_number": 167
+    },
+    "next_episode": {
+      "air_date": "2026-11-22",
+      "episode_number": 168
     }
   },
   "mortal-journey": {
@@ -458,21 +458,18 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-11-08",
-      "episode_number": 15
-    },
-    "next_episode": {
       "air_date": "2026-11-15",
       "episode_number": 16
-    }
+    },
+    "next_episode": null
   },
   "battle-through-the-heavens": {
     "tmdb_id": 79481,
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.1,
-    "vote_count": 63,
+    "rating": 8.109,
+    "vote_count": 64,
     "episodes": 279,
     "seasons": 5,
     "status": "Returning Series",
