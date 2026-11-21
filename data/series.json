@@ -265,12 +265,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-13",
-      "episode_number": 103
-    },
-    "next_episode": {
       "air_date": "2026-11-20",
       "episode_number": 104
+    },
+    "next_episode": {
+      "air_date": "2026-11-27",
+      "episode_number": 105
     }
   },
   "swallowed-star": {
@@ -429,12 +429,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-13",
-      "episode_number": 99
-    },
-    "next_episode": {
       "air_date": "2026-11-20",
       "episode_number": 100
+    },
+    "next_episode": {
+      "air_date": "2026-11-27",
+      "episode_number": 101
     }
   },
   "golden-curse": {
