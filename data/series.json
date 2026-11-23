@@ -48,12 +48,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-15",
-      "episode_number": 167
-    },
-    "next_episode": {
       "air_date": "2026-11-22",
       "episode_number": 168
+    },
+    "next_episode": {
+      "air_date": "2026-11-29",
+      "episode_number": 169
     }
   },
   "mortal-journey": {
@@ -61,9 +61,9 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.527,
+    "rating": 8.5,
     "vote_count": 94,
-    "episodes": 210,
+    "episodes": 211,
     "seasons": 1,
     "status": "Returning Series",
     "first_air_date": "2020-07-25",
@@ -468,7 +468,7 @@
     "type": "tv",
     "use_tmdb_poster": true,
     "use_tmdb_synopsis": true,
-    "rating": 8.167,
+    "rating": 8.2,
     "vote_count": 66,
     "episodes": 279,
     "seasons": 5,
@@ -476,7 +476,7 @@
     "first_air_date": "2017-01-07",
     "original_name": "斗破苍穹",
     "tagline": null,
-    "poster_path": "https://image.tmdb.org/t/p/original/fnYdEz9BFqtu0kHX4LvYXqeq59O.jpg",
+    "poster_path": "https://image.tmdb.org/t/p/original/oyoahIcdamTXwjIaL3CqZ1v5CLl.jpg",
     "overview": "In a land where no magic is present. A land where the strong make the rules and weak have to obey. A land filled with alluring treasures and beauty, yet also filled with unforeseen danger. Three years ago, Xiao Yan, who had shown talents none had seen in decades, suddenly lost everything. His powers, his reputation, and his promise to his mother. What sorcery has caused him to lose all of his powers? And why has his fiancee suddenly shown up?",
     "genres": [
       "Animation",
