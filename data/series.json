@@ -294,12 +294,12 @@
       "Action & Adventure"
     ],
     "last_episode": {
-      "air_date": "2026-11-16",
-      "episode_number": 250
-    },
-    "next_episode": {
       "air_date": "2026-11-23",
       "episode_number": 251
+    },
+    "next_episode": {
+      "air_date": "2026-11-30",
+      "episode_number": 252
     }
   },
   "above-myriads": {
@@ -401,12 +401,12 @@
       "Drama"
     ],
     "last_episode": {
-      "air_date": "2026-11-16",
-      "episode_number": 18
-    },
-    "next_episode": {
       "air_date": "2026-11-23",
       "episode_number": 19
+    },
+    "next_episode": {
+      "air_date": "2026-11-30",
+      "episode_number": 20
     }
   },
   "the-great-ruler": {
